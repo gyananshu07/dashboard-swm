@@ -7,6 +7,7 @@ import SWMProjectStatus from "pages/dashboard/swm-projects-status/SWMProjectStat
 import SWMProjectStatusDecentralized from "pages/dashboard/swm-projects-status-decentralised/SWMProjectStatusDecentralised";
 import FundStatus from "pages/dashboard/fund-status/FundStatus";
 import AppStatus from "pages/dashboard/app-update/AppStatus";
+import KeyUpdates from "pages/dashboard/key-updates/KeyUpdates";
 
 function AppRouter() {
   return (
@@ -26,7 +27,7 @@ function AppRouter() {
               element={<SWMProjectStatusDecentralized />}
             />
             <Route path="funds-status" element={<FundStatus />} />
-            <Route path="key-updates" />
+            <Route path="key-updates" element={<KeyUpdates />} />
             <Route path="states-and-uts-progress" />
             <Route path="app-updates" element={<AppStatus />} />
           </Route>
