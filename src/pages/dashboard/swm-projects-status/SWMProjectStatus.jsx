@@ -29,7 +29,6 @@ function SWMProjectStatus() {
           "#da5d1e",
           "#c2521a",
         ],
-        borderColor: "#180a03",
       },
     ],
   };
@@ -57,7 +56,6 @@ function SWMProjectStatus() {
           "#da5d1e",
           "#c2521a",
         ],
-        borderColor: "#180a03",
       },
     ],
   };
@@ -88,7 +86,6 @@ function SWMProjectStatus() {
           "#c2521a",
           "#793411",
         ],
-        borderColor: "#180a03",
       },
     ],
   };
@@ -118,7 +115,6 @@ function SWMProjectStatus() {
           "#c2521a",
           "#793411",
         ],
-        borderColor: "#180a03",
       },
     ],
   };

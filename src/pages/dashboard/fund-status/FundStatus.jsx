@@ -97,7 +97,9 @@ function FundStatus() {
               <GroupedBarChart data={FundReleaseDataSBM1} titleText="SBM 1.0" />
             </div>
           </div>
+        </div>
 
+        <div className={styles.cardsContainer}>
           <div className={styles.cardContainer}>
             <div className={styles.cardHeader}>Fund Release (in Crores)</div>
             <div className={styles.cardBody}>

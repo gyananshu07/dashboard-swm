@@ -20,6 +20,8 @@ import {
   ArcElement,
 } from "chart.js";
 
+import ChartDataLabels from "chartjs-plugin-datalabels";
+
 import AppRouter from "AppRouter";
 
 ChartJS.register(
@@ -34,8 +36,29 @@ ChartJS.register(
   BarController,
   BarElement,
   Filler,
-  ArcElement
+  ArcElement,
+  ChartDataLabels
 );
+
+ChartJS.defaults.set("plugins.datalabels", {
+  color: "#009e85",
+  anchor: "end",
+  align: "end",
+  font: {
+    weight: 600,
+  },
+  backgroundColor: null,
+  borderWidth: 0,
+});
+
+ChartJS.defaults.elements.bar.hoverBackgroundColor = "#009e85";
+ChartJS.defaults.elements.bar.borderColor = "#fff";
+ChartJS.defaults.elements.bar.borderWidth = 2;
+ChartJS.defaults.barThickness = 60;
+
+ChartJS.defaults.elements.arc.hoverBackgroundColor = "#009e85";
+ChartJS.defaults.elements.arc.hoverBorderColor = "#003f35";
+ChartJS.defaults.elements.arc.hoverBorderWidth = 2;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

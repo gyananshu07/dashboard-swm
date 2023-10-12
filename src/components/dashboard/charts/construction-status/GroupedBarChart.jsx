@@ -56,7 +56,7 @@ export const options = {
 };
 
 const labels = ["IHHL", "CT/PT"];
-export const data = {
+const data = {
   labels,
   datasets: [
     {

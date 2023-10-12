@@ -19,15 +19,22 @@ ChartJS.register(
   Legend
 );
 
-export default function GroupedBarChart({ data, titleText }) {
+export default function BarChart({ data, titleText }) {
   const options = {
     plugins: {
+      title: {
+        display: true,
+        text: titleText,
+        font: {
+          size: 16,
+        },
+      },
       legend: {
         display: false,
       },
-      responsive: true,
-      maintainAspectRatio: true,
     },
+    responsive: true,
+    maintainAspectRatio: true,
     interaction: {
       mode: "index",
       intersect: false,
@@ -37,22 +44,11 @@ export default function GroupedBarChart({ data, titleText }) {
         ticks: {
           font: {
             weight: 600,
-            size: 16,
           },
         },
         stacked: true,
       },
-      y: {
-        title: {
-          display: true,
-          text: titleText,
-          font: {
-            weight: 600,
-            size: 16,
-          },
-        },
-        stacked: true,
-      },
+      y: { stacked: true },
     },
   };
 

@@ -9,6 +9,11 @@
 }
 
 .updates {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
   background-color: var(--card-background);
   box-shadow: var(--box-shadow);
   border-radius: var(--border-radius);
@@ -37,6 +42,14 @@
 
 .body {
   padding: 20px;
+}
+
+.chartBody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 90%;
 }
 
 .iframe {

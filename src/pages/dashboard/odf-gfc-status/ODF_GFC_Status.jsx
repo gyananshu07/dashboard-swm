@@ -50,6 +50,7 @@ function ODFGFCStatus() {
             <div className={styles.cardBody}>
               <DoughnutHalfChart data={dataODF} />
             </div>
+            <div className={styles.helper}>ODF - Open Defecation Free</div>
           </div>
 
           <div className={styles.cardContainer}>
@@ -57,12 +58,14 @@ function ODFGFCStatus() {
             <div className={styles.cardBody}>
               <DoughnutHalfChart data={dataGFC} />
             </div>
+
+            <div className={styles.helper}>GFC - Garbage Free Cities</div>
           </div>
         </div>
 
-        <div className={styles.cardContainer}>
+        <div className={styles.cardContainer} style={{ width: "100%" }}>
           <div className={styles.cardHeader}>Total Data</div>
-          <div className={styles.cardBody}>
+          <div className={styles.cardBody} style={{ width: "100%" }}>
             <div className={styles.subCard}>
               <div className={styles.subCardHeading}>
                 Total no of ULBs as per 2011 census

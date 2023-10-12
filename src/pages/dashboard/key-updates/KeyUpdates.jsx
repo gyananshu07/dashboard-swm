@@ -2,11 +2,43 @@ import React from "react";
 import styles from "./styles.module.css";
 import DashboardLayout from "components/dashboard/layout/DashboardLayout";
 import InfoRoundedIcon from "@mui/icons-material/InfoRounded";
+import BarChart from "components/dashboard/charts/key-updates/BarChart";
 
 function KeyUpdates() {
+  const KeyUpdatesData = {
+    labels: [
+      "Completed",
+      "On-going",
+      "Action Plan Approved",
+      "Taken up by State/Other Funding",
+    ],
+    datasets: [
+      {
+        label: "No. of Dumpsite",
+        data: [326, 342, 949, 34],
+        backgroundColor: "#f26721",
+        stack: "Stack 0",
+      },
+
+      {
+        label: "Legacy Waste Qty. (Lacs Tonne)",
+        data: [426, 551, 972, 36],
+        backgroundColor: "#c2521a",
+        stack: "Stack 1",
+      },
+    ],
+  };
+
   return (
     <DashboardLayout>
       <div className={styles.container}>
+        <div className={styles.updates} style={{ justifyContent: "center" }}>
+          <div className={styles.header}>Remediation Status</div>
+          <div className={styles.chartBody}>
+            <BarChart data={KeyUpdatesData} />
+          </div>
+        </div>
+
         <div className={styles.updates}>
           <div className={styles.header}>GFC Updates</div>
           <div className={styles.body}>
@@ -79,7 +111,7 @@ function KeyUpdates() {
 
         <div className={styles.updates}>
           <div className={styles.header}>Google Toilet Locator</div>
-          <div className={styles.info}>
+          <div className={`${styles.info} text-center mx-auto`}>
             <InfoRoundedIcon /> 3,326 Cities (with 67,407 toilets) are live on
             Google Maps
           </div>
