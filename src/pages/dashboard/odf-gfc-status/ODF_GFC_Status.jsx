@@ -14,7 +14,7 @@ function ODFGFCStatus() {
     ],
     datasets: [
       {
-        label: "ULBs declared ODF",
+        label: "No. of ULBs",
         data: [4355, 3547, 1191, 14],
         backgroundColor: ["#f9b390", "#f58d59", "#f26721", "#793411"],
         borderColor: ["#f79c6f", "#f58d59", "#f47e42", "#3d1a08"],
@@ -32,7 +32,7 @@ function ODFGFCStatus() {
     ],
     datasets: [
       {
-        label: "GFC Certified Cities",
+        label: "No. of GFC Certified Cities",
         data: [234, 199, 11, 1],
         backgroundColor: ["#f9b390", "#f58d59", "#f26721", "#793411"],
         borderColor: ["#f79c6f", "#f58d59", "#f47e42", "#3d1a08"],

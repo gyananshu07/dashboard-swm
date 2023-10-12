@@ -1,8 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import ODFGFCStatus from "pages/dashboard/odf-gfc-status/ODF_GFC_Status";
 import DashboardHome from "pages/dashboard/DashboardHome";
 import ConstructionStatus from "pages/dashboard/construction-status/ConstructionStatus";
+import ProgressInSWM from "pages/dashboard/progress-swm/ProgressInSWM";
+import SWMProjectStatus from "pages/dashboard/swm-projects-status/SWMProjectStatus";
+import SWMProjectStatusDecentralized from "pages/dashboard/swm-projects-status-decentralised/SWMProjectStatusDecentralised";
 
 function AppRouter() {
   return (
@@ -15,9 +17,12 @@ function AppRouter() {
               path="construction-status"
               element={<ConstructionStatus />}
             />
-            <Route path="progress-swm" />
-            <Route path="swm-projects-status" />
-            <Route path="swm-projects-status-decentralized" />
+            <Route path="progress-swm" element={<ProgressInSWM />} />
+            <Route path="swm-projects-status" element={<SWMProjectStatus />} />
+            <Route
+              path="swm-projects-status-decentralized"
+              element={<SWMProjectStatusDecentralized />}
+            />
             <Route path="funds-status" />
             <Route path="key-updates" />
             <Route path="states-and-uts-progress" />

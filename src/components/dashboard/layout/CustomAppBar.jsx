@@ -6,13 +6,13 @@ import { MenuRounded as MenuRoundedIcon } from "@mui/icons-material";
 
 import { IconButton } from "@mui/material";
 
-const drawerWidth = 220;
+const drawerWidth = 200;
 
-function CustomAppBar({ onDrawerToggle, onOpenMenu }) {
+function CustomAppBar({ onDrawerToggle }) {
   return (
     <AppBar
       sx={{
-        width: { sm: `calc(100% - ${drawerWidth}px)` },
+        width: { md: `calc(100% - ${drawerWidth}px)` },
         ml: { sm: `${drawerWidth}px` },
         backgroundColor: "white",
         boxShadow: "none",
@@ -28,7 +28,7 @@ function CustomAppBar({ onDrawerToggle, onOpenMenu }) {
           aria-label="open drawer"
           edge="start"
           onClick={onDrawerToggle}
-          sx={{ mr: 2, display: { sm: "none" }, color: "#009e85" }}>
+          sx={{ mr: 2, display: { md: "none" }, color: "#009e85" }}>
           <MenuRoundedIcon />
         </IconButton>
         <Typography

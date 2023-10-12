@@ -4,7 +4,7 @@ import { Box, Drawer } from "@mui/material";
 
 import DrawerItems from "./DrawerItems";
 
-const drawerWidth = 220;
+const drawerWidth = 200;
 
 function CustomDrawer({ mobileOpen, onDrawerToggle }) {
   const container =
@@ -12,7 +12,7 @@ function CustomDrawer({ mobileOpen, onDrawerToggle }) {
   return (
     <Box
       component="nav"
-      sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
+      sx={{ width: { md: drawerWidth }, flexShrink: { sm: 0 } }}
       aria-label="Items">
       <Drawer
         container={container}
@@ -23,7 +23,7 @@ function CustomDrawer({ mobileOpen, onDrawerToggle }) {
           keepMounted: true,
         }}
         sx={{
-          display: { xs: "block", sm: "none" },
+          display: { xs: "block", md: "none" },
           "& .MuiDrawer-paper": {
             boxSizing: "border-box",
             width: drawerWidth,
@@ -34,7 +34,7 @@ function CustomDrawer({ mobileOpen, onDrawerToggle }) {
       <Drawer
         variant="permanent"
         sx={{
-          display: { xs: "none", sm: "block" },
+          display: { xs: "none", md: "block" },
           "& .MuiDrawer-paper": {
             boxSizing: "border-box",
             width: drawerWidth,

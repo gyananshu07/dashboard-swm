@@ -36,7 +36,6 @@ function DrawerItems() {
             {menuItems.map((item, index) => (
               <React.Fragment key={index}>
                 <ListItemButton
-                  disablePadding
                   component={Link}
                   to={item.path}
                   sx={{

@@ -45,7 +45,7 @@
   right: 0;
   margin: 0 auto;
   width: max-content;
-  height: max-content;
+  height: max-content !important;
 }
 
 .cardBody {
@@ -57,30 +57,9 @@
   height: 100% !important;
 }
 
-.subCard {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100% !important;
-  height: 100% !important;
-  padding: 10px;
-  margin: 10px;
-
-  background-color: var(--card-background);
-  box-shadow: var(--box-shadow);
-  border-radius: var(--border-radius);
-}
-
-.subCardHeading {
+.helperText {
   font-weight: var(--font-semibold);
-  color: var(--theme-color-2);
-  text-align: center;
-}
-
-.subCardBody {
-  font-weight: var(--font-regular);
-  color: var(--theme-color);
+  padding: 10px;
   text-align: center;
 }
 
