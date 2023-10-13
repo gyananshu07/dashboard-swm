@@ -13,7 +13,7 @@ import StatesUTsProgress from "pages/dashboard/states-progress/StatesUTsProgress
 function AppRouter() {
   return (
     <>
-      <Router basename="/">
+      <Router>
         <Routes>
           <Route exact path="/">
             <Route index element={<DashboardHome />} />
