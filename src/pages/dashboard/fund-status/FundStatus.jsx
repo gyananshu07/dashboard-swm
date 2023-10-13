@@ -118,21 +118,21 @@ function FundStatus() {
               value={statusBy}
             />
 
-            <div className={styles.cardBody}>
-              <GroupedBarChart data={FundReleaseDataSBM1} titleText="SBM 1.0" />
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.cardsContainer}>
-          <div className={styles.cardContainer}>
-            <div className={styles.cardHeader}>Fund Release (in Crores)</div>
-            <div className={styles.cardBody}>
-              <GroupedBarChart
-                data={FundReleaseDataSBMU2}
-                titleText="SBM-U 2.0"
-              />
-            </div>
+            {statusBy === "sbm-1" ? (
+              <div className={styles.cardBody}>
+                <GroupedBarChart
+                  data={FundReleaseDataSBM1}
+                  titleText="SBM 1.0"
+                />
+              </div>
+            ) : (
+              <div className={styles.cardBody}>
+                <GroupedBarChart
+                  data={FundReleaseDataSBMU2}
+                  titleText="SBM-U 2.0"
+                />
+              </div>
+            )}
           </div>
         </div>
 

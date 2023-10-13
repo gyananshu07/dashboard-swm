@@ -43,32 +43,14 @@ function StatesUTsProgress() {
         <div className={styles.cardsContainer}>
           <div className={styles.cardContainer}>
             <div className={styles.cardBody}>
-              <div className={styles.cardHeader}>Top States/UTs in ODF+</div>
-              <div className={styles.mapSuperContainer}>
-                <div className={styles.mapContainer}>
-                  <div className={styles.mapControls}>
-                    <MapControls />
-
-                    <MapChart
-                      highlighted={HighlightedTopODFPlus}
-                      handleZoomIn={handleZoomIn}
-                      handleZoomOut={handleZoomOut}
-                      setPosition={setPosition}
-                      position={position}
-                    />
-                  </div>
-                </div>
+              <div className={styles.cardHeader}>
+                Top States/UTs in Different Categories
               </div>
-            </div>
-          </div>
-
-          <div className={styles.cardContainer}>
-            <div className={styles.cardBody}>
-              <div className={styles.cardHeader}>Top States/UTs in ODF++</div>
               <div className={styles.mapSuperContainer}>
                 <div className={styles.mapContainer}>
                   <div className={styles.mapControls}>
                     <MapControls />
+
                     <MapChart
                       highlighted={HighlightedTopODFPlus}
                       handleZoomIn={handleZoomIn}
