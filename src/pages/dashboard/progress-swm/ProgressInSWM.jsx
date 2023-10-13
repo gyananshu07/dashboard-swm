@@ -1,28 +1,57 @@
-import DashboardLayout from "components/dashboard/layout/DashboardLayout";
-import React from "react";
+import React, { useState } from "react";
 
 import styles from "./styles.module.css";
+
+import DashboardLayout from "components/dashboard/layout/DashboardLayout";
 import GroupedBarChart from "components/dashboard/charts/progress-swm/GroupedBarChart";
 
+import SelectOptions from "utils/SelectOptions";
+
 function ProgressInSWM() {
-  const CollectionAndSegregationData = {
-    labels: ["Door to Door Collection", "Source Segregation"],
+  const [statusBy, setStatusBy] = useState("collection");
+
+  const CollectionData = {
+    labels: ["Door to Door Collection"],
     datasets: [
       {
         label: "Total Wards",
-        data: [94854, 94854],
+        data: [94854],
         backgroundColor: "#f9b390",
         stack: "Stack 0",
       },
       {
         label: "Wards with 100% Collection",
-        data: [90819, 84166],
+        data: [90819],
         backgroundColor: "#f58d59",
         stack: "Stack 1",
       },
       {
         label: "Remaining Wards",
-        data: [4015, 10688],
+        data: [4015],
+        backgroundColor: "#f26721",
+        stack: "Stack 2",
+      },
+    ],
+  };
+
+  const SegregationData = {
+    labels: ["Source Segregation"],
+    datasets: [
+      {
+        label: "Total Wards",
+        data: [94854],
+        backgroundColor: "#f9b390",
+        stack: "Stack 0",
+      },
+      {
+        label: "Wards with 100% Segregation",
+        data: [84166],
+        backgroundColor: "#f58d59",
+        stack: "Stack 1",
+      },
+      {
+        label: "Remaining Wards",
+        data: [10688],
         backgroundColor: "#f26721",
         stack: "Stack 2",
       },
@@ -53,32 +82,51 @@ function ProgressInSWM() {
     ],
   };
 
+  const handleChange = (e) => {
+    setStatusBy(e.target.value);
+  };
+
+  const options = [
+    {
+      value: "collection",
+      label: "By Collection",
+    },
+    {
+      value: "segregation",
+      label: "By Segregation",
+    },
+    {
+      value: "processing",
+      label: "By Processing",
+    },
+  ];
+
   return (
     <DashboardLayout>
       <div className={styles.container}>
         <div className={styles.cardsContainer}>
           <div className={styles.cardContainer}>
-            <div className={styles.cardHeader}>
-              Progress Status in Collection, Segregation
-            </div>
-            <div className={styles.cardBody}>
-              <GroupedBarChart
-                data={CollectionAndSegregationData}
-                titleText="Wards"
-              />
-            </div>
-          </div>
+            <div className={styles.cardHeader}>Progress Status</div>
 
-          <div className={styles.cardContainer}>
-            <div className={styles.cardHeader}>
-              Progress Status in Processing
-            </div>
-            <div className={styles.cardBody}>
-              <GroupedBarChart
-                data={WasteProcessingData}
-                titleText="Waste Generation (Tonnes/day)"
-              />
-            </div>
+            <SelectOptions
+              options={options}
+              onValueChange={handleChange}
+              value={statusBy}
+            />
+
+            {statusBy === "collection" ? (
+              <div className={styles.cardBody}>
+                <GroupedBarChart data={CollectionData} titleText="Wards" />
+              </div>
+            ) : statusBy === "segregation" ? (
+              <div className={styles.cardBody}>
+                <GroupedBarChart data={SegregationData} titleText="Wards" />
+              </div>
+            ) : (
+              <div className={styles.cardBody}>
+                <GroupedBarChart data={WasteProcessingData} titleText="Wards" />
+              </div>
+            )}
           </div>
         </div>
       </div>

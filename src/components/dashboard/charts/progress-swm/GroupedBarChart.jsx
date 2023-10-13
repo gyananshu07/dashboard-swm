@@ -28,10 +28,7 @@ export default function GroupedBarChart({ data, titleText }) {
       responsive: true,
       maintainAspectRatio: true,
     },
-    interaction: {
-      mode: "index",
-      intersect: false,
-    },
+
     scales: {
       x: {
         ticks: {
@@ -40,7 +37,6 @@ export default function GroupedBarChart({ data, titleText }) {
             size: 16,
           },
         },
-        stacked: true,
       },
       y: {
         title: {
@@ -51,7 +47,6 @@ export default function GroupedBarChart({ data, titleText }) {
             size: 16,
           },
         },
-        stacked: true,
       },
     },
   };

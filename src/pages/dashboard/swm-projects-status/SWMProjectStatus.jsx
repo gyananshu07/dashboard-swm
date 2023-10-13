@@ -1,10 +1,18 @@
-import DashboardLayout from "components/dashboard/layout/DashboardLayout";
-import React from "react";
+import React, { useState } from "react";
 
 import styles from "./styles.module.css";
+
+import DashboardLayout from "components/dashboard/layout/DashboardLayout";
 import BarChart from "components/dashboard/charts/project-status/BarChart";
 
+import SelectOptions from "utils/SelectOptions";
+
 function SWMProjectStatus() {
+  const [statusByUnderConstruction, setStatusByUnderConstruction] =
+    useState("no-of-projects");
+  const [statusByConstructed, setStatusByConstructed] =
+    useState("designed-capacity");
+
   // Under Construction
   const noOfProjectsDataUC = {
     labels: [
@@ -119,6 +127,25 @@ function SWMProjectStatus() {
     ],
   };
 
+  const handleChangeUnderConstruction = (e) => {
+    setStatusByUnderConstruction(e.target.value);
+  };
+
+  const handleChangeConstructed = (e) => {
+    setStatusByConstructed(e.target.value);
+  };
+
+  const options = [
+    {
+      value: "no-of-projects",
+      label: "No. of Projects",
+    },
+    {
+      value: "designed-capacity",
+      label: "Designed Capacity",
+    },
+  ];
+
   return (
     <DashboardLayout>
       <div className={styles.container}>
@@ -127,36 +154,56 @@ function SWMProjectStatus() {
             <div className={styles.cardHeader}>
               Under Construction SWM Projects
             </div>
-            <div className={styles.cardBody}>
-              <BarChart
-                data={noOfProjectsDataUC}
-                titleText="No. of Projects Under Construction"
-              />
-            </div>
 
-            <div className={styles.cardBody}>
-              <BarChart
-                data={designedCapacityDataUC}
-                titleText="Designed Capacity (in TPD)"
-              />
-            </div>
+            <SelectOptions
+              options={options}
+              onValueChange={handleChangeUnderConstruction}
+              value={statusByUnderConstruction}
+            />
+
+            {statusByUnderConstruction === "no-of-projects" ? (
+              <div className={styles.cardBody}>
+                <BarChart
+                  data={noOfProjectsDataUC}
+                  titleText="No. of Projects Under Construction"
+                />
+              </div>
+            ) : (
+              <div className={styles.cardBody}>
+                <BarChart
+                  data={designedCapacityDataUC}
+                  titleText="Designed Capacity (in TPD)"
+                />
+              </div>
+            )}
           </div>
 
           <div className={styles.cardContainer}>
             <div className={styles.cardHeader}>Completed SWM Projects</div>
-            <div className={styles.cardBody}>
-              <BarChart
-                data={noOfProjectsDataC}
-                titleText="No. of Projects Constructed"
+
+            <div className={styles.dropdown}>
+              <SelectOptions
+                options={options}
+                onValueChange={handleChangeConstructed}
+                value={statusByConstructed}
               />
             </div>
 
-            <div className={styles.cardBody}>
-              <BarChart
-                data={designedCapacityDataC}
-                titleText="Designed Capacity (in TPD)"
-              />
-            </div>
+            {statusByConstructed === "no-of-projects" ? (
+              <div className={styles.cardBody}>
+                <BarChart
+                  data={noOfProjectsDataC}
+                  titleText="No. of Projects Constructed"
+                />
+              </div>
+            ) : (
+              <div className={styles.cardBody}>
+                <BarChart
+                  data={designedCapacityDataC}
+                  titleText="Designed Capacity (in TPD)"
+                />
+              </div>
+            )}
           </div>
         </div>
       </div>

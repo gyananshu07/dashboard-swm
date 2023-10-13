@@ -41,7 +41,7 @@ ChartJS.register(
 );
 
 ChartJS.defaults.set("plugins.datalabels", {
-  color: "#009e85",
+  color: "#da5d1e",
   anchor: "end",
   align: "end",
   font: {

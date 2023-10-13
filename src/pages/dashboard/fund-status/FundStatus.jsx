@@ -1,10 +1,13 @@
 import DashboardLayout from "components/dashboard/layout/DashboardLayout";
-import React from "react";
+import React, { useState } from "react";
 
 import styles from "./styles.module.css";
 import GroupedBarChart from "components/dashboard/charts/fund-status/GroupedBarChart";
+import SelectOptions from "utils/SelectOptions";
 
 function FundStatus() {
+  const [statusBy, setStatusBy] = useState("sbm-1");
+
   const FundReleaseDataSBM1 = {
     labels: ["Allocated", "Released"],
     datasets: [
@@ -87,12 +90,34 @@ function FundStatus() {
     ],
   };
 
+  const handleChange = (e) => {
+    setStatusBy(e.target.value);
+  };
+
+  const options = [
+    {
+      value: "sbm-1",
+      label: "SBM 1.0",
+    },
+    {
+      value: "sbm-2",
+      label: "SBM U-2.0",
+    },
+  ];
+
   return (
     <DashboardLayout>
       <div className={styles.container}>
         <div className={styles.cardsContainer}>
           <div className={styles.cardContainer}>
             <div className={styles.cardHeader}>Fund Release (in Crores)</div>
+
+            <SelectOptions
+              options={options}
+              onValueChange={handleChange}
+              value={statusBy}
+            />
+
             <div className={styles.cardBody}>
               <GroupedBarChart data={FundReleaseDataSBM1} titleText="SBM 1.0" />
             </div>
