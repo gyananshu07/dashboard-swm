@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/dashboard-swm/static/css/main.b92cc12a.css",
+    "main.js": "/dashboard-swm/static/js/main.ec9df407.js",
+    "static/media/SwachttaApp_2.jpg": "/dashboard-swm/static/media/SwachttaApp_2.d59cf44e949a5fade52e.jpg",
+    "static/media/SwachttaApp.jpg": "/dashboard-swm/static/media/SwachttaApp.204d7947bac0dbbac42f.jpg",
+    "static/media/ArahasLogo.png": "/dashboard-swm/static/media/ArahasLogo.2de88a882076e3072d35.png",
+    "static/media/construction-svgrepo-com.svg": "/dashboard-swm/static/media/construction-svgrepo-com.a205dc1472db261ec7038083a90e345c.svg",
+    "static/media/update-svgrepo-com.svg": "/dashboard-swm/static/media/update-svgrepo-com.2e09f1e264be38683f2b6a51d7258af5.svg",
+    "static/media/garbage-can-svgrepo-com.svg": "/dashboard-swm/static/media/garbage-can-svgrepo-com.6841e4e515fe7dd186b26a2b9c8d7408.svg",
+    "static/media/mobile-app-svgrepo-com.svg": "/dashboard-swm/static/media/mobile-app-svgrepo-com.925021a497bc95a226647730b7ebe460.svg",
+    "static/media/flag-for-india-svgrepo-com.svg": "/dashboard-swm/static/media/flag-for-india-svgrepo-com.de2675aa6563ca2cbcea7bf12ff3033f.svg",
+    "static/media/fund-collection-svgrepo-com.svg": "/dashboard-swm/static/media/fund-collection-svgrepo-com.ea4e31284ff22c2bb228148e6e7d6ab3.svg",
+    "static/media/map-progress-svgrepo-com.svg": "/dashboard-swm/static/media/map-progress-svgrepo-com.14a1ffa4114ed2fb4ea98b49ff2a244e.svg",
+    "static/media/check-success-svgrepo-com.svg": "/dashboard-swm/static/media/check-success-svgrepo-com.bb1fbc7e69635cdc8cc69fa140ab088f.svg",
+    "index.html": "/dashboard-swm/index.html",
+    "main.b92cc12a.css.map": "/dashboard-swm/static/css/main.b92cc12a.css.map",
+    "main.ec9df407.js.map": "/dashboard-swm/static/js/main.ec9df407.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b92cc12a.css",
+    "static/js/main.ec9df407.js"
+  ]
+}
