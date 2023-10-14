@@ -181,13 +181,11 @@ function SWMProjectStatus() {
           <div className={styles.cardContainer}>
             <div className={styles.cardHeader}>Completed SWM Projects</div>
 
-            <div className={styles.dropdown}>
-              <SelectOptions
-                options={options}
-                onValueChange={handleChangeConstructed}
-                value={statusByConstructed}
-              />
-            </div>
+            <SelectOptions
+              options={options}
+              onValueChange={handleChangeConstructed}
+              value={statusByConstructed}
+            />
 
             {statusByConstructed === "no-of-projects" ? (
               <div className={styles.cardBody}>
