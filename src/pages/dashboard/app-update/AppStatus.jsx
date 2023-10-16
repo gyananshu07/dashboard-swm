@@ -1,6 +1,7 @@
 import React from "react";
 
 import styles from "./styles.module.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import AppScreenshot from "assets/SwachttaApp.jpg";
 import AppScreenshot2 from "assets/SwachttaApp_2.jpg";
@@ -10,13 +11,13 @@ import DoughnutHalfChart from "components/dashboard/charts/app-update/DoughnutHa
 
 function AppStatus() {
   const AppComplaintData = {
-    labels: ["Total Complaints Posted", "Total Complaints Resolved"],
+    labels: ["Complaints Posted", "Complaints Resolved"],
     datasets: [
       {
         label: "in Crores",
         data: [2.55, 2.39],
-        backgroundColor: ["#f5854d", "#f26721"],
-        borderColor: ["#f79c6f", "#3d1a08"],
+        backgroundColor: ["#54CAEE", "#30758A"],
+        borderColor: ["#42A0BC", "#286070"],
         borderWidth: 0.2,
       },
     ],
@@ -36,6 +37,9 @@ function AppStatus() {
                 />
               </div>
               <div className={styles.cardContainer}>
+                <div className="text-center" style={{ fontWeight: 600 }}>
+                  Values in Crores
+                </div>
                 <DoughnutHalfChart data={AppComplaintData} />
               </div>
 

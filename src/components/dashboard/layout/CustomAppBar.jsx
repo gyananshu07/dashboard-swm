@@ -16,19 +16,22 @@ function CustomAppBar({ onDrawerToggle }) {
         ml: { sm: `${drawerWidth}px` },
         backgroundColor: "white",
         boxShadow: "none",
-        borderBottom: "1px solid #f26721",
-      }}>
+        borderBottom: "1px solid #1a404b",
+      }}
+    >
       <Toolbar
         sx={{
           display: "flex",
           justifyContent: "space-between",
-        }}>
+        }}
+      >
         <IconButton
           color="inherit"
           aria-label="open drawer"
           edge="start"
           onClick={onDrawerToggle}
-          sx={{ mr: 2, display: { md: "none" }, color: "#009e85" }}>
+          sx={{ mr: 2, display: { md: "none" }, color: "#1a404b" }}
+        >
           <MenuRoundedIcon />
         </IconButton>
         <Typography
@@ -36,10 +39,11 @@ function CustomAppBar({ onDrawerToggle }) {
           component="div"
           sx={{
             flexGrow: 1,
-            color: "#009e85",
+            color: "#1a404b",
             fontFamily: "Poppins",
             textAlign: "center",
-          }}>
+          }}
+        >
           Solid Waste Management Dashboard - Arahas
         </Typography>
       </Toolbar>

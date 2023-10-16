@@ -16,14 +16,14 @@ function KeyUpdates() {
       {
         label: "No. of Dumpsite",
         data: [326, 342, 949, 34],
-        backgroundColor: "#f26721",
+        backgroundColor: "#54CAEE",
         stack: "Stack 0",
       },
 
       {
         label: "Legacy Waste Qty. (Lacs Tonne)",
         data: [426, 551, 972, 36],
-        backgroundColor: "#c2521a",
+        backgroundColor: "#30758A",
         stack: "Stack 1",
       },
     ],

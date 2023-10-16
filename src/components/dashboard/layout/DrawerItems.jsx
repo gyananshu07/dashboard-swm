@@ -25,10 +25,11 @@ function DrawerItems() {
           padding: 5,
           alignItems: "center",
           justifyContent: "center",
-        }}>
+        }}
+      >
         <img height={54} src={Arahas} alt="Arahas Technologies - Logo" />
       </Toolbar>
-      <Divider sx={{ backgroundColor: "#f26721", opacity: 1 }} />
+      <Divider sx={{ backgroundColor: "#1a404b", opacity: 1 }} />
 
       <Box sx={{ overflow: "auto" }}>
         <List>
@@ -46,14 +47,15 @@ function DrawerItems() {
                     alignItems: "center",
                     justifyContent: "center",
                   }}
-                  selected={item.path === pathname}>
+                  selected={item.path === pathname}
+                >
                   <ListItemIcon>{item.icon}</ListItemIcon>
                   <ListItemText
                     primary={item.label}
                     style={{ color: "black", textAlign: "center" }}
                   />
                 </ListItemButton>
-                <Divider sx={{ backgroundColor: "#f26721", opacity: 0.25 }} />
+                <Divider sx={{ backgroundColor: "#1a404b", opacity: 0.25 }} />
               </React.Fragment>
             ))}
           </List>

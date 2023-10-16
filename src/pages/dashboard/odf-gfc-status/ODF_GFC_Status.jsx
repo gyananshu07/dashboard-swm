@@ -16,8 +16,8 @@ function ODFGFCStatus() {
       {
         label: "No. of ULBs",
         data: [4355, 3547, 1191, 14],
-        backgroundColor: ["#f9b390", "#f58d59", "#f26721", "#793411"],
-        borderColor: ["#f79c6f", "#f58d59", "#f47e42", "#3d1a08"],
+        backgroundColor: ["#54CAEE", "#4BB5D5", "#398AA3", "#30758A"],
+        borderColor: ["#f79c6f", "#46AAC8", "#3E95AF", "#2C6B7D"],
         borderWidth: 0.2,
       },
     ],
@@ -34,8 +34,8 @@ function ODFGFCStatus() {
       {
         label: "No. of GFC Certified Cities",
         data: [234, 199, 11, 1],
-        backgroundColor: ["#f9b390", "#f58d59", "#f26721", "#793411"],
-        borderColor: ["#f79c6f", "#f58d59", "#f47e42", "#3d1a08"],
+        backgroundColor: ["#54CAEE", "#4BB5D5", "#398AA3", "#30758A"],
+        borderColor: ["#f79c6f", "#46AAC8", "#3E95AF", "#2C6B7D"],
         borderWidth: 0.2,
       },
     ],

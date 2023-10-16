@@ -41,7 +41,7 @@ ChartJS.register(
 );
 
 ChartJS.defaults.set("plugins.datalabels", {
-  color: "#da5d1e",
+  color: "#1A404B",
   anchor: "end",
   align: "end",
   font: {
@@ -51,13 +51,13 @@ ChartJS.defaults.set("plugins.datalabels", {
   borderWidth: 0,
 });
 
-ChartJS.defaults.elements.bar.hoverBackgroundColor = "#009e85";
+ChartJS.defaults.elements.bar.hoverBackgroundColor = "#1a404b";
 ChartJS.defaults.elements.bar.borderColor = "#fff";
 ChartJS.defaults.elements.bar.borderWidth = 2;
 ChartJS.defaults.barThickness = 60;
 
-ChartJS.defaults.elements.arc.hoverBackgroundColor = "#009e85";
-ChartJS.defaults.elements.arc.hoverBorderColor = "#003f35";
+ChartJS.defaults.elements.arc.hoverBackgroundColor = "#1a404b";
+ChartJS.defaults.elements.arc.hoverBorderColor = "#0D2026";
 ChartJS.defaults.elements.arc.hoverBorderWidth = 2;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
