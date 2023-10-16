@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 
 import styles from "./styles.module.css";
 
@@ -6,12 +6,37 @@ import DashboardLayout from "components/dashboard/layout/DashboardLayout";
 import BarChart from "components/dashboard/charts/project-status/BarChart";
 
 import SelectOptions from "utils/SelectOptions";
+import { useReactToPrint } from "react-to-print";
 
 function SWMProjectStatus() {
   const [statusByUnderConstruction, setStatusByUnderConstruction] =
     useState("no-of-projects");
   const [statusByConstructed, setStatusByConstructed] =
     useState("designed-capacity");
+  const componentRef = useRef();
+  const handlePrint = useReactToPrint({
+    content: () => componentRef.current,
+    pageStyle: `@media print {
+      @page {
+        size: portrait;
+        margin: 0 !important;
+        padding:0 !important;
+        flex: 1 !important;
+        width: 100% !important;
+        height: 100vh !important;
+      }
+      body {
+        display: flex;
+        flex: 1 !important;
+        justify-content: center;
+        align-items: center;
+        width: 100% !important;
+        height: 100vh !important;
+        margin: 0 !important;
+        padding:0 !important;
+      }
+    }`,
+  });
 
   // Under Construction
   const noOfProjectsDataUC = {
@@ -147,8 +172,30 @@ function SWMProjectStatus() {
   ];
 
   return (
-    <DashboardLayout>
-      <div className={styles.container}>
+    <DashboardLayout onPrint={handlePrint}>
+      <div className={styles.container} ref={componentRef}>
+        <style type="text/css" media="print">
+          {`
+          @page {
+            size: portrait;
+            margin: 0;
+            flex: 1 !important;
+            padding:0 !important;
+            width: 100% !important;
+            height: 100vh !important;
+          }
+          body {
+            display: flex;
+            flex: 1 !important;
+            justify-content: center;
+            align-items: center;
+            width: 100% !important;
+            height: 100vh !important;
+            margin: 0 !important;
+            padding: 0 !important;
+          }
+          `}
+        </style>
         <div className={styles.cardsContainer}>
           <div className={styles.cardContainer}>
             <div className={styles.cardHeader}>

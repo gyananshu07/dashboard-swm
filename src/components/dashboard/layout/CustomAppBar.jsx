@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { Box, AppBar, Toolbar, Typography } from "@mui/material";
+import { Button, AppBar, Toolbar, Typography } from "@mui/material";
 
 import { MenuRounded as MenuRoundedIcon } from "@mui/icons-material";
 
@@ -47,7 +47,13 @@ function CustomAppBar({ onDrawerToggle, onPrint }) {
           Solid Waste Management Dashboard - Arahas
         </Typography>
 
-        <button onClick={onPrint}>Print this out!</button>
+        <Button
+          variant="outlined"
+          onClick={onPrint}
+          sx={{ borderColor: "#1a404b", color: "#1a404b" }}
+        >
+          Print this out!
+        </Button>
       </Toolbar>
     </AppBar>
   );

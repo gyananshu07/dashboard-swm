@@ -1,10 +1,36 @@
-import React from "react";
+import React, { useRef } from "react";
 import styles from "./styleSheet.module.css";
 
 import DashboardLayout from "components/dashboard/layout/DashboardLayout";
 import DoughnutHalfChart from "components/dashboard/charts/odf-gfc-status/DoughnutHalfChart";
+import { useReactToPrint } from "react-to-print";
 
 function ODFGFCStatus() {
+  const componentRef = useRef();
+  const handlePrint = useReactToPrint({
+    content: () => componentRef.current,
+    pageStyle: `@media print {
+      @page {
+        size: landscape;
+        margin: 0 !important;
+        padding:0 !important;
+        flex: 1 !important;
+        width: 100vw !important;
+        height: 100vh !important;
+      }
+      body {
+        display: flex;
+        flex: 1 !important;
+        justify-content: center;
+        align-items: center;
+        width: 100vw !important;
+        height: 100vh !important;
+        margin: 0 !important;
+        padding:0 !important;
+      }
+    }`,
+  });
+
   const dataODF = {
     labels: [
       "No. of ULBs certified ODF & above",
@@ -42,8 +68,30 @@ function ODFGFCStatus() {
   };
 
   return (
-    <DashboardLayout>
-      <div className={styles.container}>
+    <DashboardLayout onPrint={handlePrint}>
+      <div className={styles.container} ref={componentRef}>
+        <style type="text/css" media="print">
+          {`
+          @page {
+            size: landscape;
+            margin: 0;
+            flex: 1 !important;
+            padding:0 !important;
+            width: 100vw !important;
+            height: 100vh !important;
+          }
+          body {
+            display: flex;
+            flex: 1 !important;
+            justify-content: center;
+            align-items: center;
+            width: 100vw !important;
+            height: 100vh !important;
+            margin: 0 !important;
+            padding: 0 !important;
+          }
+          `}
+        </style>
         <div className={styles.cardsContainer}>
           <div className={styles.cardContainer}>
             <div className={styles.cardHeader}>ULBs declared ODF</div>
@@ -63,7 +111,7 @@ function ODFGFCStatus() {
           </div>
         </div>
 
-        <div className={styles.cardContainer} style={{ width: "100%" }}>
+        <div className={styles.cardContainer} style={{ width: "100vw" }}>
           <div className={styles.cardHeader}>Total Data</div>
           <div className={styles.cardBody} style={{ width: "100%" }}>
             <div className={styles.subCard}>

@@ -77,7 +77,7 @@ function StatesUTsProgress() {
           }
           `}
         </style>
-        <div className={styles.cardsContainer}>
+        <div className={`${styles.cardsContainer} page-print`}>
           <div className={styles.cardContainer}>
             <div className={styles.cardBody}>
               <div className={styles.cardHeader}>
