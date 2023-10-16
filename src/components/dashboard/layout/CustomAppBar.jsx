@@ -8,7 +8,7 @@ import { IconButton } from "@mui/material";
 
 const drawerWidth = 200;
 
-function CustomAppBar({ onDrawerToggle }) {
+function CustomAppBar({ onDrawerToggle, onPrint }) {
   return (
     <AppBar
       sx={{
@@ -46,6 +46,8 @@ function CustomAppBar({ onDrawerToggle }) {
         >
           Solid Waste Management Dashboard - Arahas
         </Typography>
+
+        <button onClick={onPrint}>Print this out!</button>
       </Toolbar>
     </AppBar>
   );

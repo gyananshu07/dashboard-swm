@@ -1,64 +1,107 @@
-import DashboardLayout from "components/dashboard/layout/DashboardLayout";
-import MapChart from "components/dashboard/maps/MapChart";
-import React, { useState } from "react";
-
+import React, { useRef, useState } from "react";
 import styles from "./styles.module.css";
-import MapControls from "components/dashboard/others/MapControls";
+import SelectOptions from "utils/SelectOptions";
+import TopStates from "components/dashboard/others/TopStates";
+import DashboardLayout from "components/dashboard/layout/DashboardLayout";
+import BottomStates from "components/dashboard/others/BottomStates";
+import { useReactToPrint } from "react-to-print";
 
 function StatesUTsProgress() {
-  const [position, setPosition] = useState({
-    coordinates: [80, 22],
-    zoom: 1,
+  const [statusByStates, setStatusByStates] = useState("odf-plus");
+  const componentRef = useRef();
+  const handlePrint = useReactToPrint({
+    content: () => componentRef.current,
+    pageStyle: `@media print {
+      @page {
+        size: landscape;
+        margin: 0 !important;
+        padding:0 !important;
+        flex: 1 !important;
+        width: 100% !important;
+        height: 100vh !important;
+      }
+      body {
+        display: flex;
+        flex: 1 !important;
+        justify-content: center;
+        align-items: center;
+        width: 100% !important;
+        height: 100vh !important;
+        margin: 0 !important;
+        padding:0 !important;
+      }
+    }`,
   });
 
-  function handleZoomIn() {
-    if (position.zoom >= 4) return;
-    setPosition((pos) => ({ ...pos, zoom: pos.zoom * 2 }));
-  }
-
-  function handleZoomOut() {
-    if (position.zoom <= 1) return;
-    setPosition((pos) => ({ ...pos, zoom: pos.zoom / 2 }));
-  }
-
-  const HighlightedTopODFPlus = [
-    "Goa",
-    "Chhattisgarh",
-    "Maharashtra",
-    "Punjab",
-    "Gujarat",
+  const options = [
+    {
+      value: "odf-plus",
+      label: "in ODF+",
+    },
+    {
+      value: "odf-plus-plus",
+      label: "in ODF++",
+    },
+    {
+      value: "in-swm",
+      label: "in SWM",
+    },
   ];
 
-  const HighlightedTopODFPlusPlus = [
-    "Goa",
-    "Chhattisgarh",
-    "Maharashtra",
-    "Punjab",
-    "Gujarat",
-  ];
+  const handleChangeStatesStatus = (e) => {
+    setStatusByStates(e.target.value);
+  };
 
   return (
-    <DashboardLayout>
-      <div className={styles.container}>
+    <DashboardLayout onPrint={handlePrint}>
+      <div className={styles.container} ref={componentRef}>
+        <style type="text/css" media="print">
+          {`
+          @page {
+            size: landscape;
+            margin: 0;
+            flex: 1 !important;
+            padding:0 !important;
+            width: 100% !important;
+            height: 100vh !important;
+          }
+          body {
+            display: flex;
+            flex: 1 !important;
+            justify-content: center;
+            align-items: center;
+            width: 100% !important;
+            height: 100vh !important;
+            margin: 0 !important;
+            padding: 0 !important;
+          }
+          `}
+        </style>
         <div className={styles.cardsContainer}>
           <div className={styles.cardContainer}>
             <div className={styles.cardBody}>
               <div className={styles.cardHeader}>
-                Top States/UTs in Different Categories
+                States/UTs Progress in Different Categories
               </div>
-              <div className={styles.mapSuperContainer}>
-                <div className={styles.mapContainer}>
-                  <div className={styles.mapControls}>
-                    <MapControls />
 
-                    <MapChart
-                      highlighted={HighlightedTopODFPlus}
-                      handleZoomIn={handleZoomIn}
-                      handleZoomOut={handleZoomOut}
-                      setPosition={setPosition}
-                      position={position}
-                    />
+              <SelectOptions
+                options={options}
+                onValueChange={handleChangeStatesStatus}
+                value={statusByStates}
+              />
+              <div className={styles.mapRow}>
+                <div className={styles.mapEachContainer}>
+                  <div className={styles.mapHeader}>
+                    Top States/UTs in Different Category
                   </div>
+                  <TopStates statusByStates={statusByStates} />
+                </div>
+
+                <div className={styles.mapEachContainer}>
+                  <div className={styles.mapHeader}>
+                    Bottom States/UTs in Different Category
+                  </div>
+                  <BottomStates statusByStates={statusByStates} />
                 </div>
               </div>
             </div>

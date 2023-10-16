@@ -18,10 +18,14 @@ export default function DashboardLayout(props) {
     <Box
       sx={{
         display: "flex",
-      }}>
+      }}
+    >
       <CssBaseline />
 
-      <CustomAppBar onDrawerToggle={handleDrawerToggle} />
+      <CustomAppBar
+        onDrawerToggle={handleDrawerToggle}
+        onPrint={props.onPrint}
+      />
 
       <CustomDrawer
         mobileOpen={mobileOpen}
@@ -37,7 +41,8 @@ export default function DashboardLayout(props) {
             sm: `calc(100% - ${drawerWidth}px)`,
             xs: "100%",
           },
-        }}>
+        }}
+      >
         <Toolbar />
         {props.children}
       </Box>
