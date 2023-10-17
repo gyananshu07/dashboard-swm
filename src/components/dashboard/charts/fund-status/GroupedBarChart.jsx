@@ -52,7 +52,7 @@ export default function GroupedBarChart({ data, titleText }) {
       y: {
         title: {
           display: true,
-          text: "in Crores",
+          text: "in Crores (₹)",
           font: {
             weight: 600,
             size: 14,
