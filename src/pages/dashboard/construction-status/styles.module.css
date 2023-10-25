@@ -35,14 +35,12 @@
 .cardHeader {
   background-color: var(--heading-bg-color);
   color: #fff;
-  text-align: center;
+  text-align: center !important;
   padding: 0.5rem 1.5rem;
   border-radius: 5px;
 
   position: absolute;
   top: -20px;
-  left: 0;
-  right: 0;
   margin: 0 auto;
   width: max-content;
   height: max-content !important;
@@ -53,7 +51,7 @@
   align-items: center;
   justify-content: center;
   padding: 40px 10px;
-  width: 70% !important;
+  width: 69% !important;
 }
 
 .helperText {
@@ -72,5 +70,35 @@
   }
   .cardContainer {
     width: 100% !important;
+    height: 100% !important;
+  }
+  .cardBody {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .cardBody {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+@media (max-width: 470px) {
+  .cardBody {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+@media (max-width: 436px) {
+  .cardBody {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .container {
+    margin: 30px 0 !important;
   }
 }

@@ -26,9 +26,10 @@ export default function GroupedBarChart({ data, titleText }) {
         display: false,
       },
       responsive: true,
-      maintainAspectRatio: true,
+      maintainAspectRatio: false,
     },
-
+    responsive: true,
+    maintainAspectRatio: false,
     scales: {
       x: {
         ticks: {

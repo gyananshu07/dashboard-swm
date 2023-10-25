@@ -1,39 +1,13 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 
 import styles from "./styles.module.css";
 
-import DashboardLayout from "components/dashboard/layout/DashboardLayout";
 import GroupedBarChart from "components/dashboard/charts/progress-swm/GroupedBarChart";
 
 import SelectOptions from "utils/SelectOptions";
-import { useReactToPrint } from "react-to-print";
 
 function ProgressInSWM() {
   const [statusBy, setStatusBy] = useState("collection");
-  const componentRef = useRef();
-  const handlePrint = useReactToPrint({
-    content: () => componentRef.current,
-    pageStyle: `@media print {
-      @page {
-        size: landscape;
-        margin: 0 !important;
-        padding:0 !important;
-        flex: 1 !important;
-        width: 100% !important;
-        height: 100vh !important;
-      }
-      body {
-        display: flex;
-        flex: 1 !important;
-        justify-content: center;
-        align-items: center;
-        width: 100% !important;
-        height: 100vh !important;
-        margin: 0 !important;
-        padding:0 !important;
-      }
-    }`,
-  });
 
   const CollectionData = {
     labels: ["Door to Door Collection"],
@@ -127,10 +101,9 @@ function ProgressInSWM() {
   ];
 
   return (
-    <DashboardLayout onPrint={handlePrint}>
-      <div className={styles.container} ref={componentRef}>
-        <style type="text/css" media="print">
-          {`
+    <div className={styles.container}>
+      <style type="text/css" media="print">
+        {`
           @page {
             size: landscape;
             margin: 0;
@@ -150,34 +123,33 @@ function ProgressInSWM() {
             padding: 0 !important;
           }
           `}
-        </style>
-        <div className={styles.cardsContainer}>
-          <div className={styles.cardContainer}>
-            <div className={styles.cardHeader}>Progress Status</div>
+      </style>
+      <div className={styles.cardsContainer}>
+        <div className={styles.cardContainer}>
+          <div className={styles.cardHeader}>Progress Status</div>
 
-            <SelectOptions
-              options={options}
-              onValueChange={handleChange}
-              value={statusBy}
-            />
+          <SelectOptions
+            options={options}
+            onValueChange={handleChange}
+            value={statusBy}
+          />
 
-            {statusBy === "collection" ? (
-              <div className={styles.cardBody}>
-                <GroupedBarChart data={CollectionData} titleText="Wards" />
-              </div>
-            ) : statusBy === "segregation" ? (
-              <div className={styles.cardBody}>
-                <GroupedBarChart data={SegregationData} titleText="Wards" />
-              </div>
-            ) : (
-              <div className={styles.cardBody}>
-                <GroupedBarChart data={WasteProcessingData} titleText="Wards" />
-              </div>
-            )}
-          </div>
+          {statusBy === "collection" ? (
+            <div className={styles.cardBody}>
+              <GroupedBarChart data={CollectionData} titleText="Wards" />
+            </div>
+          ) : statusBy === "segregation" ? (
+            <div className={styles.cardBody}>
+              <GroupedBarChart data={SegregationData} titleText="Wards" />
+            </div>
+          ) : (
+            <div className={styles.cardBody}>
+              <GroupedBarChart data={WasteProcessingData} titleText="Wards" />
+            </div>
+          )}
         </div>
       </div>
-    </DashboardLayout>
+    </div>
   );
 }
 

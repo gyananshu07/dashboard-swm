@@ -1,6 +1,7 @@
 .chart-decentralized {
   width: 100% !important;
   height: 100% !important;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,5 +11,6 @@
 .chart-decentralized > canvas {
   width: 100% !important;
   height: 100% !important;
+
   font-family: "Poppins", sans-serif !important;
 }

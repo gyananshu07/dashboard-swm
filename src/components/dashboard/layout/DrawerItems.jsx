@@ -12,37 +12,42 @@ import {
 
 import { Link, useLocation } from "react-router-dom";
 
-import Arahas from "assets/logo/ArahasLogo.png";
+import SBM from "assets/logo/Swachh_Bharat_Mission_Logo.svg";
+
 import { menuItems } from "constants/MenuItems";
+import Scrollbars from "react-custom-scrollbars";
 
 function DrawerItems() {
   const { pathname } = useLocation();
-  return (
-    <div>
-      <Toolbar
-        style={{
-          gap: 15,
-          padding: 5,
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <img height={54} src={Arahas} alt="Arahas Technologies - Logo" />
-      </Toolbar>
-      <Divider sx={{ backgroundColor: "#1a404b", opacity: 1 }} />
 
-      <Box sx={{ overflow: "auto" }}>
-        <List>
-          <List>
+  return (
+    <Scrollbars>
+      <div>
+        <Toolbar
+          style={{
+            gap: 15,
+            padding: 5,
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <img height={54} src={SBM} alt="Swachh Bharat Mission- Logo" />
+        </Toolbar>
+        <Divider sx={{ backgroundColor: "#1a404b", opacity: 1 }} />
+
+        <Box sx={{ overflow: "auto" }} autoFocus>
+          <List autoFocus>
             {menuItems.map((item, index) => (
               <React.Fragment key={index}>
                 <ListItemButton
+                  alignItems="center"
                   component={Link}
                   to={item.path}
                   sx={{
                     "&.Mui-selected": {
                       backgroundColor: "#f3faf9",
                     },
+                    display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
                     justifyContent: "center",
@@ -52,16 +57,21 @@ function DrawerItems() {
                   <ListItemIcon>{item.icon}</ListItemIcon>
                   <ListItemText
                     primary={item.label}
-                    style={{ color: "black", textAlign: "center" }}
+                    style={{
+                      color: "black",
+                      alignItems: "center",
+                      textAlign: "center",
+                      alignSelf: "center",
+                    }}
                   />
                 </ListItemButton>
                 <Divider sx={{ backgroundColor: "#1a404b", opacity: 0.25 }} />
               </React.Fragment>
             ))}
           </List>
-        </List>
-      </Box>
-    </div>
+        </Box>
+      </div>
+    </Scrollbars>
   );
 }
 

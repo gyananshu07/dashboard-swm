@@ -1,36 +1,9 @@
-import React, { useRef } from "react";
+import React from "react";
 import styles from "./styleSheet.module.css";
 
-import DashboardLayout from "components/dashboard/layout/DashboardLayout";
 import DoughnutHalfChart from "components/dashboard/charts/odf-gfc-status/DoughnutHalfChart";
-import { useReactToPrint } from "react-to-print";
 
 function ODFGFCStatus() {
-  const componentRef = useRef();
-  const handlePrint = useReactToPrint({
-    content: () => componentRef.current,
-    pageStyle: `@media print {
-      @page {
-        size: landscape;
-        margin: 0 !important;
-        padding:0 !important;
-        flex: 1 !important;
-        width: 100vw !important;
-        height: 100vh !important;
-      }
-      body {
-        display: flex;
-        flex: 1 !important;
-        justify-content: center;
-        align-items: center;
-        width: 100vw !important;
-        height: 100vh !important;
-        margin: 0 !important;
-        padding:0 !important;
-      }
-    }`,
-  });
-
   const dataODF = {
     labels: [
       "No. of ULBs certified ODF & above",
@@ -68,10 +41,9 @@ function ODFGFCStatus() {
   };
 
   return (
-    <DashboardLayout onPrint={handlePrint}>
-      <div className={styles.container} ref={componentRef}>
-        <style type="text/css" media="print">
-          {`
+    <div className={styles.container}>
+      <style type="text/css" media="print">
+        {`
           @page {
             size: landscape;
             margin: 0;
@@ -91,58 +63,57 @@ function ODFGFCStatus() {
             padding: 0 !important;
           }
           `}
-        </style>
-        <div className={styles.cardsContainer}>
-          <div className={styles.cardContainer}>
-            <div className={styles.cardHeader}>ULBs declared ODF</div>
-            <div className={styles.cardBody}>
-              <DoughnutHalfChart data={dataODF} />
-            </div>
-            <div className={styles.helper}>ODF - Open Defecation Free</div>
+      </style>
+      <div className={styles.cardsContainer}>
+        <div className={styles.cardContainer}>
+          <div className={styles.cardHeader}>ULBs declared ODF</div>
+          <div className={styles.cardBody}>
+            <DoughnutHalfChart data={dataODF} />
           </div>
-
-          <div className={styles.cardContainer}>
-            <div className={styles.cardHeader}>ULBs declared GFC</div>
-            <div className={styles.cardBody}>
-              <DoughnutHalfChart data={dataGFC} />
-            </div>
-
-            <div className={styles.helper}>GFC - Garbage Free Cities</div>
-          </div>
+          <div className={styles.helper}>ODF - Open Defecation Free</div>
         </div>
 
-        <div className={styles.cardContainer} style={{ width: "100vw" }}>
-          <div className={styles.cardHeader}>Total Data</div>
-          <div className={styles.cardBody} style={{ width: "100%" }}>
-            <div className={styles.subCard}>
-              <div className={styles.subCardHeading}>
-                Total no of ULBs as per 2011 census
-              </div>
-              <div className={styles.subCardBody}>4041</div>
-            </div>
+        <div className={styles.cardContainer}>
+          <div className={styles.cardHeader}>ULBs declared GFC</div>
+          <div className={styles.cardBody}>
+            <DoughnutHalfChart data={dataGFC} />
+          </div>
 
-            <div className={styles.subCard}>
-              <div className={styles.subCardHeading}>
-                Total no of ULBs as on date
-              </div>
-              <div className={styles.subCardBody}>4884</div>
-            </div>
+          <div className={styles.helper}>GFC - Garbage Free Cities</div>
+        </div>
+      </div>
 
-            <div className={styles.subCard}>
-              <div className={styles.subCardHeading}>ULBs declared ODF</div>
-              <div className={styles.subCardBody}>4884</div>
+      <div className={styles.cardContainer} style={{ width: "100vw" }}>
+        <div className={styles.cardHeader}>Total Data</div>
+        <div className={styles.cardBody} style={{ width: "100%" }}>
+          <div className={styles.subCard}>
+            <div className={styles.subCardHeading}>
+              Total no of ULBs as per 2011 census
             </div>
+            <div className={styles.subCardBody}>4041</div>
+          </div>
 
-            <div className={styles.subCard}>
-              <div className={styles.subCardHeading}>
-                ODF Declared States + UTs
-              </div>
-              <div className={styles.subCardBody}>35</div>
+          <div className={styles.subCard}>
+            <div className={styles.subCardHeading}>
+              Total no of ULBs as on date
             </div>
+            <div className={styles.subCardBody}>4884</div>
+          </div>
+
+          <div className={styles.subCard}>
+            <div className={styles.subCardHeading}>ULBs declared ODF</div>
+            <div className={styles.subCardBody}>4884</div>
+          </div>
+
+          <div className={styles.subCard}>
+            <div className={styles.subCardHeading}>
+              ODF Declared States + UTs
+            </div>
+            <div className={styles.subCardBody}>35</div>
           </div>
         </div>
       </div>
-    </DashboardLayout>
+    </div>
   );
 }
 

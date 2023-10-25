@@ -27,10 +27,10 @@ const options = {
         family: "Poppins",
       },
     },
-
     maintainAspectRatio: true,
     responsive: true,
   },
+
   rotation: -90,
   circumference: 180,
   cutout: "50%",

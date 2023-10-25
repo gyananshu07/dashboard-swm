@@ -6,7 +6,7 @@ import { MenuRounded as MenuRoundedIcon } from "@mui/icons-material";
 
 import { IconButton } from "@mui/material";
 
-const drawerWidth = 200;
+const drawerWidth = 160;
 
 function CustomAppBar({ onDrawerToggle, onPrint }) {
   return (
@@ -44,7 +44,7 @@ function CustomAppBar({ onDrawerToggle, onPrint }) {
             textAlign: "center",
           }}
         >
-          Solid Waste Management Dashboard - Arahas
+          Swachh Bharat Mission Dashboard - Urban
         </Typography>
 
         <Button
@@ -52,7 +52,7 @@ function CustomAppBar({ onDrawerToggle, onPrint }) {
           onClick={onPrint}
           sx={{ borderColor: "#1a404b", color: "#1a404b" }}
         >
-          Print this out!
+          Print!
         </Button>
       </Toolbar>
     </AppBar>

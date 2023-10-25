@@ -1,37 +1,11 @@
-import DashboardLayout from "components/dashboard/layout/DashboardLayout";
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 
 import styles from "./styles.module.css";
 import GroupedBarChart from "components/dashboard/charts/fund-status/GroupedBarChart";
 import SelectOptions from "utils/SelectOptions";
-import { useReactToPrint } from "react-to-print";
 
 function FundStatus() {
   const [statusBy, setStatusBy] = useState("sbm-1");
-  const componentRef = useRef();
-  const handlePrint = useReactToPrint({
-    content: () => componentRef.current,
-    pageStyle: `@media print {
-      @page {
-        size: portrait;
-        margin: 0 !important;
-        padding:0 !important;
-        flex: 1 !important;
-        width: 100% !important;
-        height: 100vh !important;
-      }
-      body {
-        display: flex;
-        flex: 1 !important;
-        justify-content: center;
-        align-items: center;
-        width: 100% !important;
-        height: 100vh !important;
-        margin: 0 !important;
-        padding:0 !important;
-      }
-    }`,
-  });
 
   const FundReleaseDataSBM1 = {
     labels: ["Allocated", "Released"],
@@ -131,10 +105,9 @@ function FundStatus() {
   ];
 
   return (
-    <DashboardLayout onPrint={handlePrint}>
-      <div className={styles.container} ref={componentRef}>
-        <style type="text/css" media="print">
-          {`
+    <div className={styles.container}>
+      <style type="text/css" media="print">
+        {`
           @page {
             size: portrait;
             margin: 0;
@@ -154,47 +127,41 @@ function FundStatus() {
             padding: 0 !important;
           }
           `}
-        </style>
-        <div className={styles.cardsContainer}>
-          <div className={styles.cardContainer}>
-            <div className={styles.cardHeader}>Fund Release (in Crores)</div>
+      </style>
+      <div className={styles.cardsContainer}>
+        <div className={styles.cardContainer}>
+          <div className={styles.cardHeader}>Fund Release (in Crores)</div>
 
-            <SelectOptions
-              options={options}
-              onValueChange={handleChange}
-              value={statusBy}
-            />
+          <SelectOptions
+            options={options}
+            onValueChange={handleChange}
+            value={statusBy}
+          />
 
-            {statusBy === "sbm-1" ? (
-              <div className={styles.cardBody}>
-                <GroupedBarChart
-                  data={FundReleaseDataSBM1}
-                  titleText="SBM 1.0"
-                />
-              </div>
-            ) : (
-              <div className={styles.cardBody}>
-                <GroupedBarChart
-                  data={FundReleaseDataSBMU2}
-                  titleText="SBM-U 2.0"
-                />
-              </div>
-            )}
-          </div>
-        </div>
-
-        <div className={styles.cardsContainer}>
-          <div className={styles.cardContainer}>
-            <div className={styles.cardHeader}>
-              Fund Utilization (in Crores)
-            </div>
+          {statusBy === "sbm-1" ? (
             <div className={styles.cardBody}>
-              <GroupedBarChart data={FundUtilizationData} />
+              <GroupedBarChart data={FundReleaseDataSBM1} titleText="SBM 1.0" />
             </div>
+          ) : (
+            <div className={styles.cardBody}>
+              <GroupedBarChart
+                data={FundReleaseDataSBMU2}
+                titleText="SBM-U 2.0"
+              />
+            </div>
+          )}
+        </div>
+      </div>
+
+      <div className={styles.cardsContainer}>
+        <div className={styles.cardContainer}>
+          <div className={styles.cardHeader}>Fund Utilization (in Crores)</div>
+          <div className={styles.cardBody}>
+            <GroupedBarChart data={FundUtilizationData} />
           </div>
         </div>
       </div>
-    </DashboardLayout>
+    </div>
   );
 }
 

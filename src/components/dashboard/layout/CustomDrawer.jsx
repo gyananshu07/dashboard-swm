@@ -4,7 +4,7 @@ import { Box, Drawer } from "@mui/material";
 
 import DrawerItems from "./DrawerItems";
 
-const drawerWidth = 200;
+const drawerWidth = 160;
 
 function CustomDrawer({ mobileOpen, onDrawerToggle }) {
   const container =
@@ -13,11 +13,13 @@ function CustomDrawer({ mobileOpen, onDrawerToggle }) {
     <Box
       component="nav"
       sx={{ width: { md: drawerWidth }, flexShrink: { sm: 0 } }}
-      aria-label="Items">
+      aria-label="Items"
+    >
       <Drawer
         container={container}
         variant="temporary"
         open={mobileOpen}
+        anchor={"left"}
         onClose={onDrawerToggle}
         ModalProps={{
           keepMounted: true,
@@ -28,7 +30,8 @@ function CustomDrawer({ mobileOpen, onDrawerToggle }) {
             boxSizing: "border-box",
             width: drawerWidth,
           },
-        }}>
+        }}
+      >
         <DrawerItems />
       </Drawer>
       <Drawer
@@ -40,7 +43,8 @@ function CustomDrawer({ mobileOpen, onDrawerToggle }) {
             width: drawerWidth,
           },
         }}
-        open>
+        open
+      >
         <DrawerItems />
       </Drawer>
     </Box>
