@@ -1,0 +1,8 @@
+.header {
+  background-image: url("assets/header-bg.jpg");
+  background-size: contain;
+  background-repeat: inset;
+}
+
+@media (max-width: 600px) {
+}

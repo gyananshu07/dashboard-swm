@@ -1,0 +1,106 @@
+/* styles.module.css */
+
+/* Container for the entire login page */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 0px;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: black !important;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+/* Style for the login form container */
+.loginContainer {
+  background-color: #eecca3bb;
+  padding: 40px 10px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 2; /* Display above the video */
+  position: relative;
+
+  width: 40vw;
+  height: max-content;
+
+  display: flex;
+  margin: auto !important;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 30px;
+  gap: 20px;
+}
+
+.loginContainer img {
+  height: 130px;
+  width: 100%;
+}
+
+/* Style for the video container */
+.videoContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: black !important;
+  z-index: 1; /* Display behind the form */
+  filter: brightness(20%);
+}
+
+.heading {
+  font-weight: 700;
+  color: #1a404b;
+}
+
+/* Style for the video element */
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 968px) {
+  .loginContainer {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .loginContainer {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .loginContainer {
+    width: 80vw;
+  }
+  .loginContainer img {
+    height: 100px;
+  }
+}

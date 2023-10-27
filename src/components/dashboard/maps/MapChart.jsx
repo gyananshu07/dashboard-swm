@@ -1,98 +1,59 @@
-import React, { useState } from "react";
-import {
-  ComposableMap,
-  Geographies,
-  Geography,
-  ZoomableGroup,
-} from "react-simple-maps";
+import React from "react";
+import { MapContainer, TileLayer, GeoJSON } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
 
-import styles from "./Map.css";
+import indiaStatesGeoJSON from "components/dashboard/maps/geojson/India.json";
 
-import { Tooltip } from "react-tooltip";
-import "react-tooltip/dist/react-tooltip.css";
+const MapChart = ({ highlighted }) => {
+  const mapCenter = [22.5937, 82]; // Set the initial map center
 
-const INDIA_TOPO_JSON = require("./topojsons/india.json");
-
-const PROJECTION_CONFIG = {
-  scale: 235,
-  center: [82, 22.5937],
-};
-
-const geographyStyle = {
-  default: {
-    outline: "none",
-    stroke: "darkgray",
-    strokeWidth: "0.5px",
-    strokeOpacity: "50%",
-  },
-  hover: {
-    fill: "#0D2026",
-    outline: "none",
-  },
-  pressed: {
-    outline: "none",
-  },
-};
-
-function MapChart({ setPosition, position, highlighted }) {
-  const [tooltipContent, setTooltipContent] = useState("");
-
-  function handleMoveEnd(position) {
-    setPosition(position);
-    console.log(position);
-  }
-
-  const handleMouseEnter = (geo, isHighlighted) => {
-    const { ST_NM } = geo.properties;
-
-    isHighlighted && setTooltipContent(`${ST_NM}`);
+  const highlightStyle = {
+    fillColor: "green", // Fill color for highlighted states
+    color: "black", // Border color
+    weight: 1, // Border width
+    fillOpacity: 0.5, // Fill opacity
   };
 
-  const handleMouseLeave = () => {
-    setTooltipContent("");
+  const notHighlightedStyle = {
+    fillColor: "gray", // Fill color for not-highlighted states
+    color: "black", // Border color
+    weight: 1, // Border width
+    fillOpacity: 0.5, // Fill opacity
+  };
+
+  const onEachFeature = (feature, layer) => {
+    if (highlighted?.includes(feature.properties.ST_NM)) {
+      layer.setStyle(highlightStyle);
+      layer.bindPopup(feature.properties.ST_NM);
+    } else {
+      layer.setStyle(notHighlightedStyle);
+    }
   };
 
   return (
-    <>
-      <ComposableMap
-        projectionConfig={PROJECTION_CONFIG}
-        projection="geoMercator"
-        width={150}
-        height={150}
-      >
-        <ZoomableGroup
-          zoom={position.zoom}
-          center={position.coordinates}
-          onMoveEnd={handleMoveEnd}
-        >
-          <Geographies geography={INDIA_TOPO_JSON}>
-            {({ geographies }) => (
-              <>
-                {geographies.map((geo) => {
-                  const isHighlighted =
-                    highlighted.indexOf(geo.properties.ST_NM) !== -1;
-                  return (
-                    <Geography
-                      data-tooltip-id="data-tooltip"
-                      data-tooltip-content={tooltipContent}
-                      key={geo.rsmKey}
-                      geography={geo}
-                      fill={isHighlighted ? "#1A404B" : "#eee"}
-                      style={geographyStyle}
-                      onMouseEnter={() => handleMouseEnter(geo, isHighlighted)}
-                      onMouseLeave={handleMouseLeave}
-                    />
-                  );
-                })}
-              </>
-            )}
-          </Geographies>
-        </ZoomableGroup>
-      </ComposableMap>
-
-      <Tooltip id="data-tooltip" />
-    </>
+    <MapContainer
+      center={mapCenter}
+      zoom={4}
+      maxZoom={10}
+      attributionControl={true}
+      zoomControl={true}
+      doubleClickZoom={true}
+      scrollWheelZoom={true}
+      dragging={true}
+      animate={true}
+      easeLinearity={0.35}
+      style={{
+        width: "100%",
+        height: "55vh",
+      }}
+    >
+      <TileLayer
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      />
+      <GeoJSON data={indiaStatesGeoJSON} onEachFeature={onEachFeature} />
+    </MapContainer>
   );
-}
+};
 
 export default MapChart;

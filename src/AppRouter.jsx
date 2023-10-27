@@ -11,7 +11,10 @@ import KeyUpdates from "pages/dashboard/key-updates/KeyUpdates";
 import StatesUTsProgress from "pages/dashboard/states-progress/StatesUTsProgress";
 import DashboardLayout from "components/dashboard/layout/DashboardLayout";
 import { useReactToPrint } from "react-to-print";
-import Scrollbars from "react-custom-scrollbars";
+import LoginHome from "pages/admin/login/LoginHome";
+import HomePage from "pages/home/HomePage";
+
+import "leaflet/dist/leaflet.css";
 
 const Printable = forwardRef(function (props, ref) {
   return <div ref={ref}>{props.children}</div>;
@@ -44,85 +47,105 @@ function AppRouter() {
   });
   return (
     <>
-      <Router>
-        <DashboardLayout onPrint={handlePrint}>
-          <Routes>
-            <Route exact path="/">
+      <Router basename="/">
+        <Routes>
+          <Route exact>
+            <Route index element={<LoginHome />} />
+            <Route path="home" element={<HomePage />} />
+            <Route exact path="dashboard">
               <Route
                 index
                 element={
-                  <Printable ref={componentRef}>
-                    <DashboardHome />
-                  </Printable>
+                  <DashboardLayout onPrint={handlePrint}>
+                    <Printable ref={componentRef}>
+                      <DashboardHome />
+                    </Printable>
+                  </DashboardLayout>
                 }
               />
               <Route
                 path="construction-status"
                 element={
-                  <Printable ref={componentRef}>
-                    <ConstructionStatus />
-                  </Printable>
+                  <DashboardLayout onPrint={handlePrint}>
+                    <Printable ref={componentRef}>
+                      <ConstructionStatus />
+                    </Printable>
+                  </DashboardLayout>
                 }
               />
               <Route
                 path="progress-swm"
                 element={
-                  <Printable ref={componentRef}>
-                    <ProgressInSWM />
-                  </Printable>
+                  <DashboardLayout onPrint={handlePrint}>
+                    <Printable ref={componentRef}>
+                      <ProgressInSWM />
+                    </Printable>
+                  </DashboardLayout>
                 }
               />
               <Route
                 path="swm-projects-status"
                 element={
-                  <Printable ref={componentRef}>
-                    <SWMProjectStatus />
-                  </Printable>
+                  <DashboardLayout onPrint={handlePrint}>
+                    <Printable ref={componentRef}>
+                      <SWMProjectStatus />
+                    </Printable>
+                  </DashboardLayout>
                 }
               />
               <Route
                 path="swm-projects-status-decentralized"
                 element={
-                  <Printable ref={componentRef}>
-                    <SWMProjectStatusDecentralized />
-                  </Printable>
+                  <DashboardLayout onPrint={handlePrint}>
+                    <Printable ref={componentRef}>
+                      <SWMProjectStatusDecentralized />
+                    </Printable>
+                  </DashboardLayout>
                 }
               />
               <Route
                 path="funds-status"
                 element={
-                  <Printable ref={componentRef}>
-                    <FundStatus />
-                  </Printable>
+                  <DashboardLayout onPrint={handlePrint}>
+                    <Printable ref={componentRef}>
+                      <FundStatus />
+                    </Printable>
+                  </DashboardLayout>
                 }
               />
               <Route
                 path="key-updates"
                 element={
-                  <Printable ref={componentRef}>
-                    <KeyUpdates />
-                  </Printable>
+                  <DashboardLayout onPrint={handlePrint}>
+                    <Printable ref={componentRef}>
+                      <KeyUpdates />
+                    </Printable>
+                  </DashboardLayout>
                 }
               />
               <Route
                 path="states-and-uts-progress"
                 element={
-                  <Printable ref={componentRef}>
-                    <StatesUTsProgress />
-                  </Printable>
+                  <DashboardLayout onPrint={handlePrint}>
+                    <Printable ref={componentRef}>
+                      <StatesUTsProgress />
+                    </Printable>
+                  </DashboardLayout>
                 }
               />
               <Route
                 path="app-updates"
                 element={
-                  <Printable ref={componentRef}>
-                    <AppStatus ref={componentRef} />
-                  </Printable>
+                  <DashboardLayout onPrint={handlePrint}>
+                    <Printable ref={componentRef}>
+                      <AppStatus ref={componentRef} />
+                    </Printable>
+                  </DashboardLayout>
                 }
               />
             </Route>
-          </Routes>
-        </DashboardLayout>
+          </Route>
+        </Routes>
       </Router>
     </>
   );

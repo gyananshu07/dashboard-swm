@@ -36,7 +36,8 @@ export default function DashboardLayout(props) {
         component="main"
         sx={{
           flexGrow: 1,
-          p: 3,
+          padding: 2,
+          margin: 2,
           alignItems: "center",
           justifyContent: "center",
           width: {

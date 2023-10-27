@@ -4,6 +4,8 @@ import { Box, Drawer } from "@mui/material";
 
 import DrawerItems from "./DrawerItems";
 
+import styles from "./styles.module.css";
+
 const drawerWidth = 160;
 
 function CustomDrawer({ mobileOpen, onDrawerToggle }) {
@@ -24,11 +26,13 @@ function CustomDrawer({ mobileOpen, onDrawerToggle }) {
         ModalProps={{
           keepMounted: true,
         }}
+        className={styles.drawer}
         sx={{
           display: { xs: "block", md: "none" },
           "& .MuiDrawer-paper": {
             boxSizing: "border-box",
             width: drawerWidth,
+            borderRight: "2px solid #1a404b",
           },
         }}
       >
@@ -41,8 +45,10 @@ function CustomDrawer({ mobileOpen, onDrawerToggle }) {
           "& .MuiDrawer-paper": {
             boxSizing: "border-box",
             width: drawerWidth,
+            borderRight: "2px solid #1a404b",
           },
         }}
+        className={styles.drawer}
         open
       >
         <DrawerItems />

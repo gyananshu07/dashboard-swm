@@ -1,0 +1,161 @@
+.navContainer {
+  background-image: url("assets/header-bg.jpg");
+  background-size: contain;
+  background-repeat: inset;
+  height: 80px;
+  padding: 10px;
+  border-bottom: 2px solid var(--theme-color);
+
+  display: flex;
+  align-items: center !important;
+  justify-content: space-between !important;
+  flex-direction: row;
+
+  width: 100%;
+}
+
+.heading {
+  text-align: center;
+  align-self: center;
+  width: 100%;
+}
+
+.headingText {
+  font-weight: 700;
+  text-align: center;
+  font-size: 20px;
+  color: var(--theme-color);
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+  width: max-content;
+  height: 100%;
+}
+
+.image {
+  height: 50px;
+}
+
+.contentContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.banner {
+  width: 100%;
+  border-bottom: 2px solid var(--theme-color);
+}
+
+.banner img {
+  width: 100%;
+}
+
+.contentHeading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background-color: var(--theme-color);
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  margin: 30px 0 !important;
+}
+
+.mainContentContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  margin: 20px;
+  gap: 20px;
+  height: 100vh;
+}
+
+.aboutContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.SBMContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+
+.SBMContainer img {
+  height: 140px;
+}
+
+.PMContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 0.9rem;
+  gap: 10px;
+  padding: 20px;
+  width: 400px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+
+.PMImage {
+  height: 240px;
+  padding: 0;
+  margin: 0;
+  border: 2px solid var(--theme-color);
+  border-radius: 50%;
+}
+
+.statusContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
+
+.iconCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  height: 208px;
+  width: 32%;
+}
+
+.iconCard img {
+  height: 80px !important;
+}

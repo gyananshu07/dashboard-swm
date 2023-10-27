@@ -12,8 +12,6 @@ import {
 
 import { Link, useLocation } from "react-router-dom";
 
-import SBM from "assets/logo/Swachh_Bharat_Mission_Logo.svg";
-
 import { menuItems } from "constants/MenuItems";
 import Scrollbars from "react-custom-scrollbars";
 
@@ -23,18 +21,7 @@ function DrawerItems() {
   return (
     <Scrollbars>
       <div>
-        <Toolbar
-          style={{
-            gap: 15,
-            padding: 5,
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <img height={54} src={SBM} alt="Swachh Bharat Mission- Logo" />
-        </Toolbar>
-        <Divider sx={{ backgroundColor: "#1a404b", opacity: 1 }} />
-
+        <Toolbar />
         <Box sx={{ overflow: "auto" }} autoFocus>
           <List autoFocus>
             {menuItems.map((item, index) => (

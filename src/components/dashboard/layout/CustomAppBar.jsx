@@ -6,18 +6,20 @@ import { MenuRounded as MenuRoundedIcon } from "@mui/icons-material";
 
 import { IconButton } from "@mui/material";
 
+import styles from "./styles.module.css";
+
 const drawerWidth = 160;
 
 function CustomAppBar({ onDrawerToggle, onPrint }) {
   return (
     <AppBar
       sx={{
-        width: { md: `calc(100% - ${drawerWidth}px)` },
-        ml: { sm: `${drawerWidth}px` },
-        backgroundColor: "white",
+        backgroundColor: "transparent",
         boxShadow: "none",
-        borderBottom: "1px solid #1a404b",
+        borderBottom: "2px solid #1a404b",
+        zIndex: (theme) => theme.zIndex.drawer + 1,
       }}
+      className={styles.header}
     >
       <Toolbar
         sx={{
@@ -34,6 +36,14 @@ function CustomAppBar({ onDrawerToggle, onPrint }) {
         >
           <MenuRoundedIcon />
         </IconButton>
+
+        <img
+          className={styles.headerLogo}
+          height="54"
+          src={require("assets/logo/Swachh_Bharat_Mission_Logo.svg").default}
+          alt="Logo"
+        />
+
         <Typography
           variant="h6"
           component="div"
@@ -42,9 +52,10 @@ function CustomAppBar({ onDrawerToggle, onPrint }) {
             color: "#1a404b",
             fontFamily: "Poppins",
             textAlign: "center",
+            display: { xs: "none", md: "block" },
           }}
         >
-          Swachh Bharat Mission Dashboard - Urban
+          SBM Urban 2.0 - Dashboard
         </Typography>
 
         <Button
