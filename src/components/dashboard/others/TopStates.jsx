@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "pages/dashboard/states-progress/styles.module.css";
 import MapChart from "../maps/MapChart";
 

@@ -19,8 +19,8 @@
 
 .updates {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
 
   background-color: var(--card-background);

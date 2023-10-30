@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { MapContainer, TileLayer, GeoJSON } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
@@ -6,16 +6,18 @@ import indiaStatesGeoJSON from "components/dashboard/maps/geojson/India.json";
 
 const MapChart = ({ highlighted }) => {
   const mapCenter = [22.5937, 82]; // Set the initial map center
+  const mapRef = useRef(null);
 
   const highlightStyle = {
-    fillColor: "green", // Fill color for highlighted states
+    fillColor: "#1a404b", // Fill color for highlighted states
     color: "black", // Border color
     weight: 1, // Border width
-    fillOpacity: 0.5, // Fill opacity
+    fillOpacity: 0.8, // Fill opacity
+    dashArray: "2",
   };
 
   const notHighlightedStyle = {
-    fillColor: "gray", // Fill color for not-highlighted states
+    fillColor: "lightgray", // Fill color for not-highlighted states
     color: "black", // Border color
     weight: 1, // Border width
     fillOpacity: 0.5, // Fill opacity
@@ -29,6 +31,19 @@ const MapChart = ({ highlighted }) => {
       layer.setStyle(notHighlightedStyle);
     }
   };
+
+  // Use useEffect to update GeoJSON layer when 'highlighted' prop changes
+  useEffect(() => {
+    if (mapRef.current) {
+      const geoJSONLayer = mapRef.current
+        .getLayers()
+        .find((layer) => layer instanceof GeoJSON);
+      if (geoJSONLayer) {
+        geoJSONLayer.clearLayers(); // Clear existing GeoJSON layer
+        geoJSONLayer.addData(indiaStatesGeoJSON); // Add GeoJSON data with updated styles
+      }
+    }
+  }, [highlighted]);
 
   return (
     <MapContainer
@@ -46,12 +61,17 @@ const MapChart = ({ highlighted }) => {
         width: "100%",
         height: "55vh",
       }}
+      whenCreated={(map) => (mapRef.current = map)} // Store a reference to the map
     >
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       />
-      <GeoJSON data={indiaStatesGeoJSON} onEachFeature={onEachFeature} />
+      <GeoJSON
+        key={highlighted ? highlighted.join(",") : "default"}
+        data={indiaStatesGeoJSON}
+        onEachFeature={onEachFeature}
+      />
     </MapContainer>
   );
 };

@@ -48,10 +48,12 @@
 
 .cardBody {
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
   padding: 40px 10px;
-  width: 69% !important;
+  width: 90% !important;
+  height: 72vh !important;
 }
 
 .helperText {

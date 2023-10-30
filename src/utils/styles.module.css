@@ -1,7 +1,7 @@
 .dropdown {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    align-self: flex-end;
-    padding: 10px;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  align-self: flex-end;
+  padding: 30px 10px 10px 10px;
+}

@@ -5,25 +5,51 @@ import BarChart from "components/dashboard/charts/key-updates/BarChart";
 
 function KeyUpdates() {
   const KeyUpdatesData = {
-    labels: [
-      "Completed",
-      "On-going",
-      "Action Plan Approved",
-      "Taken up by State/Other Funding",
-    ],
-    datasets: [
+    theme: "light2",
+    exportEnabled: true,
+    animationEnabled: true,
+    colorSet: "blueShades",
+    legend: {
+      fontFamily: "Poppins",
+    },
+    title: {
+      text: "Key Updates Data",
+      fontFamily: "Poppins",
+      fontSize: 16,
+    },
+    axisY: {
+      labelFontFamily: "Poppins",
+    },
+    axisX: {
+      labelWrap: true,
+      labelFontFamily: "Poppins",
+    },
+    axisYType: "secondary",
+    toolTip: {
+      shared: true,
+    },
+    data: [
       {
-        label: "No. of Dumpsite",
-        data: [326, 342, 949, 34],
-        backgroundColor: "#54CAEE",
-        stack: "Stack 0",
+        type: "bar",
+        showInLegend: true,
+        name: "No. of Dumpsite",
+        dataPoints: [
+          { label: "Completed", y: 326 },
+          { label: "On-going", y: 342 },
+          { label: "Action Plan Approved", y: 949 },
+          { label: "Taken up by State/Other Funding", y: 34 },
+        ],
       },
-
       {
-        label: "Legacy Waste Qty. (Lacs Tonne)",
-        data: [426, 551, 972, 36],
-        backgroundColor: "#30758A",
-        stack: "Stack 1",
+        type: "bar",
+        showInLegend: true,
+        name: "Legacy Waste Qty. (Lacs Tonne)",
+        dataPoints: [
+          { label: "Completed", y: 426 },
+          { label: "On-going", y: 551 },
+          { label: "Action Plan Approved", y: 972 },
+          { label: "Taken up by State/Other Funding", y: 36 },
+        ],
       },
     ],
   };
@@ -129,11 +155,10 @@ function KeyUpdates() {
         </div>
       </div>
 
-      {/* <div className={styles.updates}>
+      <div className={styles.updates}>
         <div className={styles.header}>Google Toilet Locator</div>
         <div className={`${styles.info} text-center mx-auto`}>
-          <InfoRoundedIcon /> 3,326 Cities (with 67,407 toilets) are live on
-          Google Maps
+          3,326 Cities (with 67,407 toilets) are live on Google Maps
         </div>
         <iframe
           title="Google Toilet Locator"
@@ -144,7 +169,7 @@ function KeyUpdates() {
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         />
-      </div> */}
+      </div>
     </div>
   );
 }

@@ -1,16 +1,13 @@
-/* .chart {
+.chart {
   width: 100% !important;
   height: 100% !important;
-  min-height: 500px !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
   font-family: "Poppins", sans-serif !important;
 }
 
 .chart canvas {
   width: 100% !important;
   height: 100% !important;
-  min-height: 500px !important;
+
   font-family: "Poppins", sans-serif !important;
-} */
+}

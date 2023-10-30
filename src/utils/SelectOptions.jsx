@@ -11,7 +11,8 @@ function SelectOptions({ options, value, onValueChange }) {
         value={value}
         onChange={onValueChange}
         displayEmpty
-        inputProps={{ "aria-label": "Without label" }}>
+        inputProps={{ "aria-label": "Without label" }}
+      >
         <MenuItem disabled value="">
           --Select--
         </MenuItem>

@@ -9,74 +9,159 @@ import SelectOptions from "utils/SelectOptions";
 function ProgressInSWM() {
   const [statusBy, setStatusBy] = useState("collection");
 
-  const CollectionData = {
-    labels: ["Door to Door Collection"],
-    datasets: [
+  const doorToDoorCollectionConfig = {
+    theme: "light2",
+    exportEnabled: true,
+    animationEnabled: true,
+    colorSet: "blueShades",
+    legend: {
+      fontFamily: "Poppins",
+    },
+    axisY: {
+      title: "Wards",
+      titleFontFamily: "Poppins",
+      labelFontFamily: "Poppins",
+    },
+    axisX: {
+      labelFontFamily: "Poppins",
+    },
+    title: {
+      fontSize: 16,
+      text: "Door to Door Collection",
+      fontFamily: "Poppins",
+    },
+    data: [
       {
-        label: "Total Wards",
-        data: [94854],
-        backgroundColor: "#54CAEE",
-        stack: "Stack 0",
+        type: "column",
+        name: "Total Wards",
+        showInLegend: true,
+        dataPoints: [{ label: "Collection Status", y: 94854 }],
+        toolTipContent: "<b>{name}:</b> {y} (Wards)",
+        indexLabel: "{y}",
+        indexLabelFontFamily: "Poppins",
       },
       {
-        label: "Wards with 100% Collection",
-        data: [90819],
-        backgroundColor: "#42A0BC",
-        stack: "Stack 1",
+        type: "column",
+        name: "Wards with 100% Collection",
+        showInLegend: true,
+        dataPoints: [{ label: "Collection Status", y: 90819 }],
+        toolTipContent: "<b>{name}:</b> {y} (Wards)",
+        indexLabel: "{y}",
+        indexLabelFontFamily: "Poppins",
       },
       {
-        label: "Remaining Wards",
-        data: [4015],
-        backgroundColor: "#286070",
-        stack: "Stack 2",
+        type: "column",
+        name: "Remaining Wards",
+        showInLegend: true,
+        dataPoints: [{ label: "Collection Status", y: 4015 }],
+        toolTipContent: "<b>{name}:</b> {y} (Wards)",
+        indexLabel: "{y}",
+        indexLabelFontFamily: "Poppins",
+      },
+    ],
+  };
+  const sourceSegregationConfig = {
+    theme: "light2",
+    exportEnabled: true,
+    animationEnabled: true,
+    colorSet: "blueShades",
+    legend: { fontFamily: "Poppins", horizontalAlign: "center" },
+
+    axisY: {
+      title: "Wards",
+      titleFontFamily: "Poppins",
+      labelFontFamily: "Poppins",
+    },
+    axisX: {
+      labelFontFamily: "Poppins",
+    },
+    title: {
+      fontSize: 16,
+      text: "Source Segregation",
+      fontFamily: "Poppins",
+    },
+    toolTip: {
+      fontFamily: "Poppins",
+    },
+    data: [
+      {
+        type: "column",
+        showInLegend: true,
+        name: "Total Wards",
+        dataPoints: [{ label: "Segregation Status", y: 94854 }],
+        toolTipContent: "<b>{name}:</b> {y} wards",
+        indexLabel: "{y}",
+        indexLabelFontFamily: "Poppins",
+      },
+      {
+        type: "column",
+        showInLegend: true,
+        name: "Wards with 100% Segregation",
+        dataPoints: [{ label: "Segregation Status", y: 84166 }],
+        toolTipContent: "<b>{name}:</b> {y} wards",
+        indexLabel: "{y}",
+        indexLabelFontFamily: "Poppins",
+      },
+      {
+        type: "column",
+        showInLegend: true,
+        name: "Remaining Wards",
+        dataPoints: [{ label: "Segregation Status", y: 10688 }],
+        toolTipContent: "<b>{name}:</b> {y} wards",
+        indexLabel: "{y}",
+        indexLabelFontFamily: "Poppins",
       },
     ],
   };
 
-  const SegregationData = {
-    labels: ["Source Segregation"],
-    datasets: [
+  const wasteProcessingStatusConfig = {
+    theme: "light2",
+    exportEnabled: true,
+    animationEnabled: true,
+    colorSet: "blueShades",
+    legend: {
+      fontFamily: "Poppins",
+    },
+    axisY: {
+      title: "in TPD",
+      titleFontFamily: "Poppins",
+      labelFontFamily: "Poppins",
+    },
+    axisX: {
+      labelFontFamily: "Poppins",
+    },
+    title: {
+      fontSize: 16,
+      text: "Waste Processing Status",
+      fontFamily: "Poppins",
+    },
+    data: [
       {
-        label: "Total Wards",
-        data: [94854],
-        backgroundColor: "#54CAEE",
-        stack: "Stack 0",
+        type: "column",
+        name: "Total Waste Generated (in TPD)",
+        showInLegend: true,
+        dataPoints: [{ label: "Waste Processing Status", y: 155928 }],
+        toolTipContent: "<b>{name}:</b> {y}",
+        indexLabel: "{y}",
+        indexLabelFontFamily: "Poppins",
       },
       {
-        label: "Wards with 100% Segregation",
-        data: [84166],
-        backgroundColor: "#42A0BC",
-        stack: "Stack 1",
+        type: "column",
+        name: "Waste Being Processed (in TPD)",
+        showInLegend: true,
+        dataPoints: [{ label: "Waste Processing Status", y: 119094 }],
+        toolTipContent: "<b>{name}:</b> {y}",
+        indexLabel: "{y}",
+        indexLabelFontFamily: "Poppins",
       },
       {
-        label: "Remaining Wards",
-        data: [10688],
-        backgroundColor: "#286070",
-        stack: "Stack 2",
-      },
-    ],
-  };
-
-  const WasteProcessingData = {
-    labels: ["Waste Processing Status"],
-    datasets: [
-      {
-        label: "Total Waste Generated (in TPD)",
-        data: [155928],
-        backgroundColor: "#54CAEE",
-        stack: "Stack 0",
-      },
-      {
-        label: "Waste Being Processed (in TPD)",
-        data: [119094],
-        backgroundColor: "#42A0BC",
-        stack: "Stack 1",
-      },
-      {
-        label: "Remaining Waste to be Processed (in TPD)",
-        data: [4015, 10688],
-        backgroundColor: "#286070",
-        stack: "Stack 2",
+        type: "column",
+        name: "Remaining Waste to be Processed (in TPD)",
+        showInLegend: true,
+        dataPoints: [{ label: "Waste Processing Status", y: 4015 }],
+        toolTipContent: "<b>{name}:</b> {y}",
+        indexLabel: "{y}",
+        indexLabelFontFamily: "Poppins",
       },
     ],
   };
@@ -136,15 +221,15 @@ function ProgressInSWM() {
 
           {statusBy === "collection" ? (
             <div className={styles.cardBody}>
-              <GroupedBarChart data={CollectionData} titleText="Wards" />
+              <GroupedBarChart data={doorToDoorCollectionConfig} />
             </div>
           ) : statusBy === "segregation" ? (
             <div className={styles.cardBody}>
-              <GroupedBarChart data={SegregationData} titleText="Wards" />
+              <GroupedBarChart data={sourceSegregationConfig} />
             </div>
           ) : (
             <div className={styles.cardBody}>
-              <GroupedBarChart data={WasteProcessingData} titleText="Wards" />
+              <GroupedBarChart data={wasteProcessingStatusConfig} />
             </div>
           )}
         </div>

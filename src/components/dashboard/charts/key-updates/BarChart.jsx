@@ -1,60 +1,20 @@
 import React from "react";
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend,
-} from "chart.js";
-import { Bar } from "react-chartjs-2";
+import CanvasJSReact from "@canvasjs/react-charts";
+var CanvasJS = CanvasJSReact.CanvasJS;
+CanvasJS.addColorSet("blueShades", [
+  "#4BB5D5",
+  "#42A0BC",
+  "#398AA3",
+  "#30758A",
+  "#286070",
+  "#336877",
+  "#204D5A",
+  "#16353E",
+]);
+var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend
-);
-
-export default function BarChart({ data, titleText }) {
-  const options = {
-    plugins: {
-      title: {
-        display: true,
-        text: titleText,
-        font: {
-          size: 16,
-        },
-      },
-      legend: {
-        display: false,
-      },
-    },
-    responsive: true,
-    maintainAspectRatio: true,
-    interaction: {
-      mode: "index",
-      intersect: false,
-    },
-    scales: {
-      x: {
-        ticks: {
-          font: {
-            weight: 600,
-          },
-        },
-        stacked: true,
-      },
-      y: { stacked: true },
-    },
-  };
-
-  return (
-    <div className="chart">
-      <Bar options={options} data={data} />
-    </div>
-  );
+function BarChart({ data }) {
+  return <CanvasJSChart options={data} />;
 }
+
+export default BarChart;

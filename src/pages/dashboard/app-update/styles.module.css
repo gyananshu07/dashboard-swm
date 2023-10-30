@@ -39,8 +39,8 @@
 }
 
 .cardContainer {
-  width: max-content;
-  height: max-content !important;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 .cardBody {

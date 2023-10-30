@@ -5,61 +5,17 @@ import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "leaflet/dist/leaflet.css";
 
-import {
-  LinearScale,
-  CategoryScale,
-  PointElement,
-  LineController,
-  LineElement,
-  Chart as ChartJS,
-  Title,
-  Tooltip,
-  Legend,
-  BarController,
-  BarElement,
-  Filler,
-  ArcElement,
-} from "chart.js";
-
-import ChartDataLabels from "chartjs-plugin-datalabels";
-
 import AppRouter from "AppRouter";
 
-ChartJS.register(
-  LinearScale,
-  CategoryScale,
-  PointElement,
-  LineController,
-  LineElement,
-  Title,
-  Tooltip,
-  Legend,
-  BarController,
-  BarElement,
-  Filler,
-  ArcElement,
-  ChartDataLabels
-);
-
-ChartJS.defaults.set("plugins.datalabels", {
-  color: "#1A404B",
-  anchor: "end",
-  align: "end",
-  font: {
-    weight: 600,
-  },
-  backgroundColor: null,
-  borderWidth: 0,
-});
-
-ChartJS.defaults.elements.bar.hoverBackgroundColor = "#1a404b";
-ChartJS.defaults.elements.bar.borderColor = "#fff";
-ChartJS.defaults.elements.bar.borderWidth = 2;
-// ChartJS.defaults.barThickness = 60;
-
-ChartJS.defaults.elements.arc.hoverBackgroundColor = "#1a404b";
-ChartJS.defaults.elements.arc.hoverBorderColor = "#0D2026";
-ChartJS.defaults.elements.arc.hoverBorderWidth = 2;
+import CanvasJSReact from "@canvasjs/react-charts";
+var CanvasJS = CanvasJSReact.CanvasJS;
+CanvasJS.addColorSet("blueShades", [
+  "#4BB5D5",
+  "#42A0BC",
+  "#398AA3",
+  "#30758A",
+  "#286070",
+]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

@@ -8,83 +8,186 @@ function FundStatus() {
   const [statusBy, setStatusBy] = useState("sbm-1");
 
   const FundReleaseDataSBM1 = {
-    labels: ["Allocated", "Released"],
-    datasets: [
+    theme: "light2",
+    exportEnabled: true,
+    animationEnabled: true,
+    legend: {
+      fontFamily: "Poppins",
+    },
+    colorSet: "blueShades",
+    title: {
+      text: "Fund Release Data SBM-1",
+      fontFamily: "Poppins",
+      fontSize: 16,
+    },
+    axisX: {
+      labelFontFamily: "Poppins",
+      labelWrap: true,
+    },
+    axisY: {
+      titleFontFamily: "Poppins",
+      titleFontSize: 16,
+      labelFontFamily: "Poppins",
+      titleFontWeight: 500,
+      title: "in Crores (₹)",
+    },
+    toolTip: {
+      shared: true,
+    },
+    data: [
       {
-        label: "MoHUA",
-        data: [609.27, 565.07],
-        backgroundColor: "#54CAEE",
-        stack: "Stack 1",
-      },
-      {
-        label: "States/UTs",
-        data: [14013.46, 11905.57],
-        backgroundColor: "#42A0BC",
-        stack: "Stack 0",
-      },
-
-      {
-        label: "Total",
-        data: [14622.73, 12470.64],
-        backgroundColor: "#286070",
-        stack: "Stack 2",
-      },
-    ],
-  };
-
-  const FundReleaseDataSBMU2 = {
-    labels: ["Allocated", "Released"],
-    datasets: [
-      {
-        label: "MoHUA",
-        data: [1172.6, 62.36],
-        backgroundColor: "#54CAEE",
-        stack: "Stack 1",
-      },
-      {
-        label: "States/UTs",
-        data: [32821.0, 3456.78],
-        backgroundColor: "#42A0BC",
-        stack: "Stack 0",
-      },
-
-      {
-        label: "Total",
-        data: [33993.6, 3519.15],
-        backgroundColor: "#286070",
-        stack: "Stack 2",
-      },
-    ],
-  };
-
-  const FundUtilizationData = {
-    labels: [
-      "2014-2015",
-      "2015-2016",
-      "2016-2017",
-      "2017-2018",
-      "2019-2020",
-      "2020-2021",
-      "2021-2022",
-      "2022-2023",
-      "Total",
-    ],
-    datasets: [
-      {
-        label: "UC Pending",
-        data: [0.94, 11.81, 2, 26.23, 194, 420, 574.65, 716.5, 1946.84],
-        backgroundColor: [
-          "#8AE2FC",
-          "#69D9FB",
-          "#79DDFB",
-          "#A3E8FC",
-          "#4BB5D5",
-          "#42A0BC",
-          "#398AA3",
-          "#30758A",
-          "#286070",
+        type: "column",
+        name: "MoHUA",
+        showInLegend: true,
+        indexLabel: "{y}",
+        indexLabelFontFamily: "Poppins",
+        toolTipContent: "<b>{name}:</b> {y} (in Crores (₹))",
+        dataPoints: [
+          { label: "Allocated", y: 609.27 },
+          { label: "Released", y: 565.07 },
         ],
-        stack: "Stack 1",
+      },
+      {
+        type: "column",
+        name: "States/UTs",
+        showInLegend: true,
+        indexLabel: "{y}",
+        indexLabelFontFamily: "Poppins",
+        toolTipContent: "<b>{name}:</b> {y} (in Crores (₹))",
+        dataPoints: [
+          { label: "Allocated", y: 14013.46 },
+          { label: "Released", y: 11905.57 },
+        ],
+      },
+      {
+        type: "column",
+        name: "Total",
+        showInLegend: true,
+        indexLabel: "{y}",
+        indexLabelFontFamily: "Poppins",
+        toolTipContent: "<b>{name}:</b> {y} (in Crores (₹))",
+        dataPoints: [
+          { label: "Allocated", y: 14622.73 },
+          { label: "Released", y: 12470.64 },
+        ],
+      },
+    ],
+  };
+
+  // Fund Release Data SBMU2
+  const FundReleaseDataSBMU2 = {
+    theme: "light2",
+    exportEnabled: true,
+    animationEnabled: true,
+    legend: {
+      fontFamily: "Poppins",
+    },
+    colorSet: "blueShades",
+    title: {
+      text: "Fund Release Data SBM U-2.0",
+      fontFamily: "Poppins",
+      fontSize: 16,
+    },
+    axisX: {
+      titleFontFamily: "Poppins",
+      titleFontSize: 16,
+      labelFontFamily: "Poppins",
+      labelWrap: true,
+    },
+    axisY: {
+      titleFontFamily: "Poppins",
+      titleFontSize: 16,
+      labelFontFamily: "Poppins",
+      titleFontWeight: 500,
+      title: "in Crores (₹)",
+    },
+    toolTip: {
+      shared: true,
+    },
+    data: [
+      {
+        type: "column",
+        name: "MoHUA",
+        showInLegend: true,
+        indexLabel: "{y}",
+        indexLabelFontFamily: "Poppins",
+        toolTipContent: "<b>{name}:</b> {y} (in Crores (₹))",
+        dataPoints: [
+          { label: "Allocated", y: 1172.6 },
+          { label: "Released", y: 62.36 },
+        ],
+      },
+      {
+        type: "column",
+        name: "States/UTs",
+        showInLegend: true,
+        indexLabel: "{y}",
+        indexLabelFontFamily: "Poppins",
+        toolTipContent: "<b>{name}:</b> {y} (in Crores (₹))",
+        dataPoints: [
+          { label: "Allocated", y: 32821.0 },
+          { label: "Released", y: 3456.78 },
+        ],
+      },
+      {
+        type: "column",
+        name: "Total",
+        showInLegend: true,
+        indexLabel: "{y}",
+        indexLabelFontFamily: "Poppins",
+        toolTipContent: "<b>{name}:</b> {y} (in Crores (₹))",
+        dataPoints: [
+          { label: "Allocated", y: 33993.6 },
+          { label: "Released", y: 3519.15 },
+        ],
+      },
+    ],
+  };
+
+  // Fund Utilization Data
+  const FundUtilizationData = {
+    theme: "light2",
+    exportEnabled: true,
+    animationEnabled: true,
+    legend: {
+      fontFamily: "Poppins",
+    },
+    colorSet: "blueShades",
+    title: {
+      text: "Fund Utilization Data",
+      fontFamily: "Poppins",
+      fontSize: 16,
+    },
+    axisX: {
+      labelFontFamily: "Poppins",
+      labelWrap: true,
+    },
+    axisY: {
+      titleFontFamily: "Poppins",
+      titleFontSize: 16,
+      labelFontFamily: "Poppins",
+      titleFontWeight: 500,
+      title: "in Crores (₹)",
+    },
+    data: [
+      {
+        type: "column",
+        name: "UC Pending",
+        showInLegend: false,
+        indexLabel: "{y}",
+        indexLabelFontFamily: "Poppins",
+        toolTipContent: "<b>{name}:</b> {y} (in Crores (₹))",
+        dataPoints: [
+          { label: "2014-2015", y: 0.94 },
+          { label: "2015-2016", y: 11.81 },
+          { label: "2016-2017", y: 2 },
+          { label: "2017-2018", y: 26.23 },
+          { label: "2019-2020", y: 194 },
+          { label: "2020-2021", y: 420 },
+          { label: "2021-2022", y: 574.65 },
+          { label: "2022-2023", y: 716.5 },
+          { label: "Total", y: 1946.84 },
+        ],
       },
     ],
   };
@@ -140,14 +243,11 @@ function FundStatus() {
 
           {statusBy === "sbm-1" ? (
             <div className={styles.cardBody}>
-              <GroupedBarChart data={FundReleaseDataSBM1} titleText="SBM 1.0" />
+              <GroupedBarChart data={FundReleaseDataSBM1} />
             </div>
           ) : (
             <div className={styles.cardBody}>
-              <GroupedBarChart
-                data={FundReleaseDataSBMU2}
-                titleText="SBM-U 2.0"
-              />
+              <GroupedBarChart data={FundReleaseDataSBMU2} />
             </div>
           )}
         </div>

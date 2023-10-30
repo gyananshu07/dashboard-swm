@@ -38,11 +38,6 @@ code {
     monospace;
 }
 
-svg {
-  height: auto;
-  width: auto;
-}
-
 input:-webkit-autofill {
   background-color: transparent !important;
 }

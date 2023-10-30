@@ -1,60 +1,15 @@
 import React from "react";
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend,
-} from "chart.js";
-import { Bar } from "react-chartjs-2";
+import CanvasJSReact from "@canvasjs/react-charts";
+var CanvasJS = CanvasJSReact.CanvasJS;
+CanvasJS.addColorSet("blueShades", [
+  "#4BB5D5",
+  "#42A0BC",
+  "#398AA3",
+  "#30758A",
+  "#286070",
+]);
+var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend
-);
-
-export default function GroupedBarChart({ data, titleText }) {
-  const options = {
-    plugins: {
-      legend: {
-        display: false,
-      },
-      responsive: true,
-      maintainAspectRatio: false,
-    },
-    responsive: true,
-    maintainAspectRatio: false,
-    scales: {
-      x: {
-        ticks: {
-          font: {
-            weight: 600,
-            size: 16,
-          },
-        },
-      },
-      y: {
-        title: {
-          display: true,
-          text: titleText,
-          font: {
-            weight: 600,
-            size: 16,
-          },
-        },
-      },
-    },
-  };
-
-  return (
-    <div className="chart">
-      <Bar options={options} data={data} />
-    </div>
-  );
+export default function GroupedBarChart({ data }) {
+  return <CanvasJSChart options={data} />;
 }

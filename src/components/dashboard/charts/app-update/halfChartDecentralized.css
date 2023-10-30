@@ -8,7 +8,7 @@
   font-family: "Poppins", sans-serif !important;
 }
 
-.chart-decentralized > canvas {
+.chart-decentralized canvas {
   width: 100% !important;
   height: 100% !important;
 

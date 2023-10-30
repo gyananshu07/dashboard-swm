@@ -1,95 +1,88 @@
 import React from "react";
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend,
-} from "chart.js";
-import { Bar } from "react-chartjs-2";
+import CanvasJSReact from "@canvasjs/react-charts";
+var CanvasJS = CanvasJSReact.CanvasJS;
+CanvasJS.addColorSet("blueShades", [
+  "#4BB5D5",
+  "#42A0BC",
+  "#398AA3",
+  "#30758A",
+  "#286070",
+]);
 
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend
-);
+var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
-export const options = {
-  plugins: {
+function GroupedBarChart() {
+  const options = {
+    theme: "light2",
+    exportEnabled: true,
+    animationEnabled: true,
+    colorSet: "blueShades",
     legend: {
-      display: false,
+      fontFamily: "Poppins",
     },
-  },
-  responsive: true,
-  maintainAspectRatio: false,
-  interaction: {
-    mode: "index",
-    intersect: false,
-  },
-  scales: {
-    x: {
-      ticks: {
-        font: {
-          weight: 600,
-          size: 16,
-        },
-      },
-      stacked: true,
+    axisY: {
+      title: "in Lacs",
+      titleFontFamily: "Poppins",
+      labelFontFamily: "Poppins",
     },
-    y: {
-      title: {
-        display: true,
-        text: "in Lacs",
-        font: {
-          weight: 600,
-          size: 16,
-        },
-      },
-      stacked: true,
+    axisX: {
+      labelFontFamily: "Poppins",
+      indexLabelFontFamily: "Poppins",
     },
-  },
-};
 
-const labels = ["IHHL", "CT/PT"];
-const data = {
-  labels,
-  datasets: [
-    {
-      label: "Targeted Construction (in Lacs)",
-      data: [58.99, 5.07],
-      backgroundColor: "#54CAEE",
-      stack: "Stack 0",
-    },
-    {
-      label: "Total Construction (Under Construction + Completed) (in Lacs)",
-      data: [67.31, 6.52],
-      backgroundColor: "#42A0BC",
-      stack: "Stack 1",
-    },
-    {
-      label: "Total Constructed (in Lacs)",
-      data: [63.03, 6.36],
-      backgroundColor: "#30758A",
-      stack: "Stack 2",
-    },
-    {
-      label: "Under Construction (in Lacs)",
-      data: [4.09, 0.15],
-      backgroundColor: "#286070",
-      stack: "Stack 3",
-    },
-  ],
-};
+    data: [
+      {
+        type: "column",
+        name: "Targeted Construction (in Lacs)",
+        showInLegend: true,
+        dataPoints: [
+          { label: "IHHL", y: 58.99 },
+          { label: "CT/PT", y: 5.07 },
+        ],
+        toolTipContent: "<b>{name}:</b> {y} (in Lacs)",
+        indexLabel: "{y}",
+        indexLabelFontFamily: "Poppins",
+      },
+      {
+        type: "column",
+        name: "Total Construction (Under Construction + Completed) (in Lacs)",
+        showInLegend: true,
+        dataPoints: [
+          { label: "IHHL", y: 67.31 },
+          { label: "CT/PT", y: 6.52 },
+        ],
+        toolTipContent: "<b>{name}:</b> {y} (in Lacs)",
+        indexLabel: "{y}",
+        indexLabelFontFamily: "Poppins",
+      },
+      {
+        type: "column",
+        name: "Total Constructed (in Lacs)",
+        showInLegend: true,
+        dataPoints: [
+          { label: "IHHL", y: 63.03 },
+          { label: "CT/PT", y: 6.36 },
+        ],
+        toolTipContent: "<b>{name}:</b> {y} (in Lacs)",
+        indexLabel: "{y}",
+        indexLabelFontFamily: "Poppins",
+      },
+      {
+        type: "column",
+        name: "Under Construction (in Lacs)",
+        showInLegend: true,
+        dataPoints: [
+          { label: "IHHL", y: 4.09 },
+          { label: "CT/PT", y: 0.15 },
+        ],
+        toolTipContent: "<b>{name}:</b> {y} (in Lacs)",
+        indexLabel: "{y}",
+        indexLabelFontFamily: "Poppins",
+      },
+    ],
+  };
 
-export default function GroupedBarChart() {
-  return (
-    <div className="chart">
-      <Bar options={options} data={data} />
-    </div>
-  );
+  return <CanvasJSChart options={options} style={{ width: "100%" }} />;
 }
+
+export default GroupedBarChart;

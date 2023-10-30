@@ -1,47 +1,19 @@
 import React from "react";
+import CanvasJSReact from "@canvasjs/react-charts";
+var CanvasJS = CanvasJSReact.CanvasJS;
+CanvasJS.addColorSet("blueShades", [
+  "#4BB5D5",
+  "#42A0BC",
+  "#398AA3",
+  "#30758A",
+  "#286070",
+]);
+var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
-import { Doughnut } from "react-chartjs-2";
-
-import "./halfChartDecentralized.css";
-
-import { defaults } from "chart.js";
-defaults.font.family = "Poppins";
-
-const options = {
-  plugins: {
-    legend: {
-      position: "bottom",
-      align: "center",
-      display: true,
-      labels: {
-        font: {
-          size: 15,
-          family: "Poppins",
-        },
-      },
-    },
-    pointStyle: "circle",
-    tooltip: {
-      enabled: true,
-      font: {
-        family: "Poppins",
-      },
-    },
-    maintainAspectRatio: true,
-    responsive: true,
-  },
-
-  rotation: -90,
-  circumference: 180,
-  cutout: "50%",
-};
-
-export default function DoughnutHalfChart({ data }) {
+export default function GroupedBarChart({ data }) {
   return (
-    <>
-      <div className="chart-decentralized">
-        <Doughnut data={data} options={options} />
-      </div>
-    </>
+    <div style={{ width: 200 }}>
+      <CanvasJSChart options={data} style={{ width: 200 }} />
+    </div>
   );
 }

@@ -13,8 +13,7 @@ import DashboardLayout from "components/dashboard/layout/DashboardLayout";
 import { useReactToPrint } from "react-to-print";
 import LoginHome from "pages/admin/login/LoginHome";
 import HomePage from "pages/home/HomePage";
-
-import "leaflet/dist/leaflet.css";
+import VisualizeData from "pages/dashboard/visualize-data/VisualizeData";
 
 const Printable = forwardRef(function (props, ref) {
   return <div ref={ref}>{props.children}</div>;
@@ -139,6 +138,16 @@ function AppRouter() {
                   <DashboardLayout onPrint={handlePrint}>
                     <Printable ref={componentRef}>
                       <AppStatus ref={componentRef} />
+                    </Printable>
+                  </DashboardLayout>
+                }
+              />
+              <Route
+                path="visualize-data"
+                element={
+                  <DashboardLayout onPrint={handlePrint}>
+                    <Printable ref={componentRef}>
+                      <VisualizeData ref={componentRef} />
                     </Printable>
                   </DashboardLayout>
                 }

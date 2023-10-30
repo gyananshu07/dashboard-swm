@@ -12,115 +12,192 @@ function SWMProjectStatus() {
   const [statusByConstructed, setStatusByConstructed] =
     useState("designed-capacity");
 
-  // Under Construction
   const noOfProjectsDataUC = {
-    labels: [
-      "Waste to Compost",
-      "Waste to Electricity",
-      "Bio-Meth.",
-      "MRF",
-      "C&D",
-      "RDF",
-      "Total",
-    ],
-    datasets: [
+    theme: "light2",
+    exportEnabled: true,
+    animationEnabled: true,
+    colorSet: "blueShades",
+    title: {
+      text: "No. of Projects (Under Construction)",
+      fontFamily: "Poppins",
+      fontSize: 16,
+    },
+    axisX: {
+      titleFontFamily: "Poppins",
+      titleFontSize: 16,
+      labelFontFamily: "Poppins",
+      labelWrap: true,
+      titleFontWeight: 500,
+      title: "Project Type ➜",
+    },
+    axisY: {
+      titleFontFamily: "Poppins",
+      titleFontSize: 16,
+      labelFontFamily: "Poppins",
+      titleFontWeight: 500,
+      title: "No. of Projects",
+    },
+    data: [
       {
-        label: "No. of Projects",
-        data: [39, 11, 7, 49, 19, 3, 106],
-        backgroundColor: [
-          "#69D9FB",
-          "#A3E8FC",
-          "#4BB5D5",
-          "#42A0BC",
-          "#398AA3",
-          "#30758A",
-          "#286070",
+        type: "column",
+        name: "No. of Projects",
+        showInLegend: false,
+        indexLabel: "{y}",
+        indexLabelFontFamily: "Poppins",
+        dataPoints: [
+          { label: "Waste to Compost", y: 39 },
+          { label: "Waste to Electricity", y: 11 },
+          { label: "Bio-Meth.", y: 7 },
+          { label: "MRF", y: 49 },
+          { label: "C&D", y: 19 },
+          { label: "RDF", y: 3 },
+          { label: "Total", y: 106 },
         ],
       },
     ],
   };
 
   const designedCapacityDataUC = {
-    labels: [
-      "Waste to Compost",
-      "Waste to Electricity",
-      "Bio-Meth.",
-      "MRF",
-      "C&D",
-      "RDF",
-      "Total",
-    ],
-    datasets: [
+    theme: "light2",
+    exportEnabled: true,
+    animationEnabled: true,
+    colorSet: "blueShades",
+    legend: {
+      fontFamily: "Poppins",
+    },
+    title: {
+      text: "Designed Capacity (Under Construction)",
+      fontFamily: "Poppins",
+      fontSize: 16,
+    },
+    axisX: {
+      titleFontFamily: "Poppins",
+      titleFontSize: 16,
+      labelFontFamily: "Poppins",
+      labelWrap: true,
+      titleFontWeight: 500,
+      title: "Project Type ➜",
+    },
+    axisY: {
+      titleFontFamily: "Poppins",
+      titleFontSize: 16,
+      labelFontFamily: "Poppins",
+      titleFontWeight: 500,
+      title: "Designed Capacity (in TPD)",
+    },
+    data: [
       {
-        label: "Designed Capacity (in TPD)",
-        data: [4511, 10250, 375, 11030, 5555, 40, 26166],
-        backgroundColor: [
-          "#69D9FB",
-          "#A3E8FC",
-          "#4BB5D5",
-          "#42A0BC",
-          "#398AA3",
-          "#30758A",
-          "#286070",
+        type: "column",
+        name: "Designed Capacity (in TPD)",
+        showInLegend: false,
+        indexLabel: "{y}",
+        indexLabelFontFamily: "Poppins",
+        dataPoints: [
+          { label: "Waste to Compost", y: 4511 },
+          { label: "Waste to Electricity", y: 10250 },
+          { label: "Bio-Meth.", y: 375 },
+          { label: "MRF", y: 11030 },
+          { label: "C&D", y: 5555 },
+          { label: "RDF", y: 40 },
+          { label: "Total", y: 26166 },
         ],
       },
     ],
   };
 
-  // Completed Projects Bar Data
   const noOfProjectsDataC = {
-    labels: [
-      "Waste to Compost",
-      "Waste to Electricity",
-      "Bio-Meth.",
-      "MRF",
-      "SRLM",
-      "C&D",
-      "RDF",
-      "Total",
-    ],
-    datasets: [
+    theme: "light2",
+    exportEnabled: true,
+    animationEnabled: true,
+    colorSet: "blueShades",
+    legend: {
+      fontFamily: "Poppins",
+    },
+    title: {
+      text: "No. of Projects (Completed)",
+      fontFamily: "Poppins",
+      fontSize: 16,
+    },
+    axisX: {
+      titleFontFamily: "Poppins",
+      titleFontSize: 16,
+      labelFontFamily: "Poppins",
+      labelWrap: true,
+      titleFontWeight: 500,
+      title: "Project Type ➜",
+    },
+    axisY: {
+      titleFontFamily: "Poppins",
+      titleFontSize: 16,
+      labelFontFamily: "Poppins",
+      titleFontWeight: 500,
+      title: "No. of Projects",
+    },
+    data: [
       {
-        label: "No. of Projects",
-        data: [2173, 9, 102, 2050, 331, 868, 40, 4334],
-        backgroundColor: [
-          "#69D9FB",
-          "#79DDFB",
-          "#A3E8FC",
-          "#4BB5D5",
-          "#42A0BC",
-          "#398AA3",
-          "#30758A",
-          "#286070",
+        type: "column",
+        name: "No. of Projects",
+        showInLegend: false,
+        indexLabel: "{y}",
+        indexLabelFontFamily: "Poppins",
+        dataPoints: [
+          { label: "Waste to Compost", y: 2173 },
+          { label: "Waste to Electricity", y: 9 },
+          { label: "Bio-Meth.", y: 102 },
+          { label: "MRF", y: 2050 },
+          { label: "SRLM", y: 331 },
+          { label: "C&D", y: 868 },
+          { label: "RDF", y: 40 },
+          { label: "Total", y: 4334 },
         ],
       },
     ],
   };
 
   const designedCapacityDataC = {
-    labels: [
-      "Waste to Compost",
-      "Waste to Electricity",
-      "Bio-Meth.",
-      "MRF",
-      "SRLM",
-      "C&D",
-      "RDF",
-      "Total",
-    ],
-    datasets: [
+    theme: "light2",
+    exportEnabled: true,
+    animationEnabled: true,
+    colorSet: "blueShades",
+    legend: {
+      fontFamily: "Poppins",
+    },
+    title: {
+      text: "Designed Capacity (Completed)",
+      fontFamily: "Poppins",
+      fontSize: 16,
+    },
+    axisX: {
+      titleFontFamily: "Poppins",
+      titleFontSize: 16,
+      labelFontFamily: "Poppins",
+      labelWrap: true,
+      titleFontWeight: 500,
+      title: "Project Type ➜",
+    },
+    axisY: {
+      titleFontFamily: "Poppins",
+      titleFontSize: 16,
+      labelFontFamily: "Poppins",
+      titleFontWeight: 500,
+      title: "Designed Capacity (in TPD)",
+    },
+    data: [
       {
-        label: "Designed Capacity (in TPD)",
-        data: [98544, 13400, 3135, 74830, 13335, 35626, 6221, 189909],
-        backgroundColor: [
-          "#69D9FB",
-          "#79DDFB",
-          "#A3E8FC",
-          "#4BB5D5",
-          "#42A0BC",
-          "#398AA3",
-          "#30758A",
-          "#286070",
+        type: "column",
+        name: "Designed Capacity (in TPD)",
+        showInLegend: false,
+        indexLabel: "{y}",
+        indexLabelFontFamily: "Poppins",
+        dataPoints: [
+          { label: "Waste to Compost", y: 98544 },
+          { label: "Waste to Electricity", y: 13400 },
+          { label: "Bio-Meth.", y: 3135 },
+          { label: "MRF", y: 74830 },
+          { label: "SRLM", y: 13335 },
+          { label: "C&D", y: 35626 },
+          { label: "RDF", y: 6221 },
+          { label: "Total", y: 189909 },
         ],
       },
     ],
@@ -183,17 +260,11 @@ function SWMProjectStatus() {
 
           {statusByUnderConstruction === "no-of-projects" ? (
             <div className={styles.cardBody}>
-              <BarChart
-                data={noOfProjectsDataUC}
-                titleText="No. of Projects Under Construction"
-              />
+              <BarChart data={noOfProjectsDataUC} />
             </div>
           ) : (
             <div className={styles.cardBody}>
-              <BarChart
-                data={designedCapacityDataUC}
-                titleText="Designed Capacity (in TPD)"
-              />
+              <BarChart data={designedCapacityDataUC} />
             </div>
           )}
         </div>
@@ -209,17 +280,11 @@ function SWMProjectStatus() {
 
           {statusByConstructed === "no-of-projects" ? (
             <div className={styles.cardBody}>
-              <BarChart
-                data={noOfProjectsDataC}
-                titleText="No. of Projects Constructed"
-              />
+              <BarChart data={noOfProjectsDataC} />
             </div>
           ) : (
             <div className={styles.cardBody}>
-              <BarChart
-                data={designedCapacityDataC}
-                titleText="Designed Capacity (in TPD)"
-              />
+              <BarChart data={designedCapacityDataC} />
             </div>
           )}
         </div>

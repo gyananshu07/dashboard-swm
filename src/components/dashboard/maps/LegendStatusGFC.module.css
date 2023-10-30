@@ -1,0 +1,41 @@
+.heading {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: var(--font-semibold);
+  color: var(--theme-color);
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+  width: 100% !important;
+  gap: 10px;
+  border: 2px solid var(--theme-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.legendColor {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border: 1px solid var(--theme-color);
+}
+
+@media (max-width: 968px) {
+  .legend {
+    justify-content: center;
+    width: max-content !important;
+    padding: 20px;
+  }
+}

@@ -10,14 +10,30 @@ import DoughnutHalfChart from "components/dashboard/charts/app-update/DoughnutHa
 
 function AppStatus() {
   const AppComplaintData = {
-    labels: ["Complaints Posted", "Complaints Resolved"],
-    datasets: [
+    animationEnabled: true,
+    theme: "light2",
+    exportEnabled: true,
+    colorSet: "blueShades",
+    legend: {
+      fontFamily: "Poppins",
+    },
+    data: [
       {
-        label: "in Crores",
-        data: [2.55, 2.39],
-        backgroundColor: ["#54CAEE", "#30758A"],
-        borderColor: ["#42A0BC", "#286070"],
-        borderWidth: 0.2,
+        type: "pie",
+        showInLegend: true,
+        legendText: "{label}",
+
+        indexLabel: "{y}",
+        indexLabelFontFamily: "Poppins",
+        indexLabelFontColor: "white",
+        indexLabelPlacement: "inside",
+        toolTipContent: "{label}: <strong>{y} Crores</strong>",
+        startAngle: 90,
+        endAngle: -90,
+        dataPoints: [
+          { y: 2.55, label: "Complaints Posted" },
+          { y: 2.39, label: "Complaints Resolved" },
+        ],
       },
     ],
   };
@@ -55,12 +71,8 @@ function AppStatus() {
               className={styles.image}
             />
           </div>
-          <div className={styles.cardContainer}>
-            <div className="text-center" style={{ fontWeight: 600 }}>
-              Values in Crores
-            </div>
-            <DoughnutHalfChart data={AppComplaintData} />
-          </div>
+
+          <DoughnutHalfChart data={AppComplaintData} />
 
           <div className={styles.imageContainer}>
             <img

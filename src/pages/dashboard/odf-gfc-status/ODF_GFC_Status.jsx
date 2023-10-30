@@ -120,71 +120,26 @@
 // export default ODFGFCStatus;
 
 import React from "react";
-import { MapContainer, TileLayer, GeoJSON } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
 
-import indiaStatesGeoJSON from "components/dashboard/maps/geojson/India.json";
+import GFCStatusMapChart from "components/dashboard/maps/GFCStatusMapChart";
+import { GFCStatus } from "constants/GFC_States";
+import LegendGFCStatus from "components/dashboard/maps/LegendGFCStatus";
 
-const HighlightedTopODFPlus = [
-  "Goa",
-  "Chhattisgarh",
-  "Maharashtra",
-  "Punjab",
-  "Gujarat",
-  "Andaman & Nicobar Islands",
-  "Chandigarh",
-  "Dadra & Nagar Haveli and Daman & Diu",
-];
+import styles from "./styleSheet.module.css";
 
 const ODFGFCStatus = () => {
-  const mapCenter = [22.5937, 82]; // Set the initial map center
-
-  const highlightStyle = {
-    fillColor: "green", // Fill color for highlighted states
-    color: "black", // Border color
-    weight: 1, // Border width
-    fillOpacity: 0.5, // Fill opacity
-  };
-
-  const notHighlightedStyle = {
-    fillColor: "gray", // Fill color for not-highlighted states
-    color: "black", // Border color
-    weight: 1, // Border width
-    fillOpacity: 0.5, // Fill opacity
-  };
-
-  const onEachFeature = (feature, layer) => {
-    if (HighlightedTopODFPlus.includes(feature.properties.ST_NM)) {
-      layer.setStyle(highlightStyle);
-      layer.bindPopup(feature.properties.ST_NM);
-    } else {
-      layer.setStyle(notHighlightedStyle);
-    }
-  };
-
   return (
-    <MapContainer
-      center={mapCenter}
-      zoom={5}
-      maxZoom={10}
-      attributionControl={true}
-      zoomControl={true}
-      doubleClickZoom={true}
-      scrollWheelZoom={true}
-      dragging={true}
-      animate={true}
-      easeLinearity={0.35}
-      style={{
-        width: "100%",
-        height: "600px",
-      }}
-    >
-      <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      />
-      <GeoJSON data={indiaStatesGeoJSON} onEachFeature={onEachFeature} />
-    </MapContainer>
+    <div className={styles.container}>
+      <div className={styles.mapContainer}>
+        <GFCStatusMapChart status={GFCStatus} />
+        <LegendGFCStatus />
+      </div>
+
+      <div className={styles.mapContainer}>
+        <GFCStatusMapChart status={GFCStatus} />
+        <LegendGFCStatus />
+      </div>
+    </div>
   );
 };
 

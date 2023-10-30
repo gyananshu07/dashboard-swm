@@ -9,27 +9,84 @@ function SWMProjectStatusDecentralized() {
     useState("under-construction");
 
   const UnderConstructionData = {
-    labels: ["No. of Projects", "Designed Capacity (in TPD)"],
-    datasets: [
+    theme: "light2",
+    exportEnabled: true,
+    animationEnabled: true,
+    colorSet: "blueShades",
+
+    title: {
+      text: "Under Construction",
+      fontFamily: "Poppins",
+      fontSize: 16,
+    },
+    axisX: {
+      titleFontFamily: "Poppins",
+      titleFontSize: 16,
+      labelFontFamily: "Poppins",
+      labelWrap: true,
+      titleFontWeight: 500,
+      title: "Category",
+    },
+    axisY: {
+      titleFontFamily: "Poppins",
+      titleFontSize: 16,
+      labelFontFamily: "Poppins",
+      labelWrap: true,
+      titleFontWeight: 500,
+    },
+    data: [
       {
-        label: "Value",
-        data: [123, 194],
-        backgroundColor: ["#46AAC8", "#2C6B7D"],
-        borderColor: ["#42A0BC", "#1A404B"],
-        borderWidth: 0.2,
+        type: "column",
+        name: "No. of Projects",
+        showInLegend: false,
+        indexLabel: "{y}",
+        indexLabelFontFamily: "Poppins",
+        dataPoints: [
+          { label: "No. of Projects", y: 123 },
+          { label: "Designed Capacity (in TPD)", y: 194 },
+        ],
+        color: "#46AAC8",
       },
     ],
   };
 
   const CompletedConstructionData = {
-    labels: ["No. of Projects", "Designed Capacity (in TPD)"],
-    datasets: [
+    theme: "light2",
+    exportEnabled: true,
+    animationEnabled: true,
+    colorSet: "blueShades",
+    title: {
+      text: "Completed Construction",
+      fontFamily: "Poppins",
+      fontSize: 16,
+    },
+    axisX: {
+      titleFontFamily: "Poppins",
+      titleFontSize: 16,
+      labelFontFamily: "Poppins",
+      labelWrap: true,
+      titleFontWeight: 500,
+      title: "Category",
+    },
+    axisY: {
+      titleFontFamily: "Poppins",
+      titleFontSize: 16,
+      labelFontFamily: "Poppins",
+      labelWrap: true,
+      titleFontWeight: 500,
+      title: "Value",
+    },
+    data: [
       {
-        label: "Value",
-        data: [123, 194],
-        backgroundColor: ["#46AAC8", "#2C6B7D"],
-        borderColor: ["#42A0BC", "#1A404B"],
-        borderWidth: 0.2,
+        type: "column",
+        name: "No. of Projects",
+        showInLegend: false,
+        indexLabelFontFamily: "Poppins",
+        dataPoints: [
+          { label: "No. of Projects", y: 123 },
+          { label: "Designed Capacity (in TPD)", y: 194 },
+        ],
+        color: "#46AAC8",
       },
     ],
   };
@@ -87,17 +144,11 @@ function SWMProjectStatusDecentralized() {
 
           {statusByConstruction === "under-construction" ? (
             <div className={styles.cardBody}>
-              <BarChart
-                data={UnderConstructionData}
-                titleText="No. of Projects Under Construction"
-              />
+              <BarChart data={UnderConstructionData} />
             </div>
           ) : (
             <div className={styles.cardBody}>
-              <BarChart
-                data={CompletedConstructionData}
-                titleText="No. of Projects Constructed"
-              />
+              <BarChart data={CompletedConstructionData} />
             </div>
           )}
         </div>
