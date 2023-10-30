@@ -14,6 +14,7 @@ import { useReactToPrint } from "react-to-print";
 import LoginHome from "pages/admin/login/LoginHome";
 import HomePage from "pages/home/HomePage";
 import VisualizeData from "pages/dashboard/visualize-data/VisualizeData";
+import DumpsiteStatus from "pages/dashboard/dumpsite-status/DumpsiteStatus";
 
 const Printable = forwardRef(function (props, ref) {
   return <div ref={ref}>{props.children}</div>;
@@ -148,6 +149,17 @@ function AppRouter() {
                   <DashboardLayout onPrint={handlePrint}>
                     <Printable ref={componentRef}>
                       <VisualizeData ref={componentRef} />
+                    </Printable>
+                  </DashboardLayout>
+                }
+              />
+
+              <Route
+                path="dumpsite-status"
+                element={
+                  <DashboardLayout onPrint={handlePrint}>
+                    <Printable ref={componentRef}>
+                      <DumpsiteStatus ref={componentRef} />
                     </Printable>
                   </DashboardLayout>
                 }

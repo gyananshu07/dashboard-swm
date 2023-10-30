@@ -1,143 +1,45 @@
-// import React from "react";
-// import styles from "./styleSheet.module.css";
-
-// import DoughnutHalfChart from "components/dashboard/charts/odf-gfc-status/DoughnutHalfChart";
-
-// function ODFGFCStatus() {
-//   const dataODF = {
-//     labels: [
-//       "No. of ULBs certified ODF & above",
-//       "No. of ULBs certified ODF+ & above",
-//       "No. of ULBs certified ODF ++",
-//       "No. of ULBs certified Water+",
-//     ],
-//     datasets: [
-//       {
-//         label: "No. of ULBs",
-//         data: [4355, 3547, 1191, 14],
-//         backgroundColor: ["#54CAEE", "#4BB5D5", "#398AA3", "#30758A"],
-//         borderColor: ["#f79c6f", "#46AAC8", "#3E95AF", "#2C6B7D"],
-//         borderWidth: 0.2,
-//       },
-//     ],
-//   };
-
-//   const dataGFC = {
-//     labels: [
-//       "GFC 1 Star Certified Cities",
-//       "GFC 3 Star Certified Cities",
-//       "GFC 5 Star Certified Cities",
-//       "GFC 7 Star Certified Cities",
-//     ],
-//     datasets: [
-//       {
-//         label: "No. of GFC Certified Cities",
-//         data: [234, 199, 11, 1],
-//         backgroundColor: ["#54CAEE", "#4BB5D5", "#398AA3", "#30758A"],
-//         borderColor: ["#f79c6f", "#46AAC8", "#3E95AF", "#2C6B7D"],
-//         borderWidth: 0.2,
-//       },
-//     ],
-//   };
-
-//   return (
-//     <div className={styles.container}>
-//       <style type="text/css" media="print">
-//         {`
-//           @page {
-//             size: landscape;
-//             margin: 0;
-//             flex: 1 !important;
-//             padding:0 !important;
-//             width: 100vw !important;
-//             height: 100vh !important;
-//           }
-//           body {
-//             display: flex;
-//             flex: 1 !important;
-//             justify-content: center;
-//             align-items: center;
-//             width: 100vw !important;
-//             height: 100vh !important;
-//             margin: 0 !important;
-//             padding: 0 !important;
-//           }
-//           `}
-//       </style>
-//       <div className={styles.cardsContainer}>
-//         <div className={styles.cardContainer}>
-//           <div className={styles.cardHeader}>ULBs declared ODF</div>
-//           <div className={styles.cardBody}>
-//             <DoughnutHalfChart data={dataODF} />
-//           </div>
-//           <div className={styles.helper}>ODF - Open Defecation Free</div>
-//         </div>
-
-//         <div className={styles.cardContainer}>
-//           <div className={styles.cardHeader}>ULBs declared GFC</div>
-//           <div className={styles.cardBody}>
-//             <DoughnutHalfChart data={dataGFC} />
-//           </div>
-
-//           <div className={styles.helper}>GFC - Garbage Free Cities</div>
-//         </div>
-//       </div>
-
-//       <div className={styles.cardContainer} style={{ width: "100vw" }}>
-//         <div className={styles.cardHeader}>Total Data</div>
-//         <div className={styles.cardBody} style={{ width: "100%" }}>
-//           <div className={styles.subCard}>
-//             <div className={styles.subCardHeading}>
-//               Total no of ULBs as per 2011 census
-//             </div>
-//             <div className={styles.subCardBody}>4041</div>
-//           </div>
-
-//           <div className={styles.subCard}>
-//             <div className={styles.subCardHeading}>
-//               Total no of ULBs as on date
-//             </div>
-//             <div className={styles.subCardBody}>4884</div>
-//           </div>
-
-//           <div className={styles.subCard}>
-//             <div className={styles.subCardHeading}>ULBs declared ODF</div>
-//             <div className={styles.subCardBody}>4884</div>
-//           </div>
-
-//           <div className={styles.subCard}>
-//             <div className={styles.subCardHeading}>
-//               ODF Declared States + UTs
-//             </div>
-//             <div className={styles.subCardBody}>35</div>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default ODFGFCStatus;
-
 import React from "react";
 
 import GFCStatusMapChart from "components/dashboard/maps/GFCStatusMapChart";
+
 import { GFCStatus } from "constants/GFC_States";
-import LegendGFCStatus from "components/dashboard/maps/LegendGFCStatus";
+import { ODFStatus } from "constants/ODFStatus";
+
+import ODFStatusMapChart from "components/dashboard/maps/ODFStatusMapChart";
+import LegendStatus from "components/dashboard/maps/LegendStatus";
 
 import styles from "./styleSheet.module.css";
 
 const ODFGFCStatus = () => {
+  const legendItemsGFC = [
+    { color: "#89A8B0", label: "0" },
+    { color: "#336877", label: "1-4" },
+    { color: "#22525F", label: "5-9" },
+    { color: "#1C434E", label: "10-14" },
+    { color: "#16353E", label: "15-19" },
+    { color: "#10262D", label: "20-29" },
+    { color: "#0E2227", label: "30+" },
+  ];
+
+  const legendItemsODF = [
+    { color: "#89A8B0", label: "0/NA" },
+    { color: "#336877", label: "1-50" },
+    { color: "#1C434E", label: "51-100" },
+    { color: "#16353E", label: "101-150" },
+    { color: "#10262D", label: "151-200" },
+    { color: "#0E2227", label: "201-300" },
+  ];
+
   return (
     <div className={styles.container}>
       <div className={styles.mapContainer}>
         <GFCStatusMapChart status={GFCStatus} />
-        <LegendGFCStatus />
+        <LegendStatus statusName="GFC" legendItems={legendItemsGFC} />
       </div>
 
       <div className={styles.mapContainer}>
-        <GFCStatusMapChart status={GFCStatus} />
-        <LegendGFCStatus />
+        <ODFStatusMapChart status={ODFStatus} />
+        <LegendStatus statusName="ODF" legendItems={legendItemsODF} />
       </div>
     </div>
   );

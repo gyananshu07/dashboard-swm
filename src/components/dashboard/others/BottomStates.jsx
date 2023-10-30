@@ -40,11 +40,14 @@ function BottomStates({ statusByStates }) {
     <div className={styles.mapSuperContainer}>
       <div className={styles.mapContainer}>
         {statusByStates === "odf-plus" ? (
-          <MapChart highlighted={HighlightedTopODFPlus} />
+          <MapChart highlighted={HighlightedTopODFPlus} component="bottom" />
         ) : statusByStates === "odf-plus-plus" ? (
-          <MapChart highlighted={HighlightedTopODFPlusPlus} />
+          <MapChart
+            highlighted={HighlightedTopODFPlusPlus}
+            component="bottom"
+          />
         ) : (
-          <MapChart highlighted={HighlightedTopInSWM} />
+          <MapChart highlighted={HighlightedTopInSWM} component="bottom" />
         )}
       </div>
     </div>

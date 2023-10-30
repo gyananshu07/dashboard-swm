@@ -41,3 +41,7 @@ code {
 input:-webkit-autofill {
   background-color: transparent !important;
 }
+
+.canvasjs-chart-credit {
+  display: none !important;
+}

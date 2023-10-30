@@ -4,12 +4,12 @@ import "leaflet/dist/leaflet.css";
 
 import indiaStatesGeoJSON from "components/dashboard/maps/geojson/India.json";
 
-const MapChart = ({ highlighted }) => {
+const MapChart = ({ highlighted, component }) => {
   const mapCenter = [22.5937, 82]; // Set the initial map center
   const mapRef = useRef(null);
 
   const highlightStyle = {
-    fillColor: "#1a404b", // Fill color for highlighted states
+    fillColor: component === "bottom" ? "#FF0D0D" : "#0D860D", // Fill color for highlighted states
     color: "black", // Border color
     weight: 1, // Border width
     fillOpacity: 0.8, // Fill opacity
@@ -20,7 +20,7 @@ const MapChart = ({ highlighted }) => {
     fillColor: "lightgray", // Fill color for not-highlighted states
     color: "black", // Border color
     weight: 1, // Border width
-    fillOpacity: 0.5, // Fill opacity
+    fillOpacity: 0.2, // Fill opacity
   };
 
   const onEachFeature = (feature, layer) => {
@@ -50,7 +50,7 @@ const MapChart = ({ highlighted }) => {
       center={mapCenter}
       zoom={4}
       maxZoom={10}
-      attributionControl={true}
+      attributionControl={false}
       zoomControl={true}
       doubleClickZoom={true}
       scrollWheelZoom={true}
@@ -63,10 +63,7 @@ const MapChart = ({ highlighted }) => {
       }}
       whenCreated={(map) => (mapRef.current = map)} // Store a reference to the map
     >
-      <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      />
+      <TileLayer url="https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png" />
       <GeoJSON
         key={highlighted ? highlighted.join(",") : "default"}
         data={indiaStatesGeoJSON}

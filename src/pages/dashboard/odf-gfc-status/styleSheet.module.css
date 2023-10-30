@@ -14,11 +14,15 @@
   flex-direction: column;
   gap: 10px;
   width: 100% !important;
-  height: max-content !important;
+  height: 80vh !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .container {
     flex-wrap: wrap;
+  }
+
+  .mapContainer {
+    height: 100% !important;
   }
 }

@@ -58,7 +58,7 @@ const GFCStatusMapChart = ({ status }) => {
       center={mapCenter}
       zoom={4}
       maxZoom={10}
-      attributionControl={true}
+      attributionControl={false}
       zoomControl={true}
       doubleClickZoom={true}
       scrollWheelZoom={true}
@@ -73,10 +73,7 @@ const GFCStatusMapChart = ({ status }) => {
         rgba(27, 31, 35, 0.15) 0px 0px 0px 1px`,
       }}
     >
-      <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      />
+      <TileLayer url="https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png" />
 
       <GeoJSON
         data={indiaStatesGeoJSON}

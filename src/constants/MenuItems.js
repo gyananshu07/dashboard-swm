@@ -72,6 +72,18 @@ export const menuItems = [
     ),
   },
   {
+    label: "Dumpsite Status",
+    path: "/dashboard/dumpsite-status",
+    icon: (
+      <img
+        width="40"
+        height="40"
+        src={require("assets/svg-icons/dump.png")}
+        alt="dump"
+      />
+    ),
+  },
+  {
     label: "Key Updates",
     path: "/dashboard/key-updates",
     icon: (

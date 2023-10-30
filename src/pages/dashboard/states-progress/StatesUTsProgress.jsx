@@ -67,16 +67,12 @@ function StatesUTsProgress() {
             />
             <div className={styles.mapRow}>
               <div className={styles.mapEachContainer}>
-                <div className={styles.mapHeader}>
-                  Top States/UTs in Different Category
-                </div>
+                <div className={styles.mapHeader}>Top States/UTs</div>
                 <TopStates statusByStates={statusByStates} />
               </div>
 
               <div className={styles.mapEachContainer}>
-                <div className={styles.mapHeader}>
-                  Bottom States/UTs in Different Category
-                </div>
+                <div className={styles.mapHeader}>Bottom States/UTs</div>
                 <BottomStates statusByStates={statusByStates} />
               </div>
             </div>
