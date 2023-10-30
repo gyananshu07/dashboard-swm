@@ -13,7 +13,7 @@ import {
 import { Link, useLocation } from "react-router-dom";
 
 import { menuItems } from "constants/MenuItems";
-import Scrollbars from "react-custom-scrollbars";
+import Scrollbars from "react-custom-scrollbars-2";
 
 function DrawerItems() {
   const { pathname } = useLocation();
