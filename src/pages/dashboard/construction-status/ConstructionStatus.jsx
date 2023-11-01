@@ -9,22 +9,14 @@ function ConstructionStatus() {
       <style type="text/css" media="print">
         {`
           @page {
-            size: landscape;
-            margin: 0;
-            flex: 1 !important;
-            padding:0 !important;
-            width: 100% !important;
-            height: 100vh !important;
-          }
-          body {
-            display: flex;
-            flex: 1 !important;
-            justify-content: center;
-            align-items: center;
+            size: portrait; 
             width: 100% !important;
             height: 100vh !important;
             margin: 0 !important;
             padding: 0 !important;
+          }
+          .canvasjs-chart-canvas {
+            position: relative !important;
           }
           `}
       </style>

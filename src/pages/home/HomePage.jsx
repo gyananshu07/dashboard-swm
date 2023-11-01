@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 import SBM from "assets/logo/Swachh_Bharat_Mission_Logo.svg";
-import SBMWhite from "assets/svg-icons/Swach Bharat.svg";
+// import SBMWhite from "assets/svg-icons/Swach Bharat.svg";
 import Emblem from "assets/National-Emblem.png";
 import PMImage from "assets/pm.png";
 import PMSign from "assets/pm-sign.svg";
@@ -11,7 +11,7 @@ import styles from "./styles.module.css";
 
 import { Button } from "@mui/material";
 
-import HomeSlider from "components/home/carousel/HomeSlider";
+// import HomeSlider from "components/home/carousel/HomeSlider";
 import { menuItemsHome } from "constants/MenuItemsHome";
 
 function HomePage() {
@@ -54,15 +54,15 @@ function HomePage() {
       </div>
 
       <div className={styles.contentContainer}>
-        <div className={styles.banner}>
+        {/* <div className={styles.banner}>
           <HomeSlider />
-        </div>
+        </div> */}
 
-        <h2 className={styles.contentHeading}>
+        {/* <h2 className={styles.contentHeading}>
           <img src={SBMWhite} alt="" className={styles.image} />
           Swachh Bharat Mission Urban 2.0
           <img src={SBMWhite} alt="" className={styles.image} />
-        </h2>
+        </h2> */}
 
         <div className={`${styles.mainContentContainer} container`}>
           <div className={styles.aboutContainer}>

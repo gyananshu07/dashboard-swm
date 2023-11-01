@@ -37,7 +37,6 @@ export default function DashboardLayout(props) {
         sx={{
           flexGrow: 1,
           padding: 2,
-          margin: 2,
           alignItems: "center",
           justifyContent: "center",
           width: {

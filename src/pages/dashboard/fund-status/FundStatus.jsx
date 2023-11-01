@@ -214,20 +214,13 @@ function FundStatus() {
           @page {
             size: portrait;
             margin: 0;
-            flex: 1 !important;
             padding:0 !important;
             width: 100% !important;
             height: 100vh !important;
           }
-          body {
-            display: flex;
-            flex: 1 !important;
-            justify-content: center;
-            align-items: center;
+          .canvasjs-chart-canvas {
+            position: relative !important;
             width: 100% !important;
-            height: 100vh !important;
-            margin: 0 !important;
-            padding: 0 !important;
           }
           `}
       </style>

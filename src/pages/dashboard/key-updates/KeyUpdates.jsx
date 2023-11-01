@@ -78,19 +78,12 @@ function KeyUpdates() {
               margin: 0;
               flex: 1 !important;
               padding:0 !important;
-              width: 100% !important;
+              width: 100vw !important;
               height: 100vh !important;
             }
-            body {
-              display: flex;
-              flex: 1 !important;
-              justify-content: center;
-              align-items: center;
-              width: 100% !important;
-              height: 100vh !important;
-              margin: 0 !important;
-              padding: 0 !important;
-            }
+           .updatesContainer{
+            flex-direction: column;
+           }
         `}
         </style>
         <div className={styles.updates} style={{ justifyContent: "center" }}>
@@ -100,7 +93,16 @@ function KeyUpdates() {
           </div>
         </div>
 
-        <Box sx={{ width: "100%" }}>
+        <Box
+          sx={{
+            width: "100%",
+            backgroundColor: "white",
+            borderRadius: 1,
+            padding: 1,
+            border: 1,
+            borderColor: "lightgray",
+          }}
+        >
           <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
             <Tabs
               value={value}
@@ -196,7 +198,7 @@ function KeyUpdates() {
         </Box>
       </div>
 
-      <div className={styles.updates}>
+      {/* <div className={styles.updates}>
         <div className={styles.header}>Google Toilet Locator</div>
         <div className={`${styles.info} text-center mx-auto`}>
           3,326 Cities (with 67,407 toilets) are live on Google Maps
@@ -210,7 +212,7 @@ function KeyUpdates() {
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         />
-      </div>
+      </div> */}
     </div>
   );
 }

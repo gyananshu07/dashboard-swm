@@ -50,7 +50,7 @@ const DumpsiteMap = () => {
         rgba(27, 31, 35, 0.15) 0px 0px 0px 1px`,
       }}
     >
-      <TileLayer url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png" />
+      <TileLayer url="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}" />
       <MarkerCluster markers={markers} addMarkers={addMarkers} />
       <GeoJSON
         data={IndiaGeoJSON}

@@ -34,23 +34,21 @@ function StatesUTsProgress() {
       <style type="text/css" media="print">
         {`
           @page {
-            size: landscape;
+            size: portrait;
             margin: 0;
-            flex: 1 !important;
             padding:0 !important;
-            width: 100% !important;
+            width: 100vw !important;
             height: 100vh !important;
           }
-          body {
-            display: flex;
-            flex: 1 !important;
-            justify-content: center;
-            align-items: center;
-            width: 100% !important;
-            height: 100vh !important;
-            margin: 0 !important;
-            padding: 0 !important;
-          }
+          .cardBody{
+            width:100vw !important;
+           }
+         .cardBody{
+          width:100vw !important;
+         }
+         .mapSuperCOntainer{
+          width:100vw !important;
+         }
           `}
       </style>
       <div className={`${styles.cardsContainer} page-print`}>

@@ -39,7 +39,7 @@ function CustomAppBar({ onDrawerToggle, onPrint }) {
 
         <img
           className={styles.headerLogo}
-          height="54"
+          height="45"
           src={require("assets/logo/Swachh_Bharat_Mission_Logo.svg").default}
           alt="Logo"
         />
