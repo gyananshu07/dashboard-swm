@@ -12,6 +12,30 @@ export const menuItems = [
     ),
   },
   {
+    label: "Dumpsite Status",
+    path: "/dashboard/dumpsite-status",
+    icon: (
+      <img
+        width="40"
+        height="40"
+        src={require("assets/svg-icons/dump.png")}
+        alt="dump"
+      />
+    ),
+  },
+  {
+    label: "Landfill Status",
+    path: "/dashboard/landfill-status",
+    icon: (
+      <img
+        width="40"
+        height="40"
+        src={require("assets/svg-icons/landfill.svg").default}
+        alt="dump"
+      />
+    ),
+  },
+  {
     label: "Construction Status",
     path: "/dashboard/construction-status",
     icon: (
@@ -71,18 +95,7 @@ export const menuItems = [
       />
     ),
   },
-  {
-    label: "Dumpsite Status",
-    path: "/dashboard/dumpsite-status",
-    icon: (
-      <img
-        width="40"
-        height="40"
-        src={require("assets/svg-icons/dump.png")}
-        alt="dump"
-      />
-    ),
-  },
+
   {
     label: "Key Updates",
     path: "/dashboard/key-updates",
@@ -96,7 +109,7 @@ export const menuItems = [
     ),
   },
   {
-    label: "States and UTs Progress",
+    label: "States & UTs Progress",
     path: "/dashboard/states-and-uts-progress",
     icon: (
       <img

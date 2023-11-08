@@ -15,6 +15,7 @@ import LoginHome from "pages/admin/login/LoginHome";
 import HomePage from "pages/home/HomePage";
 import VisualizeData from "pages/dashboard/visualize-data/VisualizeData";
 import DumpsiteStatus from "pages/dashboard/dumpsite-status/DumpsiteStatus";
+import LandfillStatus from "pages/landfill-status/LandfillStatus";
 
 const Printable = forwardRef(function (props, ref) {
   return <div ref={ref}>{props.children}</div>;
@@ -59,6 +60,26 @@ function AppRouter() {
                   <DashboardLayout onPrint={handlePrint}>
                     <Printable ref={componentRef}>
                       <DashboardHome />
+                    </Printable>
+                  </DashboardLayout>
+                }
+              />
+              <Route
+                path="dumpsite-status"
+                element={
+                  <DashboardLayout onPrint={handlePrint}>
+                    <Printable ref={componentRef}>
+                      <DumpsiteStatus ref={componentRef} />
+                    </Printable>
+                  </DashboardLayout>
+                }
+              />
+              <Route
+                path="landfill-status"
+                element={
+                  <DashboardLayout onPrint={handlePrint}>
+                    <Printable ref={componentRef}>
+                      <LandfillStatus ref={componentRef} />
                     </Printable>
                   </DashboardLayout>
                 }
@@ -149,17 +170,6 @@ function AppRouter() {
                   <DashboardLayout onPrint={handlePrint}>
                     <Printable ref={componentRef}>
                       <VisualizeData ref={componentRef} />
-                    </Printable>
-                  </DashboardLayout>
-                }
-              />
-
-              <Route
-                path="dumpsite-status"
-                element={
-                  <DashboardLayout onPrint={handlePrint}>
-                    <Printable ref={componentRef}>
-                      <DumpsiteStatus ref={componentRef} />
                     </Printable>
                   </DashboardLayout>
                 }

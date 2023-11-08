@@ -15,7 +15,10 @@ const GFCStatusMapChart = ({ status }) => {
     const filteredStatus = status.filter((item) => item.State === ST_NM);
 
     if (filteredStatus.length > 0) {
-      const popupContent = `<b>${ST_NM}</b> <br/> <b>No. of ULBs with GFC Status:</b> ${filteredStatus[0].Awarded}
+      const popupContent = `
+      <b>${ST_NM}</b>
+      <br/>
+      <b>No. of ULBs with GFC Status:</b> ${filteredStatus[0].Awarded}
       `;
       layer.bindPopup(popupContent);
     }

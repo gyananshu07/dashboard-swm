@@ -9,7 +9,7 @@ const MapChart = ({ highlighted, component }) => {
   const mapRef = useRef(null);
 
   const highlightStyle = {
-    fillColor: component === "bottom" ? "#FF0D0D" : "#0D860D", // Fill color for highlighted states
+    fillColor: component === "bottom" ? "#FFBF00" : "#52b788", // Fill color for highlighted states
     color: "black", // Border color
     weight: 1, // Border width
     fillOpacity: 0.8, // Fill opacity

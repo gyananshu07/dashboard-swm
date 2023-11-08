@@ -1,0 +1,4469 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.2613, 8.3236]
+      },
+      "properties": {
+        "State": "TAMIL NADU",
+        "District": "KANNIYAKUMARI",
+        "ULB_City": "ATTOOR",
+        "ULBCode": 803900,
+        "wardNumber": 12,
+        "wardName": "Ward No. 12",
+        "LandFillArea": "0.45",
+        "DesignedHeight": "4",
+        "CurrentHeight": "2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.852, 10.768]
+      },
+      "properties": {
+        "State": "TAMIL NADU",
+        "District": "COIMBATORE",
+        "ULB_City": "T.M.PALAYAM",
+        "ULBCode": 803999,
+        "wardNumber": 9,
+        "wardName": "SANDHAIPETTAI, MASTHIGOUNDENPATHY",
+        "LandFillArea": "1.2",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.6637, 11.7903]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Chamarajanagar ",
+        "ULB_City": "Gundlupet (TMC)",
+        "ULBCode": 803200,
+        "wardNumber": 1,
+        "wardName": "Ward No. 01",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.09, 12.33]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Mysore",
+        "ULB_City": "Piriyapatna (TP)",
+        "ULBCode": 803191,
+        "wardNumber": 2,
+        "wardName": "WARD NO. 02",
+        "LandFillArea": "0.5",
+        "DesignedHeight": "3",
+        "CurrentHeight": "2.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.0228, 12.4247]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "MANDYA",
+        "ULB_City": "MADDUR (TMC)",
+        "ULBCode": 803169,
+        "wardNumber": 0,
+        "wardName": "Outside City Boundry",
+        "LandFillArea": "1",
+        "DesignedHeight": "2",
+        "CurrentHeight": "0.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.8247, 12.4873]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Mandya ",
+        "ULB_City": "Mandya (CMC)",
+        "ULBCode": 803168,
+        "wardNumber": 0,
+        "wardName": "Outside City Boundry",
+        "LandFillArea": "24.02",
+        "DesignedHeight": "0",
+        "CurrentHeight": "0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.41, 12.52]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Dakshin Kannada",
+        "ULB_City": "Sulya (TP)",
+        "ULBCode": 803186,
+        "wardNumber": 14,
+        "wardName": "KALLUMUTLU",
+        "LandFillArea": "0",
+        "DesignedHeight": "0",
+        "CurrentHeight": "0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.6597, 12.5253]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Mandya ",
+        "ULB_City": "Pandavapura (TMC)",
+        "ULBCode": 803166,
+        "wardNumber": 18,
+        "wardName": "BOVI COLONY",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.4174, 12.5265]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "RAMANAGARA",
+        "ULB_City": "KANAKAPURA",
+        "ULBCode": 803240,
+        "wardNumber": 21,
+        "wardName": "AJEEJ NAGARA",
+        "LandFillArea": "7.5",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [80.1, 12.54]
+      },
+      "properties": {
+        "State": "TAMIL NADU",
+        "District": "Kancheepuram ",
+        "ULB_City": "Madambakkam (TP)",
+        "ULBCode": 803348,
+        "wardNumber": 4,
+        "wardName": "WARD NO. 4",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [80.9, 12.5719]
+      },
+      "properties": {
+        "State": "TAMIL NADU",
+        "District": "Kancheepuram ",
+        "ULB_City": "Pallavapuram (M)",
+        "ULBCode": 803356,
+        "wardNumber": 24,
+        "wardName": "Ward No. 24",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.9279, 12.6075]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Kodagu",
+        "ULB_City": "Somvarpet (TP)",
+        "ULBCode": 803188,
+        "wardNumber": 2,
+        "wardName": "BANAVARA ROAD",
+        "LandFillArea": "2.5",
+        "DesignedHeight": "0",
+        "CurrentHeight": "0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.4712, 12.6282]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Mandya ",
+        "ULB_City": "Krishnarajpet (TMC)",
+        "ULBCode": 803164,
+        "wardNumber": 0,
+        "wardName": "Outside City Boundry",
+        "LandFillArea": "5.5",
+        "DesignedHeight": "3",
+        "CurrentHeight": "0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.28, 12.73]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Ramanagara ",
+        "ULB_City": "Ramanagara (CMC)",
+        "ULBCode": 803238,
+        "wardNumber": 31,
+        "wardName": "ARCHAKARAHALLI",
+        "LandFillArea": "30",
+        "DesignedHeight": "10",
+        "CurrentHeight": "10"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.78, 12.76]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "HASSAN",
+        "ULB_City": "CHANNARAYAPATNA (TMC + OG)",
+        "ULBCode": 803178,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "21",
+        "DesignedHeight": "3",
+        "CurrentHeight": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.2373, 12.7679]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "HASSAN",
+        "ULB_City": "HOLE NARSIPUR (TMC)",
+        "ULBCode": 803177,
+        "wardNumber": 23,
+        "wardName": "Ward No. 23",
+        "LandFillArea": "7.38",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.0989, 12.7696]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Dakshin Kannada",
+        "ULB_City": "Vitla TP",
+        "ULBCode": 900384,
+        "wardNumber": 12,
+        "wardName": "WARD 12",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.7927, 12.799]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Mandya ",
+        "ULB_City": "Nagamangala (TP)",
+        "ULBCode": 803165,
+        "wardNumber": 16,
+        "wardName": "WARD NO.16",
+        "LandFillArea": "5",
+        "DesignedHeight": "8",
+        "CurrentHeight": "4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.8081, 12.9314]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Hassan ",
+        "ULB_City": "Sakleshpur (TMC)",
+        "ULBCode": 803171,
+        "wardNumber": 0,
+        "wardName": "Outside City Boundry",
+        "LandFillArea": "11",
+        "DesignedHeight": "0",
+        "CurrentHeight": "0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [80.101, 12.9358]
+      },
+      "properties": {
+        "State": "TAMIL NADU",
+        "District": "KANCHEEPURAM",
+        "ULB_City": "ST THOMAS MOUNT CANTT",
+        "ULBCode": 803350,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [80.2278, 12.9542]
+      },
+      "properties": {
+        "State": "TAMIL NADU",
+        "District": "KANCHEEPURAM",
+        "ULB_City": "ST THOMAS MOUNT CANTT",
+        "ULBCode": 803350,
+        "wardNumber": 0,
+        "wardName": "Outside City Boundry",
+        "LandFillArea": "",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.2413, 12.9614]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Ramanagara ",
+        "ULB_City": "Magadi (TMC)",
+        "ULBCode": 803237,
+        "wardNumber": 2,
+        "wardName": "NES BADAVANE, VARAHA COLONY, NATARAJA BADAVANE",
+        "LandFillArea": "5.14",
+        "DesignedHeight": "6.5",
+        "CurrentHeight": "2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [78.2884, 12.9637]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Kolar ",
+        "ULB_City": "Robertson Pet (CMC)",
+        "ULBCode": 803224,
+        "wardNumber": 22,
+        "wardName": "SWARNA NAGAR WARD",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.0238, 13.0253]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "TUMKUR",
+        "ULB_City": "KUNIGAL (TMC)",
+        "ULBCode": 803161,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "17.23",
+        "DesignedHeight": "0.2",
+        "CurrentHeight": "0.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.7956, 13.0922]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Dakshin Kannada",
+        "ULB_City": "Mulki (TP)",
+        "ULBCode": 803179,
+        "wardNumber": 3,
+        "wardName": "MULKI-03",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.86, 13.13]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Hassan ",
+        "ULB_City": "Belur (TMC)",
+        "ULBCode": 803172,
+        "wardNumber": 8,
+        "wardName": "Ward No. 08",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.681, 13.1625]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Chikmagalur ",
+        "ULB_City": "Mudigere (TP)",
+        "ULBCode": 803150,
+        "wardNumber": 2,
+        "wardName": "EIDGAMAIDANA",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [78.3529, 13.1857]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "KOLAR",
+        "ULB_City": "MULBAGAL (TMC)",
+        "ULBCode": 803225,
+        "wardNumber": 0,
+        "wardName": "Outside City Boundry",
+        "LandFillArea": "6",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.0049, 13.1963]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Udupi ",
+        "ULB_City": "Karkala (TMC)",
+        "ULBCode": 803142,
+        "wardNumber": 12,
+        "wardName": "VERNABETTU-GOMMATABETTA",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.15, 13.25]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "CHIKMAGALUR",
+        "ULB_City": "NARASIMHARAJAPURA (TP)",
+        "ULBCode": 803145,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "1",
+        "DesignedHeight": "5",
+        "CurrentHeight": "2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.4731, 13.2878]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "TUMKUR",
+        "ULB_City": "TIPTUR (CMC)",
+        "ULBCode": 803159,
+        "wardNumber": 12,
+        "wardName": "ANNAPURA",
+        "LandFillArea": "15.05",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.2445, 13.3071]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Hassan ",
+        "ULB_City": "Arsikere (TMC)",
+        "ULBCode": 803173,
+        "wardNumber": 4,
+        "wardName": "HASSAN ROAD, JENUKAL NAGARA, YADAPURA ROAD",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.803, 13.3184]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "UDUPI",
+        "ULB_City": "UDUPI",
+        "ULBCode": 803141,
+        "wardNumber": 0,
+        "wardName": "Outside City Boundry",
+        "LandFillArea": "22",
+        "DesignedHeight": "3",
+        "CurrentHeight": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [78.2194, 13.3192]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Kolar ",
+        "ULB_City": "Srinivaspur (TMC)",
+        "ULBCode": 803220,
+        "wardNumber": 9,
+        "wardName": "Ward No. 09",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.561, 13.3508]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "CHIKMAGALUR",
+        "ULB_City": "BIRUR (TMC)",
+        "ULBCode": 803147,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "8.2",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.4421, 13.3623]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Udupi",
+        "ULB_City": "Kundapura (TMC)",
+        "ULBCode": 803139,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "2",
+        "DesignedHeight": "5.6",
+        "CurrentHeight": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.6293, 13.3972]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Tumkur ",
+        "ULB_City": "Chiknayakanhalli (TMC)",
+        "ULBCode": 803152,
+        "wardNumber": 3,
+        "wardName": "T.N.S.EXTENSION",
+        "LandFillArea": "1088",
+        "DesignedHeight": "3.5",
+        "CurrentHeight": "3.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.7518, 13.5622]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Udupi ",
+        "ULB_City": "Saligram (TP)",
+        "ULBCode": 803140,
+        "wardNumber": 1,
+        "wardName": "PADUKERE",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.7136, 13.6908]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "CHIKKABALLAPURA",
+        "ULB_City": "GUDIBANDA (TP)",
+        "ULBCode": 803228,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "10.3",
+        "DesignedHeight": "4.5",
+        "CurrentHeight": "4.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.639, 13.9984]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Chitradurga ",
+        "ULB_City": "Hiriyur (TMC)",
+        "ULBCode": 803123,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "10",
+        "DesignedHeight": "5",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.2975, 14.0799]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "TUMKUR",
+        "ULB_City": "PAVAGADA (TMC)",
+        "ULBCode": 803154,
+        "wardNumber": 1,
+        "wardName": "ROPPA BADAVANE",
+        "LandFillArea": "",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.2975, 14.0799]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "TUMKUR",
+        "ULB_City": "PAVAGADA (TMC)",
+        "ULBCode": 803154,
+        "wardNumber": 1,
+        "wardName": "ROPPA BADAVANE",
+        "LandFillArea": "",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.2975, 14.0799]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "TUMKUR",
+        "ULB_City": "PAVAGADA (TMC)",
+        "ULBCode": 803154,
+        "wardNumber": 1,
+        "wardName": "ROPPA BADAVANE",
+        "LandFillArea": "",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.2975, 14.0799]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "TUMKUR",
+        "ULB_City": "PAVAGADA (TMC)",
+        "ULBCode": 803154,
+        "wardNumber": 1,
+        "wardName": "ROPPA BADAVANE",
+        "LandFillArea": "",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.6032, 14.1587]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "DAVANAGERE",
+        "ULB_City": "NYAMATHI",
+        "ULBCode": 900667,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.8414, 14.2012]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "SHIMOGA",
+        "ULB_City": "JOG KARGAL (TP)",
+        "ULBCode": 803130,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "5",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.6628, 14.3446]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "CHITRADURGA",
+        "ULB_City": "CHALLAKERE (TMC)",
+        "ULBCode": 803119,
+        "wardNumber": 1,
+        "wardName": "WARD NO. 01",
+        "LandFillArea": "4",
+        "DesignedHeight": "7",
+        "CurrentHeight": "4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.09, 14.35]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "SHIMOGA",
+        "ULB_City": "SORAB (TP)",
+        "ULBCode": 803132,
+        "wardNumber": 6,
+        "wardName": "MAIN ROAD RIGHT SIDE",
+        "LandFillArea": "10",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [78.2158, 14.3685]
+      },
+      "properties": {
+        "State": "ANDHRA PRADESH",
+        "District": "KADAPA",
+        "ULB_City": "PULIVENDULA",
+        "ULBCode": 802997,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "2",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.1497, 14.5622]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Haveri",
+        "ULB_City": "Hirekerur (TP)",
+        "ULBCode": 803106,
+        "wardNumber": 3,
+        "wardName": "AMBEDKAR NAGAR",
+        "LandFillArea": "7",
+        "DesignedHeight": "100",
+        "CurrentHeight": "300"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.3209, 14.693]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Uttara Kannada",
+        "ULB_City": "Ankola (TP)",
+        "ULBCode": 803095,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "5",
+        "DesignedHeight": "15",
+        "CurrentHeight": "5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.33, 14.77]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Haveri",
+        "ULB_City": "Haveri (CMC)",
+        "ULBCode": 803104,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "0.75",
+        "DesignedHeight": "10",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.3866, 14.9034]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Bellary",
+        "ULB_City": "Kudligi (TP)",
+        "ULBCode": 803116,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "2.97",
+        "DesignedHeight": "2",
+        "CurrentHeight": "1.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.2355, 14.9093]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "HAVERI",
+        "ULB_City": "BANKAPURA (TMC)",
+        "ULBCode": 803101,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "5",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.369, 14.994]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Haveri ",
+        "ULB_City": "Savanur (TMC)",
+        "ULBCode": 803102,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "5",
+        "DesignedHeight": "8",
+        "CurrentHeight": "2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.4887, 15.1573]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Gadag-Betigeri",
+        "ULB_City": "Lakshmeshwar (TMC)",
+        "ULBCode": 803081,
+        "wardNumber": 23,
+        "wardName": "Ward No. 23",
+        "LandFillArea": "13.4",
+        "DesignedHeight": "10",
+        "CurrentHeight": "5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.8767, 15.2214]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "GADAG",
+        "ULB_City": "MUNDARGI (TMC)",
+        "ULBCode": 803082,
+        "wardNumber": 17,
+        "wardName": "WARD NO:17",
+        "LandFillArea": "0.2",
+        "DesignedHeight": "6",
+        "CurrentHeight": "8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.122, 15.3236]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Hubli-Dharwad",
+        "ULB_City": "Hubli-Dharwad (M Corp.)",
+        "ULBCode": 803083,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "67.2",
+        "DesignedHeight": "0",
+        "CurrentHeight": "0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.4757, 15.4953]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "KOPPAL",
+        "ULB_City": "GANGAWATI",
+        "ULBCode": 803072,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "16.05",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.1072, 15.497]
+      },
+      "properties": {
+        "State": "Goa",
+        "District": "South Goa",
+        "ULB_City": "Quepem (M Cl)",
+        "ULBCode": 803251,
+        "wardNumber": 4,
+        "wardName": "DEULMOL(PART)",
+        "LandFillArea": "0",
+        "DesignedHeight": "0",
+        "CurrentHeight": "0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.8615, 15.5288]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Bellary ",
+        "ULB_City": "Tekkalakote (TP)",
+        "ULBCode": 803113,
+        "wardNumber": 17,
+        "wardName": "WARD NO. 17, YELAMATTI AREA TO OLD SIRIGERI ROAD.",
+        "LandFillArea": "8.44",
+        "DesignedHeight": "10",
+        "CurrentHeight": "10"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.1255, 15.5308]
+      },
+      "properties": {
+        "State": "GOA",
+        "District": "NORTH GOA",
+        "ULB_City": "VALPOI",
+        "ULBCode": 803246,
+        "wardNumber": 7,
+        "wardName": "SEVEN",
+        "LandFillArea": "0.5",
+        "DesignedHeight": "3",
+        "CurrentHeight": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.8206, 15.5736]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Gadag-Betigeri",
+        "ULB_City": "Naregal (TP)",
+        "ULBCode": 803077,
+        "wardNumber": 7,
+        "wardName": "Ward No. 07",
+        "LandFillArea": "6",
+        "DesignedHeight": "6",
+        "CurrentHeight": "5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.8921, 15.6042]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "BELLARY",
+        "ULB_City": "SIRUGUPPA (TMC)",
+        "ULBCode": 803112,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "7",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.016, 15.611]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Koppal ",
+        "ULB_City": "Yelbarga (TP)",
+        "ULBCode": 803070,
+        "wardNumber": 11,
+        "wardName": "KEB CALONI, BIHAND POST OFFICER, VIDYA SAGAR CALONI, DR:BABUJAGAJIVNRAM NAGAR, ADIKAGI BADAVANNE, B.R.C OFFICE.",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.7408, 15.6616]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Gadag-Betigeri",
+        "ULB_City": "Ron (TMC)",
+        "ULBCode": 803075,
+        "wardNumber": 22,
+        "wardName": "WARD NO.22",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.95, 15.74]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "HUBLI-DHARWAD",
+        "ULB_City": "ALNAVAR (TP)",
+        "ULBCode": 803084,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "0.44",
+        "DesignedHeight": "3",
+        "CurrentHeight": "0.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [73.4801, 16.064]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "SINDHUDURGA",
+        "ULB_City": "MALWAN",
+        "ULBCode": 802878,
+        "wardNumber": 2,
+        "wardName": "REVTALE",
+        "LandFillArea": "",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.3341, 16.2215]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Raichur ",
+        "ULB_City": "Raichur (CMC)",
+        "ULBCode": 803067,
+        "wardNumber": 34,
+        "wardName": "WARD 34",
+        "LandFillArea": "6",
+        "DesignedHeight": "5",
+        "CurrentHeight": "8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.6239, 16.2488]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Belgaum ",
+        "ULB_City": "Hukeri (TP)",
+        "ULBCode": 803032,
+        "wardNumber": 15,
+        "wardName": "RENUKACHARYA/JAYANAGAR/ADARSH NAGAR",
+        "LandFillArea": "3.32",
+        "DesignedHeight": "2",
+        "CurrentHeight": "1.82"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.48, 16.25]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Belgaum ",
+        "ULB_City": "Sankeshwar (TMC)",
+        "ULBCode": 803031,
+        "wardNumber": 23,
+        "wardName": "WARD NO. 23",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.2482, 16.3022]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Bagalkot",
+        "ULB_City": "Mudhol (TMC)",
+        "ULBCode": 803044,
+        "wardNumber": 6,
+        "wardName": "SIDRAMESHVAR NAGAR, POLICE STATION",
+        "LandFillArea": "11.25",
+        "DesignedHeight": "2",
+        "CurrentHeight": "2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.1928, 16.39]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "Kolhapur",
+        "ULB_City": "Murgud (M Cl)",
+        "ULBCode": 802889,
+        "wardNumber": 3,
+        "wardName": "WARD NO. 03",
+        "LandFillArea": "0.25",
+        "DesignedHeight": "5",
+        "CurrentHeight": "2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.4182, 16.4002]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Belgaum ",
+        "ULB_City": "Nipani  (CMC)",
+        "ULBCode": 803021,
+        "wardNumber": 1,
+        "wardName": "Ward No. 1",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.4565, 16.5456]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "RAICHUR",
+        "ULB_City": "MUDGAL (TP)",
+        "ULBCode": 803063,
+        "wardNumber": 23,
+        "wardName": "SOMARPET",
+        "LandFillArea": "5",
+        "DesignedHeight": "869",
+        "CurrentHeight": "869"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.53, 16.55]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "BELGAUM",
+        "ULB_City": "SADALGI",
+        "ULBCode": 803022,
+        "wardNumber": 18,
+        "wardName": "BADIGER, ATHANE GALLI, MAHADEV TEMPLE, SHIRAGURE TOTA MARAJAKKE PATTI",
+        "LandFillArea": "3",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.8576, 16.6025]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Belgaum ",
+        "ULB_City": "Kudachi (TP)",
+        "ULBCode": 803025,
+        "wardNumber": 20,
+        "wardName": "SHYAM NAGAR",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.5034, 16.624]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "BELGAUM",
+        "ULB_City": "BORAGAON (TP)",
+        "ULBCode": 900418,
+        "wardNumber": 15,
+        "wardName": "WARD 15",
+        "LandFillArea": "5",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.891, 16.688]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "YADGIR",
+        "ULB_City": "SHAHPUR (TMC)",
+        "ULBCode": 803217,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "1",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.2509, 16.6996]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "Kolhapur",
+        "ULB_City": "Kolhapur (M Corp.)",
+        "ULBCode": 802887,
+        "wardNumber": 38,
+        "wardName": "TAKALA KHAN MALI COLONY",
+        "LandFillArea": "4",
+        "DesignedHeight": "8",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.2763, 16.7796]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "Kolhapur",
+        "ULB_City": "Kolhapur (M Corp.)",
+        "ULBCode": 802887,
+        "wardNumber": 1,
+        "wardName": "SUGAR MIL",
+        "LandFillArea": "7",
+        "DesignedHeight": "3",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.5018, 16.888]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "BIJAPUR",
+        "ULB_City": "THIKOTA",
+        "ULBCode": 900610,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [73.933, 16.9111]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "KOLHAPUR",
+        "ULB_City": "MALKAPUR_K",
+        "ULBCode": 802881,
+        "wardNumber": 0,
+        "wardName": "Outside City Boundry",
+        "LandFillArea": "0.04",
+        "DesignedHeight": "3",
+        "CurrentHeight": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.58, 17.06]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "Sangli",
+        "ULB_City": "Tasgaon (M Cl)",
+        "ULBCode": 802894,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "1",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [78.4589, 17.4017]
+      },
+      "properties": {
+        "State": "TELANGANA",
+        "District": "WARANGAL",
+        "ULB_City": "WARANGAL",
+        "ULBCode": 802930,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.4183, 17.4633]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Gulbarga",
+        "ULB_City": "Afzalpur (TP)",
+        "ULBCode": 803206,
+        "wardNumber": 20,
+        "wardName": "WARD NO.20",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.4589, 17.588]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "Satara",
+        "ULB_City": "Waduj",
+        "ULBCode": 900349,
+        "wardNumber": 6,
+        "wardName": "WARD NO 6",
+        "LandFillArea": "1.99",
+        "DesignedHeight": "2",
+        "CurrentHeight": "2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.2175, 17.5918]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "Satara",
+        "ULB_City": "Rahimatpur (M Cl)",
+        "ULBCode": 802868,
+        "wardNumber": 2,
+        "wardName": "WARD NO. 02",
+        "LandFillArea": "0.02",
+        "DesignedHeight": "2",
+        "CurrentHeight": "2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [73.885, 17.645]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "Satara",
+        "ULB_City": "Satara (M Cl)",
+        "ULBCode": 802869,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "9.69",
+        "DesignedHeight": "1",
+        "CurrentHeight": "2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.2493, 17.8401]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "BIDAR",
+        "ULB_City": "HALLI KHEDA (TMC)",
+        "ULBCode": 900403,
+        "wardNumber": 2,
+        "wardName": "PAGA GALLI",
+        "LandFillArea": "4",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.6477, 17.8553]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "OSMANABAD",
+        "ULB_City": "UMARGA",
+        "ULBCode": 802852,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "2.1",
+        "DesignedHeight": "3",
+        "CurrentHeight": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.2266, 18.0919]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "Bidar",
+        "ULB_City": "Bhalki (TMC)",
+        "ULBCode": 803058,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "0.5",
+        "DesignedHeight": "3",
+        "CurrentHeight": "0.05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [78.748, 18.098]
+      },
+      "properties": {
+        "State": "TELANGANA",
+        "District": "SIDDIPET",
+        "ULB_City": "SIDDIPET (M)",
+        "ULBCode": 802914,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "2",
+        "DesignedHeight": "3",
+        "CurrentHeight": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [73.1183, 18.1263]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "RAIGADH",
+        "ULB_City": "MHASALA",
+        "ULBCode": 900282,
+        "wardNumber": 14,
+        "wardName": "WARD NO.14",
+        "LandFillArea": "",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.4131, 18.2648]
+      },
+      "properties": {
+        "State": "KARNATAKA",
+        "District": "BIDAR",
+        "ULB_City": "AURAD (TP)",
+        "ULBCode": 803059,
+        "wardNumber": 1,
+        "wardName": "GOUNDI GALLI, VAZAR BHAVI, KHB COLONY",
+        "LandFillArea": "1",
+        "DesignedHeight": "3",
+        "CurrentHeight": "0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.6786, 18.2698]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "SOLAPUR",
+        "ULB_City": "BARSHI",
+        "ULBCode": 802855,
+        "wardNumber": 12,
+        "wardName": "PRABHAG NO 12",
+        "LandFillArea": "2",
+        "DesignedHeight": "36",
+        "CurrentHeight": "45"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.682, 18.4644]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "OSMANABAD",
+        "ULB_City": "BHUM",
+        "ULBCode": 802846,
+        "wardNumber": 3,
+        "wardName": "LAXMINAGAR,NEW LAXMINAGAR",
+        "LandFillArea": "",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.48, 18.8]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "Beed",
+        "ULB_City": "Ashti (NP)",
+        "ULBCode": 900266,
+        "wardNumber": 1,
+        "wardName": "SAIKAD WASTI, WARUNGULE WASTI",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.3686, 18.8197]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "PUNE",
+        "ULB_City": "SHIRUR",
+        "ULBCode": 802807,
+        "wardNumber": 10,
+        "wardName": "Ward No. 10",
+        "LandFillArea": "0.16",
+        "DesignedHeight": "4",
+        "CurrentHeight": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [73.311, 18.9042]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "RAIGADH",
+        "ULB_City": "KARJAT_R",
+        "ULBCode": 802798,
+        "wardNumber": 9,
+        "wardName": "Ward No. 09",
+        "LandFillArea": "0.09",
+        "DesignedHeight": "5",
+        "CurrentHeight": "0.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.4699, 19.0636]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "Beed",
+        "ULB_City": "Shirur (NP)",
+        "ULBCode": 900267,
+        "wardNumber": 1,
+        "wardName": "BUDDHAVIHAR",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [72.9518, 19.1254]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "MUMBAI",
+        "ULB_City": "GREATER MUMBAI",
+        "ULBCode": 802794,
+        "wardNumber": 23,
+        "wardName": "S",
+        "LandFillArea": "2.47",
+        "DesignedHeight": "12",
+        "CurrentHeight": "0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [82.3285, 19.1531]
+      },
+      "properties": {
+        "State": "ODISHA",
+        "District": "NABARANGAPUR",
+        "ULB_City": "NABARANGAPUR (M)",
+        "ULBCode": 801903,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "8.64",
+        "DesignedHeight": "14",
+        "CurrentHeight": "10"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [73.0128, 19.172]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "Thane ",
+        "ULB_City": "Thane (M Corp.)",
+        "ULBCode": 802787,
+        "wardNumber": 29,
+        "wardName": "KHARDI_DAVLE,_PADLE_DESAI_KHIDKALI_DAIGHAR_KAUSA",
+        "LandFillArea": "1",
+        "DesignedHeight": "5",
+        "CurrentHeight": "2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [73.2248, 19.1907]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "Thane",
+        "ULB_City": "Ambarnath(M Cl)",
+        "ULBCode": 802793,
+        "wardNumber": 7,
+        "wardName": "BUVAPA PADA CHIKHLOLI SARVODAYA NAGAR",
+        "LandFillArea": "33.58",
+        "DesignedHeight": "12",
+        "CurrentHeight": "5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [73.0643, 19.2991]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "Thane",
+        "ULB_City": "Bhiwandi Nizampur (M Corp.)",
+        "ULBCode": 802789,
+        "wardNumber": 3,
+        "wardName": "WD3",
+        "LandFillArea": "1",
+        "DesignedHeight": "350",
+        "CurrentHeight": "75"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.2076, 19.3157]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "HINGOLI",
+        "ULB_City": "BASMAT",
+        "ULBCode": 802750,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "2",
+        "DesignedHeight": "1.2",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.8725, 19.3983]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "NANDED WAGHALA",
+        "ULB_City": "HIMAYATNAGAR",
+        "ULBCode": 900274,
+        "wardNumber": 7,
+        "wardName": "AMBEDKAR NGR",
+        "LandFillArea": "",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.2134, 19.5956]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "Jalna",
+        "ULB_City": "Partur (M Cl)",
+        "ULBCode": 802762,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.7807, 19.6151]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "Jalna",
+        "ULB_City": "Ambad (M Cl)",
+        "ULBCode": 802761,
+        "wardNumber": 6,
+        "wardName": "WARD NO. 06",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [72.761, 19.7172]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "PALGHAR",
+        "ULB_City": "PALGHAR",
+        "ULBCode": 802784,
+        "wardNumber": 1,
+        "wardName": "GOTHANPUR,PILLENA NAGAR ",
+        "LandFillArea": "",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.3975, 19.8954]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "AURANGABAD",
+        "ULB_City": "AURANGABAD",
+        "ULBCode": 802765,
+        "wardNumber": 35,
+        "wardName": "NAREGAV",
+        "LandFillArea": "10",
+        "DesignedHeight": "10",
+        "CurrentHeight": "9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.6059, 20.1571]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "BULDANA",
+        "ULB_City": "MEHKAR",
+        "ULBCode": 802667,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [80.3181, 20.2699]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "GADCHIROLI",
+        "ULB_City": "DHANORA",
+        "ULBCode": 900302,
+        "wardNumber": 16,
+        "wardName": "RICE MEAL AREA 16",
+        "LandFillArea": "0.07",
+        "DesignedHeight": "1.5",
+        "CurrentHeight": "1.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.6608, 20.3182]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "NASHIK",
+        "ULB_City": "NANDGAON",
+        "ULBCode": 802773,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "0.3",
+        "DesignedHeight": "1",
+        "CurrentHeight": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [78.8228, 20.5296]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "Wardha",
+        "ULB_City": "Hinganghat (M Cl)",
+        "ULBCode": 802699,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "0.5",
+        "DesignedHeight": "4.5",
+        "CurrentHeight": "1.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.218, 20.5986]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "NASHIK",
+        "ULB_City": "SATANA",
+        "ULBCode": 802771,
+        "wardNumber": 5,
+        "wardName": "WARD NO. 5",
+        "LandFillArea": "1",
+        "DesignedHeight": "10",
+        "CurrentHeight": "0.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.3328, 20.6783]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "Jalgaon",
+        "ULB_City": "Pachora (M Cl)",
+        "ULBCode": 802660,
+        "wardNumber": 1,
+        "wardName": "WARD NO. 01",
+        "LandFillArea": "2",
+        "DesignedHeight": "4",
+        "CurrentHeight": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [78.6015, 20.7146]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "Wardha",
+        "ULB_City": "Wardha (M Cl)",
+        "ULBCode": 802696,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "1.97",
+        "DesignedHeight": "",
+        "CurrentHeight": "10"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [84.5523, 20.7402]
+      },
+      "properties": {
+        "State": "ODISHA",
+        "District": "ANUGUL",
+        "ULB_City": "ATHMALLIK (NAC)",
+        "ULBCode": 801852,
+        "wardNumber": 3,
+        "wardName": "TANGIANISHA, SIDHHAPUR, PADMAPOKHARI",
+        "LandFillArea": "3",
+        "DesignedHeight": "60",
+        "CurrentHeight": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [79.6222, 20.7962]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "Bhandara",
+        "ULB_City": "Pauni (M Cl)",
+        "ULBCode": 802714,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "28.336",
+        "DesignedHeight": "5",
+        "CurrentHeight": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.8025, 20.9157]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "Dhule",
+        "ULB_City": "Dhule (M Corp.)",
+        "ULBCode": 802646,
+        "wardNumber": 10,
+        "wardName": "10",
+        "LandFillArea": "4.46",
+        "DesignedHeight": "4",
+        "CurrentHeight": "2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75281200, 21.0174]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "JALGAON",
+        "ULB_City": "DHARANGAON",
+        "ULBCode": 802655,
+        "wardNumber": 2,
+        "wardName": "Ward No. 02",
+        "LandFillArea": "",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.2852, 21.1698]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "Amravati",
+        "ULB_City": "Anjangaon (M Cl)",
+        "ULBCode": 802684,
+        "wardNumber": 6,
+        "wardName": "Ward No. 06",
+        "LandFillArea": "0.5",
+        "DesignedHeight": "5",
+        "CurrentHeight": "5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.0611, 21.2468]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "JALGAON",
+        "ULB_City": "RAVER",
+        "ULBCode": 802651,
+        "wardNumber": 8,
+        "wardName": "Ward No. 08",
+        "LandFillArea": "9.46",
+        "DesignedHeight": "2",
+        "CurrentHeight": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.4977, 21.2522]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "Amravati",
+        "ULB_City": "Achalpur (M Cl)",
+        "ULBCode": 802685,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "1",
+        "DesignedHeight": "2.4",
+        "CurrentHeight": "2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.3046, 21.2578]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "JALGAON",
+        "ULB_City": "CHOPADA",
+        "ULBCode": 802647,
+        "wardNumber": 3,
+        "wardName": "RAMPURA",
+        "LandFillArea": "0.5",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [78.5395, 21.4807]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "Nagpur",
+        "ULB_City": "Narkhed (M Cl)",
+        "ULBCode": 802701,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "0.21",
+        "DesignedHeight": "2.5",
+        "CurrentHeight": "1.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [78.9275, 22.1044]
+      },
+      "properties": {
+        "State": "MADHYA PRADESH",
+        "District": "CHHINDWARA",
+        "ULB_City": "CHHINDWARA",
+        "ULBCode": 802386,
+        "wardNumber": 3,
+        "wardName": "VEER SAVARKAR WARD",
+        "LandFillArea": "2.87",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [73.206, 22.234]
+      },
+      "properties": {
+        "State": "GUJARAT",
+        "District": "Vadodara",
+        "ULB_City": "Vadodara (M Corp.)",
+        "ULBCode": 802596,
+        "wardNumber": 19,
+        "wardName": "S",
+        "LandFillArea": "12",
+        "DesignedHeight": "10",
+        "CurrentHeight": "9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [71.9825, 22.3547]
+      },
+      "properties": {
+        "State": "GUJARAT",
+        "District": "AHMEDABAD",
+        "ULB_City": "DHANDHUKA",
+        "ULBCode": 802489,
+        "wardNumber": 7,
+        "wardName": "WARD NO. 7",
+        "LandFillArea": "",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [70.8419, 22.3632]
+      },
+      "properties": {
+        "State": "GUJARAT",
+        "District": "Rajkot ",
+        "ULB_City": "Rajkot (M Corp.)",
+        "ULBCode": 802501,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "9.5",
+        "DesignedHeight": "10",
+        "CurrentHeight": "0.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.6068, 22.6857]
+      },
+      "properties": {
+        "State": "JHARKHAND",
+        "District": "WEST SINGHBHUM",
+        "ULB_City": "Chakardharpur (Nagar Parishad)",
+        "ULBCode": 801799,
+        "wardNumber": 2,
+        "wardName": "BHALIYA KUDAR, KUDLI BADI",
+        "LandFillArea": "8",
+        "DesignedHeight": "4.5",
+        "CurrentHeight": "6.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [88.3139, 22.7872]
+      },
+      "properties": {
+        "State": "WEST BENGAL",
+        "District": "HUGLI-CHINSURAH",
+        "ULB_City": "BAIDYABATI (M)",
+        "ULBCode": 801727,
+        "wardNumber": 14,
+        "wardName": "WARD NO. 14",
+        "LandFillArea": "52",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [88.0267, 22.8836]
+      },
+      "properties": {
+        "State": "WEST BENGAL",
+        "District": "Hugli-Chinsurah",
+        "ULB_City": "Tarakeswar (M)",
+        "ULBCode": 801723,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [88.3994, 22.9047]
+      },
+      "properties": {
+        "State": "WEST BENGAL",
+        "District": "HUGLI-CHINSURAH",
+        "ULB_City": "HUGLI-CHINSURAH (M)",
+        "ULBCode": 801721,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "6.5",
+        "DesignedHeight": "15",
+        "CurrentHeight": "15"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.0733, 22.9387]
+      },
+      "properties": {
+        "State": "MADHYA PRADESH",
+        "District": "DEWAS",
+        "ULB_City": "HATPIPLIYA",
+        "ULBCode": 802255,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.7403, 23.0898]
+      },
+      "properties": {
+        "State": "MADHYA PRADESH",
+        "District": "Ujjain",
+        "ULB_City": "Ujjain (M Corp.)",
+        "ULBCode": 802230,
+        "wardNumber": 34,
+        "wardName": "JAISINGHPURA",
+        "LandFillArea": "4.15",
+        "DesignedHeight": "6",
+        "CurrentHeight": "6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.291, 23.094]
+      },
+      "properties": {
+        "State": "JHARKHAND",
+        "District": "KHUNTI",
+        "ULB_City": "KHUNTI (NP)",
+        "ULBCode": 801796,
+        "wardNumber": 0,
+        "wardName": "Outside City Boundry",
+        "LandFillArea": "2.25",
+        "DesignedHeight": "6.25",
+        "CurrentHeight": "0.01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [72.0505, 23.1246]
+      },
+      "properties": {
+        "State": "GUJARAT",
+        "District": "Ahmedabad",
+        "ULB_City": "Bopal-Ghuma",
+        "ULBCode": 900197,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.5576, 23.2642]
+      },
+      "properties": {
+        "State": "MADHYA PRADESH",
+        "District": "Bhopal",
+        "ULB_City": "Bhopal (M Corp.)",
+        "ULBCode": 802312,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "4.35",
+        "DesignedHeight": "4",
+        "CurrentHeight": "4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [86.2028, 23.6794]
+      },
+      "properties": {
+        "State": "JHARKHAND",
+        "District": "BOKARO",
+        "ULB_City": "CHAS",
+        "ULBCode": 801778,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "7",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [86.7985, 23.7253]
+      },
+      "properties": {
+        "State": "JHARKHAND",
+        "District": "Dhanbad ",
+        "ULB_City": "Chirkunda (NP)",
+        "ULBCode": 801776,
+        "wardNumber": 21,
+        "wardName": "WARD 21",
+        "LandFillArea": "1.6",
+        "DesignedHeight": "7.25",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [86.8669, 23.8472]
+      },
+      "properties": {
+        "State": "JHARKHAND",
+        "District": "JAMTARA",
+        "ULB_City": "MIHIJAM",
+        "ULBCode": 801793,
+        "wardNumber": 6,
+        "wardName": "CHATADANGAL,RAJBARI",
+        "LandFillArea": "2.1",
+        "DesignedHeight": "7",
+        "CurrentHeight": "0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [92.6221, 23.8474]
+      },
+      "properties": {
+        "State": "MIZORAM",
+        "District": "MAMIT",
+        "ULB_City": "LENGPUI",
+        "ULBCode": 801499,
+        "wardNumber": 1,
+        "wardName": "DINTHAR",
+        "LandFillArea": "0.0247105",
+        "DesignedHeight": "6",
+        "CurrentHeight": "6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [78.7763, 23.8537]
+      },
+      "properties": {
+        "State": "MADHYA PRADESH",
+        "District": "Sagar ",
+        "ULB_City": "Sagar Cantt (CB)",
+        "ULBCode": 802160,
+        "wardNumber": 6,
+        "wardName": "WARD NO.06",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [78.721, 23.925]
+      },
+      "properties": {
+        "State": "MADHYA PRADESH",
+        "District": "Sagar",
+        "ULB_City": "Sagar (M Corp.)",
+        "ULBCode": 802159,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "3",
+        "DesignedHeight": "15",
+        "CurrentHeight": "15"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [91.8094, 24.1762]
+      },
+      "properties": {
+        "State": "TRIPURA",
+        "District": "DHALAI",
+        "ULB_City": "KAMALPUR (NP)",
+        "ULBCode": 801531,
+        "wardNumber": 11,
+        "wardName": "COLLEGE CHOWMUHANI ",
+        "LandFillArea": "1",
+        "DesignedHeight": "8",
+        "CurrentHeight": "8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [92.677, 24.2615]
+      },
+      "properties": {
+        "State": "MIZORAM",
+        "District": "KOLASIB",
+        "ULB_City": "KOLASIB",
+        "ULBCode": 801503,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "0.26",
+        "DesignedHeight": "5",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.6873, 24.3684]
+      },
+      "properties": {
+        "State": "RAJASTHAN",
+        "District": "Pratapgarh ",
+        "ULB_City": "Chhoti Sadri (M)",
+        "ULBCode": 800627,
+        "wardNumber": 3,
+        "wardName": "BHATO KI BAWDI",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [87.0937, 24.4334]
+      },
+      "properties": {
+        "State": "JHARKHAND",
+        "District": "DUMKA",
+        "ULB_City": "BASUKINATH (NP)",
+        "ULBCode": 801790,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.6002, 24.4415]
+      },
+      "properties": {
+        "State": "JHARKHAND",
+        "District": "KODARMA",
+        "ULB_City": "KODARMA (NP)",
+        "ULBCode": 801766,
+        "wardNumber": 0,
+        "wardName": "Outside City Boundry",
+        "LandFillArea": "2.9",
+        "DesignedHeight": "1.2",
+        "CurrentHeight": "0.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [80.6195, 24.5743]
+      },
+      "properties": {
+        "State": "MADHYA PRADESH",
+        "District": "SATNA",
+        "ULB_City": "NAGOD",
+        "ULBCode": 802174,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "1.2",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.3, 24.59]
+      },
+      "properties": {
+        "State": "BIHAR",
+        "District": "NAWADA",
+        "ULB_City": "NAWADA",
+        "ULBCode": 801407,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "5",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [84.1432, 24.5928]
+      },
+      "properties": {
+        "State": "BIHAR",
+        "District": "AURANGABAD",
+        "ULB_City": "NABINAGAR (NP)",
+        "ULBCode": 801402,
+        "wardNumber": 14,
+        "wardName": "JOBEY",
+        "LandFillArea": "0.83",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [81.3845, 24.595]
+      },
+      "properties": {
+        "State": "MADHYA PRADESH",
+        "District": "REWA",
+        "ULB_City": "REWA",
+        "ULBCode": 802189,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "3",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [73.6921, 24.5954]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "Pune",
+        "ULB_City": "Baramati (M Cl)",
+        "ULBCode": 802820,
+        "wardNumber": 6,
+        "wardName": "\tDESAI ESTATE, AMBIKANAGAR",
+        "LandFillArea": "0.17",
+        "DesignedHeight": "2",
+        "CurrentHeight": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [87.1919, 24.7811]
+      },
+      "properties": {
+        "State": "JHARKHAND",
+        "District": "Godda",
+        "ULB_City": "Godda (NP)",
+        "ULBCode": 801771,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "2.5",
+        "DesignedHeight": "6.9",
+        "CurrentHeight": "0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.4156, 24.8721]
+      },
+      "properties": {
+        "State": "BIHAR",
+        "District": "NAWADA",
+        "ULB_City": "HISUA (NP)",
+        "ULBCode": 801409,
+        "wardNumber": 0,
+        "wardName": "Outside City Boundry",
+        "LandFillArea": "",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.6046, 24.9891]
+      },
+      "properties": {
+        "State": "BIHAR",
+        "District": "NAWADA",
+        "ULB_City": "WARISALIGANJ (NP)",
+        "ULBCode": 801408,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "1.5",
+        "DesignedHeight": "68",
+        "CurrentHeight": "68"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.2035, 25.1441]
+      },
+      "properties": {
+        "State": "BIHAR",
+        "District": "Nalanda",
+        "ULB_City": "Islampur (NP)",
+        "ULBCode": 801366,
+        "wardNumber": 6,
+        "wardName": "PATELNAGAR AND BARBIGHA",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [87.1436, 25.153]
+      },
+      "properties": {
+        "State": "BIHAR",
+        "District": "BHAGALPUR",
+        "ULB_City": "KAHALGAON",
+        "ULBCode": 900096,
+        "wardNumber": 17,
+        "wardName": "PATELNAGAR",
+        "LandFillArea": "",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [78.4674, 25.2652]
+      },
+      "properties": {
+        "State": "UTTAR PRADESH",
+        "District": "Jhansi ",
+        "ULB_City": "Babina (CB)",
+        "ULBCode": 801033,
+        "wardNumber": 1,
+        "wardName": "WARD NO 1",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [84.4536, 25.3153]
+      },
+      "properties": {
+        "State": "BIHAR",
+        "District": "BHOJPUR",
+        "ULB_City": "ARA",
+        "ULBCode": 801385,
+        "wardNumber": 0,
+        "wardName": "Outside City Boundry",
+        "LandFillArea": "10",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [84.2697, 25.3333]
+      },
+      "properties": {
+        "State": "BIHAR",
+        "District": "ROHTAS",
+        "ULB_City": "KOATH",
+        "ULBCode": 801393,
+        "wardNumber": 11,
+        "wardName": "MAJHAULI WARD 11",
+        "LandFillArea": "4",
+        "DesignedHeight": "12",
+        "CurrentHeight": "12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [84.945, 25.3566]
+      },
+      "properties": {
+        "State": "JHARKHAND",
+        "District": "Palamu",
+        "ULB_City": "Bishrampur (NP)",
+        "ULBCode": 801785,
+        "wardNumber": 6,
+        "wardName": "REHLA KALA",
+        "LandFillArea": "5",
+        "DesignedHeight": "1",
+        "CurrentHeight": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [87.6378, 25.3601]
+      },
+      "properties": {
+        "State": "BIHAR",
+        "District": "KATIHAR",
+        "ULB_City": "MANIHARI",
+        "ULBCode": 801315,
+        "wardNumber": 3,
+        "wardName": "BALDIYA BARI BICHLA TOLA ",
+        "LandFillArea": "112.24",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [78.6165, 25.4394]
+      },
+      "properties": {
+        "State": "UTTAR PRADESH",
+        "District": "Jhansi ",
+        "ULB_City": "Jhansi (CB)",
+        "ULBCode": 801031,
+        "wardNumber": 1,
+        "wardName": "GANJ MOHALLA, LPC",
+        "LandFillArea": "0.25",
+        "DesignedHeight": "7",
+        "CurrentHeight": "6.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [81.805, 25.4678]
+      },
+      "properties": {
+        "State": "UTTAR PRADESH",
+        "District": "PRAYAGRAJ",
+        "ULB_City": "ALLAHABAD CANTT.",
+        "ULBCode": 801087,
+        "wardNumber": 3,
+        "wardName": "THREE",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [91.2339, 25.5043]
+      },
+      "properties": {
+        "State": "MEGHALAYA",
+        "District": "West Khasi Hills",
+        "ULB_City": "Nongstoin (TC)",
+        "ULBCode": 801540,
+        "wardNumber": 12,
+        "wardName": "MAWKADIANG &amp",
+        "LandFillArea": "",
+        "DesignedHeight": "",
+        "CurrentHeight": "200"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.1781, 25.5661]
+      },
+      "properties": {
+        "State": "BIHAR",
+        "District": "PATNA",
+        "ULB_City": "PHULWARI SHARIF (NAGAR PARISHAD)",
+        "ULBCode": 801374,
+        "wardNumber": 0,
+        "wardName": "Outside City Boundry",
+        "LandFillArea": "78.89",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [86.2721, 25.625]
+      },
+      "properties": {
+        "State": "BIHAR",
+        "District": "BEGUSARAI",
+        "ULB_City": "BAKHRI (NP)",
+        "ULBCode": 801347,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "2",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.2654, 25.6845]
+      },
+      "properties": {
+        "State": "BIHAR",
+        "District": "Purba Champaran",
+        "ULB_City": "Pakri Dayal (NP)",
+        "ULBCode": 801289,
+        "wardNumber": 12,
+        "wardName": "WARD NO 12 RAMPURWA/BARAHARAKH",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [84.1254, 25.8756]
+      },
+      "properties": {
+        "State": "BIHAR",
+        "District": "SARAN",
+        "ULB_City": "MARHAURA (NP)",
+        "ULBCode": 801334,
+        "wardNumber": 0,
+        "wardName": "Outside City Boundry",
+        "LandFillArea": "120",
+        "DesignedHeight": "150",
+        "CurrentHeight": "20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.8219, 25.8852]
+      },
+      "properties": {
+        "State": "RAJASTHAN",
+        "District": "Ajmer ",
+        "ULB_City": "Kekri (M)",
+        "ULBCode": 800575,
+        "wardNumber": 8,
+        "wardName": "KHAIGAR MOHALLA, GUJRATI MOHALLA, MANAK CHOUK",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [86.1516, 26.0488]
+      },
+      "properties": {
+        "State": "BIHAR",
+        "District": "DARBHANGA",
+        "ULB_City": "BENIPUR",
+        "ULBCode": 801320,
+        "wardNumber": 12,
+        "wardName": "PIPRA",
+        "LandFillArea": "2",
+        "DesignedHeight": "3.6",
+        "CurrentHeight": "4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.35, 26.0983]
+      },
+      "properties": {
+        "State": "RAJASTHAN",
+        "District": "Ajmer ",
+        "ULB_City": "Beawar (M Cl)",
+        "ULBCode": 800571,
+        "wardNumber": 41,
+        "wardName": "NULL",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.8104, 26.1643]
+      },
+      "properties": {
+        "State": "RAJASTHAN",
+        "District": "Tonk ",
+        "ULB_City": "Tonk (M Cl)",
+        "ULBCode": 800578,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "0",
+        "DesignedHeight": "0",
+        "CurrentHeight": "0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [86.5776, 26.3113]
+      },
+      "properties": {
+        "State": "BIHAR",
+        "District": "SUPAUL",
+        "ULB_City": "NIRMALI",
+        "ULBCode": 801302,
+        "wardNumber": 3,
+        "wardName": "WARD NO 03",
+        "LandFillArea": "0.24",
+        "DesignedHeight": "1",
+        "CurrentHeight": "0.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [90.6756, 26.3473]
+      },
+      "properties": {
+        "State": "ASSAM",
+        "District": "BONGAIGAON",
+        "ULB_City": "ABHAYAPURI (TC)",
+        "ULBCode": 801621,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.0245, 26.518]
+      },
+      "properties": {
+        "State": "RAJASTHAN",
+        "District": "Karauli ",
+        "ULB_City": "Karauli (M)",
+        "ULBCode": 800507,
+        "wardNumber": 33,
+        "wardName": "NULL",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [92.815, 26.633]
+      },
+      "properties": {
+        "State": "ASSAM",
+        "District": "SONITPUR",
+        "ULB_City": "TEZPUR",
+        "ULBCode": 801572,
+        "wardNumber": 12,
+        "wardName": "EX POLICE LINE AREA",
+        "LandFillArea": "14.48",
+        "DesignedHeight": "2",
+        "CurrentHeight": "1.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.2723, 26.7512]
+      },
+      "properties": {
+        "State": "BIHAR",
+        "District": "SITAMARHI",
+        "ULB_City": "BAIRGANIA",
+        "ULBCode": 801293,
+        "wardNumber": 1,
+        "wardName": "ONE",
+        "LandFillArea": "",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [84.5929, 26.7643]
+      },
+      "properties": {
+        "State": "BIHAR",
+        "District": "PASCHIM CHAMPARAN",
+        "ULB_City": "BETTIAH (NAGAR PARISHAD)",
+        "ULBCode": 801281,
+        "wardNumber": 0,
+        "wardName": "Outside City Boundry",
+        "LandFillArea": "5",
+        "DesignedHeight": "4",
+        "CurrentHeight": "0.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.2273, 26.8723]
+      },
+      "properties": {
+        "State": "RAJASTHAN",
+        "District": "JAIPUR",
+        "ULB_City": "PHULERA (M)",
+        "ULBCode": 800519,
+        "wardNumber": 3,
+        "wardName": "L.B.S ",
+        "LandFillArea": "4.448",
+        "DesignedHeight": "",
+        "CurrentHeight": "1.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.3357, 26.8897]
+      },
+      "properties": {
+        "State": "RAJASTHAN",
+        "District": "Dausa ",
+        "ULB_City": "Dausa (M)",
+        "ULBCode": 800511,
+        "wardNumber": 15,
+        "wardName": "15",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.2744, 26.9071]
+      },
+      "properties": {
+        "State": "RAJASTHAN",
+        "District": "BHARATPUR",
+        "ULB_City": "BAYANA (M)",
+        "ULBCode": 800501,
+        "wardNumber": 5,
+        "wardName": "WARD NO. 5",
+        "LandFillArea": "5.26",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.45, 27.0129]
+      },
+      "properties": {
+        "State": "RAJASTHAN",
+        "District": "NAGAUR",
+        "ULB_City": "MAKRANA (M)",
+        "ULBCode": 800540,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "7.62",
+        "DesignedHeight": "8",
+        "CurrentHeight": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.5619, 27.0246]
+      },
+      "properties": {
+        "State": "RAJASTHAN",
+        "District": "DAUSA",
+        "ULB_City": "BANDIKUI (M)",
+        "ULBCode": 800510,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [95.4699, 27.1935]
+      },
+      "properties": {
+        "State": "ARUNACHAL PRADESH",
+        "District": "TIRAP",
+        "ULB_City": "DEOMALI",
+        "ULBCode": 801440,
+        "wardNumber": 1,
+        "wardName": "WARD NO.1",
+        "LandFillArea": "",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [92.1535, 27.2113]
+      },
+      "properties": {
+        "State": "ARUNACHAL PRADESH",
+        "District": "WEST KAMENG",
+        "ULB_City": "DIRANG",
+        "ULBCode": 801425,
+        "wardNumber": 0,
+        "wardName": "Outside City Boundry",
+        "LandFillArea": "0.15",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [92.3528, 27.3293]
+      },
+      "properties": {
+        "State": "ARUNACHAL PRADESH",
+        "District": "WEST KAMENG",
+        "ULB_City": "BOMDILA",
+        "ULBCode": 801426,
+        "wardNumber": 0,
+        "wardName": "Outside City Boundry",
+        "LandFillArea": "0.28",
+        "DesignedHeight": "",
+        "CurrentHeight": "10"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.5035, 27.4076]
+      },
+      "properties": {
+        "State": "RAJASTHAN",
+        "District": "Sikar",
+        "ULB_City": "Losal (M)",
+        "ULBCode": 800528,
+        "wardNumber": 14,
+        "wardName": "KHATIKAN MOHALLA",
+        "LandFillArea": "6",
+        "DesignedHeight": "3",
+        "CurrentHeight": "2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.465, 27.5128]
+      },
+      "properties": {
+        "State": "RAJASTHAN",
+        "District": "Alwar ",
+        "ULB_City": "Alwar (M Cl)",
+        "ULBCode": 800490,
+        "wardNumber": 40,
+        "wardName": "DEVKHEDA, AMBEDKAR NAGAR, PUSHAP COLONI",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [94.5986, 27.5198]
+      },
+      "properties": {
+        "State": "ASSAM",
+        "District": "Dhemaji ",
+        "ULB_City": "Dhemaji (TC)",
+        "ULBCode": 801579,
+        "wardNumber": 7,
+        "wardName": "W7",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.0936, 27.6121]
+      },
+      "properties": {
+        "State": "RAJASTHAN",
+        "District": "SIKAR",
+        "ULB_City": "SIKAR (M CL)",
+        "ULBCode": 800527,
+        "wardNumber": 0,
+        "wardName": "Outside City Boundry",
+        "LandFillArea": "",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.3113, 27.8384]
+      },
+      "properties": {
+        "State": "RAJASTHAN",
+        "District": "Churu ",
+        "ULB_City": "Bidasar (M)",
+        "ULBCode": 800471,
+        "wardNumber": 25,
+        "wardName": "WARD NO. 25",
+        "LandFillArea": "0",
+        "DesignedHeight": "0",
+        "CurrentHeight": "0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [95.1831, 27.8537]
+      },
+      "properties": {
+        "State": "ARUNACHAL PRADESH",
+        "District": "EAST SIANG",
+        "ULB_City": "RUKSIN",
+        "ULBCode": 900831,
+        "wardNumber": 0,
+        "wardName": "OUTSIDE CITY BOUNDARY",
+        "LandFillArea": "2.4",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [94.6887, 27.9547]
+      },
+      "properties": {
+        "State": "ARUNACHAL PRADESH",
+        "District": "WEST SIANG",
+        "ULB_City": "BASAR",
+        "ULBCode": 801433,
+        "wardNumber": 0,
+        "wardName": "Outside City Boundry",
+        "LandFillArea": "0.12",
+        "DesignedHeight": "10",
+        "CurrentHeight": "10"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [95.346, 28.0621]
+      },
+      "properties": {
+        "State": "ARUNACHAL PRADESH",
+        "District": "EAST SIANG",
+        "ULB_City": "PASIGHAT",
+        "ULBCode": 801435,
+        "wardNumber": 8,
+        "wardName": "WARD-8",
+        "LandFillArea": "45.15",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.1735, 28.4063]
+      },
+      "properties": {
+        "State": "HARYANA",
+        "District": "FARIDABAD",
+        "ULB_City": "FARIDABAD",
+        "ULBCode": 800436,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "30",
+        "DesignedHeight": "35",
+        "CurrentHeight": "35"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.5513, 28.5309]
+      },
+      "properties": {
+        "State": "HARYANA",
+        "District": "Sonipat",
+        "ULB_City": "Kharkhoda (MC)",
+        "ULBCode": 800390,
+        "wardNumber": 7,
+        "wardName": "MAHAVIR COLONY",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.2148, 28.6109]
+      },
+      "properties": {
+        "State": "MAHARASHTRA",
+        "District": "Latur",
+        "ULB_City": "Nilanga (M Cl)",
+        "ULBCode": 802843,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "0.5",
+        "DesignedHeight": "4",
+        "CurrentHeight": "4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.0365, 28.6691]
+      },
+      "properties": {
+        "State": "RAJASTHAN",
+        "District": "CHURU",
+        "ULB_City": "TARANAGAR (M)",
+        "ULBCode": 800464,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "6.25",
+        "DesignedHeight": "2",
+        "CurrentHeight": "2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.9283, 28.6922]
+      },
+      "properties": {
+        "State": "HARYANA",
+        "District": "Jhajjar",
+        "ULB_City": "Bahadurgarh (M Cl)",
+        "ULBCode": 800418,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "8.5",
+        "DesignedHeight": "2.5",
+        "CurrentHeight": "1.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [80.0666, 28.9881]
+      },
+      "properties": {
+        "State": "UTTARAKHAND",
+        "District": "CHAMPAWAT",
+        "ULB_City": "BANBASA",
+        "ULBCode": 900110,
+        "wardNumber": 6,
+        "wardName": "MEENA BAZAR",
+        "LandFillArea": "",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.2318, 29.1422]
+      },
+      "properties": {
+        "State": "RAJASTHAN",
+        "District": "HANUMANGARH",
+        "ULB_City": "RAWATSAR (M)",
+        "ULBCode": 800457,
+        "wardNumber": 0,
+        "wardName": "Outside City Boundry",
+        "LandFillArea": "0.07",
+        "DesignedHeight": "10",
+        "CurrentHeight": "10"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [73.4414, 29.6538]
+      },
+      "properties": {
+        "State": "RAJASTHAN",
+        "District": "Ganganagar ",
+        "ULB_City": "Gajsinghpur (M)",
+        "ULBCode": 800448,
+        "wardNumber": 5,
+        "wardName": "5",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.2533, 29.6631]
+      },
+      "properties": {
+        "State": "PUNJAB",
+        "District": "MANSA",
+        "ULB_City": "SARDULGARH",
+        "ULBCode": 800232,
+        "wardNumber": 3,
+        "wardName": "KHERA ROAD",
+        "LandFillArea": "0.4",
+        "DesignedHeight": "5",
+        "CurrentHeight": "5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [79.4649, 29.664]
+      },
+      "properties": {
+        "State": "UTTARAKHAND",
+        "District": "ALMORA",
+        "ULB_City": "RANIKHET CANTT",
+        "ULBCode": 800324,
+        "wardNumber": 2,
+        "wardName": "WARD NO - 2",
+        "LandFillArea": "3",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [80.0395, 29.7812]
+      },
+      "properties": {
+        "State": "UTTARAKHAND",
+        "District": "PITHORAGARH",
+        "ULB_City": "BERINAG",
+        "ULBCode": 900111,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "10",
+        "DesignedHeight": "10",
+        "CurrentHeight": "10"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.9149, 29.7862]
+      },
+      "properties": {
+        "State": "HARYANA",
+        "District": "KARNAL",
+        "ULB_City": "TARAORI",
+        "ULBCode": 800379,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "5",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.8879, 29.8363]
+      },
+      "properties": {
+        "State": "UTTARAKHAND",
+        "District": "HARDWAR",
+        "ULB_City": "ROORKEE CANTT",
+        "ULBCode": 800354,
+        "wardNumber": 7,
+        "wardName": "BEG OFR MESS, STN HQ, TFOI,ETC",
+        "LandFillArea": "8",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [73.8801, 29.8427]
+      },
+      "properties": {
+        "State": "RAJASTHAN",
+        "District": "Ganganagar ",
+        "ULB_City": "Ganganagar (M Cl)",
+        "ULBCode": 800446,
+        "wardNumber": 50,
+        "wardName": "JAWAHAR NAGAR",
+        "LandFillArea": "5.09",
+        "DesignedHeight": "30",
+        "CurrentHeight": "0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.0957, 30.0056]
+      },
+      "properties": {
+        "State": "PUNJAB",
+        "District": "PATIALA",
+        "ULB_City": "GHAGGA",
+        "ULBCode": 800239,
+        "wardNumber": 6,
+        "wardName": "NEAR ANGANWADI CENTRE",
+        "LandFillArea": "0.04",
+        "DesignedHeight": "4",
+        "CurrentHeight": "4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.0402, 30.212]
+      },
+      "properties": {
+        "State": "HARYANA",
+        "District": "AMBALA",
+        "ULB_City": "BARARA",
+        "ULBCode": 900228,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "8",
+        "DesignedHeight": "20",
+        "CurrentHeight": "10"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.792, 30.224]
+      },
+      "properties": {
+        "State": "PUNJAB",
+        "District": "SANGRUR",
+        "ULB_City": "SANGRUR",
+        "ULBCode": 800273,
+        "wardNumber": 29,
+        "wardName": "OFFICER COLONY",
+        "LandFillArea": "1.5",
+        "DesignedHeight": "0",
+        "CurrentHeight": "0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.373, 30.294]
+      },
+      "properties": {
+        "State": "PUNJAB",
+        "District": "BARNALA",
+        "ULB_City": "TAPA",
+        "ULBCode": 800284,
+        "wardNumber": 14,
+        "wardName": "AAWA BASTI ",
+        "LandFillArea": "3",
+        "DesignedHeight": "1",
+        "CurrentHeight": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.7311, 30.32]
+      },
+      "properties": {
+        "State": "UTTARAKHAND",
+        "District": "DEHRADUN",
+        "ULB_City": "HERBERTPUR",
+        "ULBCode": 800306,
+        "wardNumber": 3,
+        "wardName": "FATEHPUR PASCHIM",
+        "LandFillArea": "0",
+        "DesignedHeight": "0",
+        "CurrentHeight": "0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.7311, 30.3202]
+      },
+      "properties": {
+        "State": "UTTARAKHAND",
+        "District": "DEHRADUN",
+        "ULB_City": "HERBERTPUR",
+        "ULBCode": 800306,
+        "wardNumber": 1,
+        "wardName": "BANSHIPUR",
+        "LandFillArea": "0",
+        "DesignedHeight": "0",
+        "CurrentHeight": "0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.7311, 30.3202]
+      },
+      "properties": {
+        "State": "UTTARAKHAND",
+        "District": "DEHRADUN",
+        "ULB_City": "HERBERTPUR",
+        "ULBCode": 800306,
+        "wardNumber": 2,
+        "wardName": "ADARSH VIHAR",
+        "LandFillArea": "0",
+        "DesignedHeight": "0",
+        "CurrentHeight": "0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.7311, 30.3202]
+      },
+      "properties": {
+        "State": "UTTARAKHAND",
+        "District": "DEHRADUN",
+        "ULB_City": "HERBERTPUR",
+        "ULBCode": 800306,
+        "wardNumber": 4,
+        "wardName": "ASAN BAGH",
+        "LandFillArea": "0",
+        "DesignedHeight": "0",
+        "CurrentHeight": "0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.7311, 30.3202]
+      },
+      "properties": {
+        "State": "UTTARAKHAND",
+        "District": "DEHRADUN",
+        "ULB_City": "HERBERTPUR",
+        "ULBCode": 800306,
+        "wardNumber": 5,
+        "wardName": "RAMBAGH",
+        "LandFillArea": "0",
+        "DesignedHeight": "0",
+        "CurrentHeight": "0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.7311, 30.3202]
+      },
+      "properties": {
+        "State": "UTTARAKHAND",
+        "District": "DEHRADUN",
+        "ULB_City": "HERBERTPUR",
+        "ULBCode": 800306,
+        "wardNumber": 6,
+        "wardName": "VIVEK VIHAR",
+        "LandFillArea": "0",
+        "DesignedHeight": "0",
+        "CurrentHeight": "0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.7311, 30.3202]
+      },
+      "properties": {
+        "State": "UTTARAKHAND",
+        "District": "DEHRADUN",
+        "ULB_City": "HERBERTPUR",
+        "ULBCode": 800306,
+        "wardNumber": 7,
+        "wardName": "TEA STATE",
+        "LandFillArea": "0",
+        "DesignedHeight": "0",
+        "CurrentHeight": "0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.7311, 30.3202]
+      },
+      "properties": {
+        "State": "UTTARAKHAND",
+        "District": "DEHRADUN",
+        "ULB_City": "HERBERTPUR",
+        "ULBCode": 800306,
+        "wardNumber": 8,
+        "wardName": "ADARSH NAGAR(JHADOWALA)",
+        "LandFillArea": "0",
+        "DesignedHeight": "0",
+        "CurrentHeight": "0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.7311, 30.3202]
+      },
+      "properties": {
+        "State": "UTTARAKHAND",
+        "District": "DEHRADUN",
+        "ULB_City": "HERBERTPUR",
+        "ULBCode": 800306,
+        "wardNumber": 9,
+        "wardName": "ASHANPUR PURVI BASTI ",
+        "LandFillArea": "0",
+        "DesignedHeight": "0",
+        "CurrentHeight": "0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.2899, 30.668]
+      },
+      "properties": {
+        "State": "PUNJAB",
+        "District": "SIRHIND FATEHGARH SAHIB",
+        "ULB_City": "GOBINDGARH",
+        "ULBCode": 800187,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "6",
+        "DesignedHeight": "0.5",
+        "CurrentHeight": "0.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.6838, 30.7107]
+      },
+      "properties": {
+        "State": "PUNJAB",
+        "District": "S.A.S. NAGAR (MOHALI)",
+        "ULB_City": "S.A.S. NAGAR (MOHALI)",
+        "ULBCode": 800266,
+        "wardNumber": 41,
+        "wardName": "WARD NO. 41",
+        "LandFillArea": "0.18",
+        "DesignedHeight": "4",
+        "CurrentHeight": "4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.5101, 30.7583]
+      },
+      "properties": {
+        "State": "PUNJAB",
+        "District": "RUPNAGAR",
+        "ULB_City": "MORINDA",
+        "ULBCode": 800261,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "0.03",
+        "DesignedHeight": "2.5",
+        "CurrentHeight": "2.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.8661, 30.7596]
+      },
+      "properties": {
+        "State": "PUNJAB",
+        "District": "FIROZPUR",
+        "ULB_City": "MUDKI",
+        "ULBCode": 800210,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "0.1",
+        "DesignedHeight": "3",
+        "CurrentHeight": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.9877, 30.7654]
+      },
+      "properties": {
+        "State": "PUNJAB",
+        "District": "BATHINDA",
+        "ULB_City": "BAALAIN WALA",
+        "ULBCode": 900049,
+        "wardNumber": 1,
+        "wardName": "WARD NO 1",
+        "LandFillArea": "3",
+        "DesignedHeight": "45",
+        "CurrentHeight": "67"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.9652, 30.8421]
+      },
+      "properties": {
+        "State": "PUNJAB",
+        "District": "LUDHIANA",
+        "ULB_City": "SAHNEWAL",
+        "ULBCode": 800195,
+        "wardNumber": 14,
+        "wardName": "14",
+        "LandFillArea": "0.02",
+        "DesignedHeight": "2.5",
+        "CurrentHeight": "2.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.9084, 30.9334]
+      },
+      "properties": {
+        "State": "PUNJAB",
+        "District": "LUDHIANA",
+        "ULB_City": "LUDHIANA",
+        "ULBCode": 800196,
+        "wardNumber": 15,
+        "wardName": "WARD NO 15",
+        "LandFillArea": "2.5",
+        "DesignedHeight": "4.5",
+        "CurrentHeight": "4.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.9977, 30.9715]
+      },
+      "properties": {
+        "State": "PUNJAB",
+        "District": "FIROZPUR",
+        "ULB_City": "ZIRA",
+        "ULBCode": 800205,
+        "wardNumber": 5,
+        "wardName": "SHAHWALA ROAD GURUDUWARA HARNAM SAR",
+        "LandFillArea": "0.02",
+        "DesignedHeight": "2.5",
+        "CurrentHeight": "2.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.1283, 31.0853]
+      },
+      "properties": {
+        "State": "HIMACHAL PRADESH",
+        "District": "Shimla",
+        "ULB_City": "Shimla (M Corp.)",
+        "ULBCode": 800137,
+        "wardNumber": 6,
+        "wardName": "TOTU",
+        "LandFillArea": "9.92",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.9973, 31.1139]
+      },
+      "properties": {
+        "State": "PUNJAB",
+        "District": "FIROZPUR",
+        "ULB_City": "MAKHU (NP)",
+        "ULBCode": 800204,
+        "wardNumber": 1,
+        "wardName": "BASTI MISHION, BASTI SHOKINA WALI",
+        "LandFillArea": "0.09",
+        "DesignedHeight": "3",
+        "CurrentHeight": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.5817, 31.1743]
+      },
+      "properties": {
+        "State": "PUNJAB",
+        "District": "RUPNAGAR",
+        "ULB_City": "KIRATPUR SAHIB",
+        "ULBCode": 900107,
+        "wardNumber": 5,
+        "wardName": "BIHARI BASTI AND NEAR ICE FACTORY",
+        "LandFillArea": "0.01",
+        "DesignedHeight": "4",
+        "CurrentHeight": "4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.643, 31.5394]
+      },
+      "properties": {
+        "State": "PUNJAB",
+        "District": "JALANDHAR",
+        "ULB_City": "BHOGPUR",
+        "ULBCode": 800170,
+        "wardNumber": 8,
+        "wardName": "8",
+        "LandFillArea": "0.07",
+        "DesignedHeight": "3",
+        "CurrentHeight": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.6637, 31.7997]
+      },
+      "properties": {
+        "State": "PUNJAB",
+        "District": "HOSHIARPUR",
+        "ULB_City": "DASUA (M CL)",
+        "ULBCode": 800172,
+        "wardNumber": 5,
+        "wardName": "OLD BANK ROAD,VIJAY MARKET,OLD COURT COMPLEX,KASBA MOHALLA",
+        "LandFillArea": "8",
+        "DesignedHeight": "2",
+        "CurrentHeight": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.5081, 32.8419]
+      },
+      "properties": {
+        "State": "JAMMU AND KASHMIR",
+        "District": "JAMMU",
+        "ULB_City": "KHORE (MC)",
+        "ULBCode": 800070,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "5",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.5706, 32.845]
+      },
+      "properties": {
+        "State": "JAMMU AND KASHMIR",
+        "District": "JAMMU",
+        "ULB_City": "JOURIAN (MC)",
+        "ULBCode": 800068,
+        "wardNumber": 1,
+        "wardName": "S.C MOHALLA",
+        "LandFillArea": "2",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.6703, 33.018]
+      },
+      "properties": {
+        "State": "JAMMU AND KASHMIR",
+        "District": "Doda",
+        "ULB_City": "Bhaderwah (MC)",
+        "ULBCode": 800050,
+        "wardNumber": null,
+        "wardName": "",
+        "LandFillArea": "0.26",
+        "DesignedHeight": "5",
+        "CurrentHeight": "5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.49, 33.0715]
+      },
+      "properties": {
+        "State": "JAMMU AND KASHMIR",
+        "District": "RAJOURI",
+        "ULB_City": "SUNDERBANI",
+        "ULBCode": 800067,
+        "wardNumber": 8,
+        "wardName": "KATHANU",
+        "LandFillArea": "1",
+        "DesignedHeight": "30",
+        "CurrentHeight": "30"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.2968, 33.586]
+      },
+      "properties": {
+        "State": "JAMMU AND KASHMIR",
+        "District": "ANANTNAG",
+        "ULB_City": "KOKER NAG (MC)",
+        "ULBCode": 800037,
+        "wardNumber": 5,
+        "wardName": "KOKERNAG",
+        "LandFillArea": "",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.1744, 33.7209]
+      },
+      "properties": {
+        "State": "JAMMU AND KASHMIR",
+        "District": "Srinagar ",
+        "ULB_City": "Anantnag (M Cl)",
+        "ULBCode": 800033,
+        "wardNumber": 23,
+        "wardName": "SHIRPORA BALA",
+        "LandFillArea": "NA",
+        "DesignedHeight": "NA",
+        "CurrentHeight": "NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.0339, 33.7508]
+      },
+      "properties": {
+        "State": "JAMMU AND KASHMIR",
+        "District": "KULGAM",
+        "ULB_City": "FRISAL (MC)",
+        "ULBCode": 800042,
+        "wardNumber": 10,
+        "wardName": "AYARABAD",
+        "LandFillArea": "0.5",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.4213, 34.0555]
+      },
+      "properties": {
+        "State": "JAMMU AND KASHMIR",
+        "District": "BARAMULA",
+        "ULB_City": "TANGMARG",
+        "ULBCode": 800009,
+        "wardNumber": 2,
+        "wardName": "MARKET WARD TANGMARG",
+        "LandFillArea": "0.8",
+        "DesignedHeight": "",
+        "CurrentHeight": ""
+      }
+    }
+  ]
+}
